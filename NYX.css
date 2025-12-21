@@ -1,12 +1,22 @@
 body {
     background-color: #27123c
 }
-
+img {
+    weigth: 200px;
+    height: 200px;
+    margin-right: 1000px;
+    position: absolute;
+    left:45vw;
+    top:0px;
+}
+#object-position-1 {
+    object-position: 10000px;
+}
 #menuToggle {
     display: block;
     position: relative;
-    top: 50px;
-    left: 50px;
+    top: 80px;
+    left: 3vw;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
