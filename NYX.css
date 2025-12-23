@@ -1,20 +1,19 @@
 body {
-    background-color: #27123c
+    background-color: #60259e;
+    font-family: "Sans Serif", system-ui;
 }
 img {
-    weigth: 200px;
-    height: 200px;
-    margin-right: 1000px;
+    width: 250px ;
+    height: 250px;
     position: absolute;
-    left:45vw;
-    top:0px;
-}
-#object-position-1 {
-    object-position: 10000px;
+    padding-right: 100%;
+    padding-bottom: 0;
+    top:-85px;
+    left: -10px;
 }
 #menuToggle {
     display: block;
-    position: relative;
+    position: absolute;
     top: 80px;
     left: 3vw;
     z-index: 1;
@@ -116,13 +115,13 @@ img {
 
 .regions{
     padding:15px;
-    margin-left:10vw;
-    margin-top:12px;
-    margin-bottom:13px;
-    height : 15px;
+    margin-left:10%;
+    margin-top: 4px;
     background :#5715a2;
     color:#fff;
     border-radius:10px;
     list-style-type: none;
     font-size: 25px;
+    border-style: groove;
+    border-color:#5715a2;
 }
