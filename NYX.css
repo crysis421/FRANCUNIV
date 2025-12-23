@@ -116,11 +116,13 @@ img {
 
 .regions{
     padding:15px;
+    margin-left:10vw;
     margin-top:12px;
+    margin-bottom:13px;
     height : 15px;
     background :#5715a2;
     color:#fff;
-    border-radius:30px;
+    border-radius:10px;
     list-style-type: none;
     font-size: 25px;
 }
