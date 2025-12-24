@@ -214,3 +214,13 @@ li{
 p{
     margin:0;
 }
+#ecole{
+    font-weight: bold;
+    margin-left:12%;
+    background:#7f00ff;
+    border-radius:10px;
+    list-style-type: none;
+    font-size: 25px;
+    border-style: groove;
+    border-color:#7f00ff;
+}
