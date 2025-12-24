@@ -11,6 +11,37 @@ img {
     top:-85px;
     left: -10px;
 }
+#photo{
+    position: absolute;
+    width: 200px ;
+    height: 200px;
+    padding-right: 100%;
+    padding-bottom: 0;
+    margin-left:73%;
+    margin-top:15%;
+    border-radius: 0px;
+
+}
+#name{
+    margin-top:10%;
+    margin-left:10%;
+    font-weight: bold;
+}
+#firstname{
+    margin-top:5%;
+    margin-left:10%;
+    font-weight: bold;
+}
+#age{
+    margin-top:5%;
+    margin-left:10%;
+    font-weight: bold;
+}
+#email{
+    margin-top:5%;
+    margin-left:10%;
+    font-weight: bold;
+}
 #menuToggle {
     display: block;
     position: absolute;
