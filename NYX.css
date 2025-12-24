@@ -112,6 +112,9 @@ img {
     transform: none;
 }
 
+#first{
+    margin-top:70px;
+}
 
 .regions{
     padding:15px;
@@ -202,3 +205,12 @@ button:active {
     background: #222; /* Fond encore plus foncé */
 }
 
+summary{
+    list-style-type: none;
+}
+li{
+    list-style-type: none;
+}
+p{
+    margin:0;
+}
