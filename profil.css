@@ -6,7 +6,7 @@ img {
     width: 250px ;
     height: 250px;
     position: absolute;
-    padding-right: 100%;
+    padding-right: 0%;
     padding-bottom: 0;
     top:-85px;
     left: -10px;
@@ -15,11 +15,11 @@ img {
     position: absolute;
     width: 200px ;
     height: 200px;
-    padding-right: 100%;
+    padding-right: 0%;
     padding-bottom: 0;
     margin-left:73%;
     margin-top:15%;
-    border-radius: 0px;
+    border-radius: 10px;
 
 }
 #name{

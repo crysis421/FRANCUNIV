@@ -6,7 +6,7 @@ img {
     width: 250px ;
     height: 250px;
     position: absolute;
-    padding-right: 100%;
+    padding-right: 0%;
     padding-bottom: 0;
     top:-85px;
     left: -10px;
