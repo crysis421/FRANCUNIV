@@ -27,7 +27,7 @@ img {
         transition: color 0.3s ease;
     }
 
-        #menuToggle a li:hover {
+        #menuToggle a ul:hover {
             color: red;
             font-size: 30px;
             transition: font-size 0.3s ease-out;
@@ -98,8 +98,12 @@ img {
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
-
-    #menu li {
+    #menu a ul:hover {
+        color: red;
+        font-size: 30px;
+        transition: font-size 0.3s ease-out;
+    }
+    #menu ul {
         padding: 10px 0;
         font-size: 20px;
     }

@@ -123,25 +123,27 @@ img {
 
 }
 iframe{
-    margin-left:82.2%;
+    margin-left:82.8%;
     margin-top:9.5%;
-    width: 300px ;
-    height: 100px;
+    width: 15vw ;
+    height: 5vw;
     border-radius: 10px;
 
 }
 
 #noteggmaps{
+    position:absolute;
     color:white;
     font-weight: bold;
-    margin-left:87.5%;
+    margin-top:5%;
+    margin-left:86.7%;
     text-decoration: none;
     top:10vw;
 }
 #avis{
     width:40vw;
-    height:100vw;
-    margin-left:10%;
+    height:40vw;
+    margin-left:9%;
     margin-top:-10%;
     background :#F8F8F1;
     color:#000;
@@ -150,4 +152,8 @@ iframe{
     font-size: 25px;
     border-style: groove;
     border-color:#5715a2;
+}
+h1{
+    color:black;
+    margin-left:42%;
 }
