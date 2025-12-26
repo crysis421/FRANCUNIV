@@ -11,37 +11,6 @@ img {
     top:-85px;
     left: -10px;
 }
-#photo{
-    position: absolute;
-    width: 200px ;
-    height: 200px;
-    padding-right: 100%;
-    padding-bottom: 0;
-    margin-left:73%;
-    margin-top:15%;
-    border-radius: 0px;
-
-}
-#name{
-    margin-top:10%;
-    margin-left:10%;
-    font-weight: bold;
-}
-#firstname{
-    margin-top:5%;
-    margin-left:10%;
-    font-weight: bold;
-}
-#age{
-    margin-top:5%;
-    margin-left:10%;
-    font-weight: bold;
-}
-#email{
-    margin-top:5%;
-    margin-left:10%;
-    font-weight: bold;
-}
 #menuToggle {
     display: block;
     position: absolute;
@@ -142,17 +111,14 @@ img {
 #menuToggle input:checked ~ ul {
     transform: none;
 }
-#profil{
-    width:80vw;
-    height:40vw;
-    margin-left:10%;
-    margin-top:0%;
-    background :#F8F8F1;
-    color:#000;
-    border-radius:10px;
-    list-style-type: none;
-    font-size: 25px;
-    border-style: groove;
-    border-color:#5715a2;
+#logo{
+    position: absolute;
+    width: 200px ;
+    height: 200px;
+    padding-right: 100%;
+    padding-bottom: 0;
+    margin-left:73%;
+    margin-top:15%;
+    border-radius: 0px;
 
 }
