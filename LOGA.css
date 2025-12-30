@@ -215,12 +215,12 @@ a:hover {
     z-index: 1;
 }
 path {
-    fill: #d0d0d0;
-    stroke: #333;
+    fill: #7ba448;
+    stroke: white;
     stroke-width: 1;
 }
 
 path:hover {
-    fill: #ffcc66;
+    fill: #516a32;
     cursor: pointer;
 }
