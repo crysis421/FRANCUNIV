@@ -132,83 +132,6 @@ img {
     border-style: groove;
     border-color:#5715a2;
 }
-
-
-/* === STYLE DU FORMULAIRE === */
-form {
-    margin: 50px auto; /* Espace de 50px en haut/bas, centré horizontalement */
-    width: 100%; /* Prend toute la largeur disponible */
-    max-width: 600px; /* Largeur maximale de 600px pour ne pas être trop large */
-    padding: 20px; /* Espace intérieur de 20px */
-    position:absolute;
-    left:65vw;
-    top:-2vw;
-}
-
-/* === CONTENEUR DE LA BARRE DE RECHERCHE === */
-form div {
-    display: flex; /* Met l'input et le bouton côte à côte */
-    align-items: center; /* Aligne verticalement au centre */
-    background: white; /* Fond blanc */
-    border: 2px solid #333; /* Bordure noire de 2px */
-    border-radius: 50px; /* Coins arrondis (forme ovale) */
-    overflow: hidden; /* Cache les débordements pour garder les coins ronds */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère pour effet de profondeur */
-    transition: box-shadow 0.3s ease; /* Animation douce de l'ombre au survol */
-}
-
-/* Effet au survol du conteneur */
-form div:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
-}
-
-/* === CHAMP DE SAISIE (INPUT) === */
-#maRecherche {
-    flex: 1; /* Prend tout l'espace disponible à gauche du bouton */
-    padding: 15px 25px; /* Espace intérieur : 15px haut/bas, 25px gauche/droite */
-    border: none; /* Retire la bordure par défaut */
-    outline: none; /* Retire le contour bleu au focus */
-    font-size: 16px; /* Taille de texte de 16px */
-    font-family: 'Arial', sans-serif; /* Police moderne */
-    color: #333; /* Couleur du texte */
-    background: transparent; /* Fond transparent (hérite du parent) */
-}
-
-/* Style du placeholder (texte d'exemple) */
-#maRecherche::placeholder {
-    color: #999; /* Couleur grise pour le texte du placeholder */
-    font-style: italic; /* Texte en italique */
-}
-
-/* Effet au focus (quand on clique dans l'input) */
-#maRecherche:focus {
-    background: #f9f9f9; /* Fond légèrement gris au focus */
-}
-
-/* === BOUTON DE RECHERCHE === */
-button {
-    padding: 15px 30px; /* Espace intérieur : 15px haut/bas, 30px gauche/droite */
-    border: none; /* Retire la bordure par défaut */
-    background: #5715a2; /* Fond noir */
-    color: white; /* Texte blanc */
-    font-size: 16px; /* Taille de texte */
-    font-weight: bold; /* Texte en gras */
-    cursor: pointer; /* Curseur en forme de main au survol */
-    transition: background 0.3s ease, transform 0.2s ease; /* Animations douces */
-}
-
-/* Effet au survol du bouton */
-button:hover {
-    background: #555; /* Fond gris plus clair au survol */
-    transform: scale(1.05); /* Agrandit légèrement le bouton (effet zoom) */
-}
-
-/* Effet au clic (active) */
-button:active {
-    transform: scale(0.98); /* Réduit légèrement le bouton au clic */
-    background: #222; /* Fond encore plus foncé */
-}
-
 summary{
     list-style-type: none;
 }
@@ -239,4 +162,65 @@ a:link {
 a:hover {
     color: white;
     background-color: transparent;
+}
+.group {
+    margin-left:80vw;
+    margin-top:3.5vw;
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+}
+
+.input {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    height: 45px;
+    padding-left: 2.5rem;
+    box-shadow: 0 0 0 1.5px #2b2c37, 0 0 25px -17px #000;
+    border: 0;
+    border-radius: 12px;
+    background-color: #5715a2;
+    outline: none;
+    color: #bdbecb;
+    transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+    cursor: text;
+    z-index: 0;
+}
+
+.input::placeholder {
+    color: #bdbecb;
+}
+
+.input:hover {
+    box-shadow: 0 0 0 2.5px #2f303d, 0px 0px 25px -15px #000;
+}
+
+.input:active {
+    transform: scale(0.95);
+}
+
+.input:focus {
+    box-shadow: 0 0 0 2.5px #2f303d;
+}
+
+.search-icon {
+    position: absolute;
+    left: 1rem;
+    fill: #bdbecb;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    z-index: 1;
+}
+path {
+    fill: #d0d0d0;
+    stroke: #333;
+    stroke-width: 1;
+}
+
+path:hover {
+    fill: #ffcc66;
+    cursor: pointer;
 }
