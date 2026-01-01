@@ -172,7 +172,7 @@ p{
 }
 .group {
     margin-left:80vw;
-    margin-top:3vw;
+    margin-top:2.5vw;
     display: flex;
     line-height: 28px;
     align-items: center;
@@ -236,9 +236,9 @@ path:hover {
 }
 #profil{
     width:80vw;
-    height:40vw;
+    height:35vw;
     margin-left:10%;
-    margin-top:0%;
+    margin-top:2.5%;
     background :#F8F8F1;
     color:#000;
     border-radius:10px;
@@ -260,25 +260,25 @@ path:hover {
 
 }
 #name{
-    margin-top:15%;
+    margin-top:12.5%;
     margin-left:10%;
     font-weight: bold;
     color: black;
 }
 #firstname{
-    margin-top:10%;
+    margin-top:7.5%;
     margin-left:10%;
     font-weight: bold;
     color: black;
 }
 #age{
-    margin-top:20%;
+    margin-top:17.5%;
     margin-left:10%;
     font-weight: bold;
     color: black;
 }
 #email{
-    margin-top:25%;
+    margin-top:22.5%;
     margin-left:10%;
     font-weight: bold;
     color:#000;
