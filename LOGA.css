@@ -6,11 +6,15 @@ img {
     width: 250px ;
     height: 250px;
     position: absolute;
-    padding-right: 0%;
-    padding-bottom: 0;
-    top:-8%;
-    left: 42.5%;
+    top: 75px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+svg{
+    transform: translate(6%, 0%);
+}
+
 #menuToggle {
     display: block;
     position: absolute;
@@ -162,13 +166,13 @@ a:hover {
     background-color: transparent;
 }
 p{
-    position:absolute;
-    margin-left:35vw;
-    margin-top:-2vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
     color:white;
     font-size:2vw;
     font-weight: 900;
-    font-family:Serif;
+    font-family: Serif, serif;
 }
 .group {
     margin-left:80vw;
@@ -228,6 +232,10 @@ path {
 }
 
 path:hover {
+    fill: #516a32;
+    cursor: pointer;
+}
+.groupir:hover .Ile-de-France{
     fill: #516a32;
     cursor: pointer;
 }
