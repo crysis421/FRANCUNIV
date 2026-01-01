@@ -164,17 +164,10 @@ a:hover {
 p{
     position:absolute;
     margin-left:35vw;
-    margin-top:-2%;
+    margin-top:-2vw;
     color:white;
     font-size:2vw;
-    font-family:Serif;
-}
-#nom_region{
-    position:absolute;
-    margin-left:40%;
-    margin-top:2%;
-    color:white;
-    font-size:2vw;
+    font: blod;
     font-family:Serif;
 }
 .group {
