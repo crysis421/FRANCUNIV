@@ -149,7 +149,7 @@ li{
     border-style: groove;
     border-color:#7f00ff;
     color:#ffffff;
-    text-align:20vw;
+    text-align: center;
 }
 a:link {
     color:white;
@@ -167,7 +167,7 @@ p{
     margin-top:-2vw;
     color:white;
     font-size:2vw;
-    font:blod;
+    font-weight: 900;
     font-family:Serif;
 }
 .group {
