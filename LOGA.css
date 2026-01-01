@@ -8,13 +8,13 @@ img {
     position: absolute;
     padding-right: 0%;
     padding-bottom: 0;
-    top:-85px;
-    left: -10px;
+    top:-8%;
+    left: 42.5%;
 }
 #menuToggle {
     display: block;
     position: absolute;
-    top: 80px;
+    top: 7%;
     left: 3vw;
     z-index: 1;
     -webkit-user-select: none;
@@ -138,9 +138,7 @@ summary{
 li{
     list-style-type: none;
 }
-p{
-    margin:0;
-}
+
 #ecole{
     font-weight: bold;
     margin-left:12%;
@@ -163,9 +161,18 @@ a:hover {
     color: white;
     background-color: transparent;
 }
+p{
+    position:absolute;
+    margin-left:35vw;
+    margin-top:-2vw;
+    color:white;
+    font-size:2vw;
+    font:blod;
+    font-family:Serif;
+}
 .group {
     margin-left:80vw;
-    margin-top:3.5vw;
+    margin-top:3vw;
     display: flex;
     line-height: 28px;
     align-items: center;
@@ -215,7 +222,7 @@ a:hover {
     z-index: 1;
 }
 path {
-    fill: #7ba448;
+    fill: #82c46c;
     stroke: white;
     stroke-width: 1;
 }
@@ -223,4 +230,7 @@ path {
 path:hover {
     fill: #516a32;
     cursor: pointer;
+}
+#svg-carte-france{
+    margin-top:3vw;
 }
