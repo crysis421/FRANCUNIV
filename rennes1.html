@@ -17,6 +17,8 @@
     <ul id="menu">
       <a href="LOGA.html">
         <i class="fa-solid fa-house"> &nbsp Home</i></a><br>
+      <a href="classement.html">
+        <i class="fa-solid fa-trophy"> &nbsp Classement</i></a><br>
       <a href="profil.html">
         <i class="fa-solid fa-user"> &nbsp Profil</i></a>
     </ul>
@@ -26,7 +28,21 @@
   Note Google Maps : 4.2 <i class="fa-solid fa-star"></i>
   </a>
 <div id="avis">
-  <h1 id="avistitre">Avis</h1>
+  <div id="avistitre">Avis</div>
+  <div class="messageBox">
+    <div class="fileUploadWrapper">
+      <label for="file">
+        <i class="fa-solid fa-image"></i>
+        </svg>
+        <span class="tooltip">Add an image</span>
+      </label>
+      <input type="file" id="file" name="file" />
+    </div>
+    <input required="" placeholder="Rediger un avis ..." type="text" id="messageInput" />
+    <button id="sendButton">
+      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+    </button>
+  </div>
 
 </div>
 </body>
