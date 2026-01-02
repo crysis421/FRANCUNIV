@@ -1,5 +1,5 @@
 body {
-    background-color: #60259e;
+    background: linear-gradient(to bottom, #60259E, #4A1A7F, #300E5F);
     font-family: "Sans Serif", system-ui;
 }
 img {
@@ -165,7 +165,7 @@ a:hover {
     color: white;
     background-color: transparent;
 }
-p{
+#Ordre{
     position: relative;
     display: flex;
     justify-content: center;
@@ -246,8 +246,8 @@ path:hover {
     width:80vw;
     height:35vw;
     margin-left:10%;
-    margin-top:2.5%;
-    background :#F8F8F1;
+    margin-top:-2%;
+    background :#f4EDDE;
     color:#000;
     border-radius:10px;
     list-style-type: none;
@@ -258,8 +258,8 @@ path:hover {
 }
 #photo{
     position: absolute;
-    width: 200px ;
-    height: 200px;
+    width: 10% ;
+    height: 20%;
     padding-right: 0%;
     padding-bottom: 0;
     margin-left:30%;
@@ -268,25 +268,25 @@ path:hover {
 
 }
 #name{
-    margin-top:12.5%;
+    margin-top:10%;
     margin-left:10%;
     font-weight: bold;
     color: black;
 }
 #firstname{
-    margin-top:7.5%;
+    margin-top:0%;
     margin-left:10%;
     font-weight: bold;
     color: black;
 }
 #age{
-    margin-top:17.5%;
+    margin-top:0%;
     margin-left:10%;
     font-weight: bold;
     color: black;
 }
 #email{
-    margin-top:22.5%;
+    margin-top:0%;
     margin-left:10%;
     font-weight: bold;
     color:#000;
@@ -336,4 +336,36 @@ iframe{
 h1{
     color:black;
     margin-left:42%;
+}
+#login{
+    position: relative;
+    display: flex;
+    background:#60259E;
+    left:78%;
+    margin-top:4%;
+    height:2vw;
+    width:5vw;
+    text-align:center;
+}
+#signup{
+    position: relative;
+    display: flex;
+    height:2vw;
+    width:5vw;
+    left:85%;
+    margin-top:-2%;
+    background:#60259E;
+    text-align:top;
+}
+#login:hover{
+    background:#4A1A7F;
+    cursor: pointer;
+}
+#signup:hover{
+    background:#4A1A7F;
+    cursor: pointer;
+}
+#login2{
+    text-align:center;
+    color:white;
 }
