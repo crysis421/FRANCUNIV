@@ -340,8 +340,8 @@ h1{
 .button {
     position: relative;
     display: flex;
-    left: 85%;
-    top:45px;
+    left: 82%;
+    top:70px;
     --bg: #000;
     --hover-bg: #ff90e8;
     --hover-text: #000;
@@ -364,4 +364,23 @@ h1{
 .button:active {
     transform: translate(0);
     box-shadow: none;
+}
+li{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top:100px;
+}
+#pb{
+    height: 44vw;
+    width: 80vw;
+}
+#pub{
+    position: absolute;
+    display: flex;
+    left:90vw;
+    top:20vw;
+    background: white;
+    height:40vw;
+    width:5vw;
 }
