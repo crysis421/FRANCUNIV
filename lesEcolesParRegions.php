@@ -42,5 +42,4 @@
     />
 </div>
 <script src="LOGA.js"></script>
-<p id="nom_region"><strong>Corse</strong></p>
 </body>
