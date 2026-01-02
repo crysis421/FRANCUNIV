@@ -44,7 +44,7 @@
 
 <?php
 if(isset($_GET['departement'])){
-    echo "<br><br><br><p> Region : ".$_GET['departement'].'</p>';
+    echo "<br><br><br><h1> Region : ".$_GET['departement'].'</h1>';
 }
 
 ?>

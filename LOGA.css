@@ -333,7 +333,7 @@ iframe{
     border-style: groove;
     border-color:#5715a2;
 }
-h1{
+#avistitre{
     color:black;
     margin-left:42%;
 }
@@ -383,4 +383,13 @@ li{
     background: white;
     height:40vw;
     width:5vw;
+}
+h1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-size:2vw;
+    font-weight: 900;
+    font-family: Serif, serif;
 }
