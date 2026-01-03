@@ -36,4 +36,16 @@
         </div>
 <br><br><br><br>
 <a></a>
+<?php
+        include'basededonnee.php';
+        global $db;
+        $q = $db->query("SELECT * FROM users");
+        $q ->execute();
+        while ($user = $q -> fetch()){
+            echo "id : ", $user['id']. "pseudo :" , $user['pseudo'];
+
+        }
+
+
+       ?>
 </body>

@@ -7,7 +7,7 @@
   try{
     $db = new PDO("mysql:host=" .host. ";dbname=".db_name, user,pass );
     $db->setAttribute(PDO::ATTR_ERRMODE , PDO::ERRMODE_EXCEPTION);
-    echo"Connection ok "
+    echo"Connection ok ";
   } catch (PDOException $e){
     echo $e;
   }
