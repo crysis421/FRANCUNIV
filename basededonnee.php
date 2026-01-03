@@ -1,6 +1,6 @@
 <?php
   define('host','localhost');
-  define('db_name','siteweb');
+  define('db_name','loga');
   define('user','root');
   define('pass','');
 
