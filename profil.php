@@ -37,7 +37,7 @@
 <br><br><br><br>
 <a></a>
 <?php
-        include'basededonnee.php';
+        include 'basededonnee.php';
         global $db;
         $q = $db->query("SELECT * FROM users");
         $q ->execute();
