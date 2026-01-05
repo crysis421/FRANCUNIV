@@ -230,7 +230,6 @@ path {
     stroke: white;
     stroke-width: 1;
 }
-
 path:hover {
     fill: #516a32;
     cursor: pointer;
