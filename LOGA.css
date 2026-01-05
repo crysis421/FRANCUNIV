@@ -236,6 +236,11 @@ path {
     stroke: white;
     stroke-width: 1;
 }
+@media screen and (max-width:1000px){
+    #svg-carte-france{
+        height:100%
+    }
+}
 path:hover {
     fill: #516a32;
     cursor: pointer;
@@ -513,7 +518,6 @@ li{
     display: flex;
     left:90vw;
     top:20vw;
-    background: white;
     height:40vw;
     width:5vw;
 }
