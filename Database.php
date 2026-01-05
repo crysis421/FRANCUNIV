@@ -7,26 +7,18 @@ ini_set('max_execution_time', 600);
 ///connection classique
 class Database
 {
-    $dsn = 'mysql:host=localhost;dbname=hana2028_LOGA;charset=utf8mb4';
-    $user = 'hana2028_patatoufs';
-    $pass = 'RdAnFK2x436cMVp';
-    private $host = "localhost";
-    private $username = "root";
-    private $password = "";
+    private $host = 'localhost';
+    private$dbname = 'votreidentifiant_nomdelabase'; //TODO
+    private$username = 'votreidentifiant_nomutilisateur'; //TODO
+    private $password = 'votremotdepasse'; //TODO
     private $conn;
 
     public function getConnection()
     {
-        $this->conn = null;
         try {
-            $dsn = "mysql:host=localhost;dbname=NOM_BDD;charset=utf8"; //TODO
-            $this->conn = new PDO($dsn, $this->username, $this->password);
-
-            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $this->conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-
-        } catch (PDOException $e) {
-            echo "Erreur de connexion : " . $e->getMessage();
+            $this->conn = new mysqli($this->host, $this->username, $this->password, $this->dbname);
+        }catch(exception $e){
+            echo 'Erreur : '.$e->getMessage();
         }
         return $this->conn;
     }
