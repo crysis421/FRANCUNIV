@@ -7,6 +7,9 @@ ini_set('max_execution_time', 600);
 ///connection classique
 class Database
 {
+    $dsn = 'mysql:host=localhost;dbname=hana2028_LOGA;charset=utf8mb4';
+    $user = 'hana2028_patatoufs';
+    $pass = 'RdAnFK2x436cMVp';
     private $host = "localhost";
     private $username = "root";
     private $password = "";
@@ -16,7 +19,7 @@ class Database
     {
         $this->conn = null;
         try {
-            $dsn = "mysql:host={$this->host};"; //TODO
+            $dsn = "mysql:host=localhost;dbname=NOM_BDD;charset=utf8"; //TODO
             $this->conn = new PDO($dsn, $this->username, $this->password);
 
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
