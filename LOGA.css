@@ -91,7 +91,6 @@ svg{
     position: fixed;
     min-height: 100000px;
     box-sizing: border-box;
-    background: black;
     width: 300px;
     margin: -100px 0 0 -70px;
     padding: 50px;
@@ -241,6 +240,8 @@ path:hover {
 }
 #svg-carte-france{
     margin-top:3vw;
+    margin-right:6vw;
+
 }
 #profil{
     width:80vw;
@@ -508,7 +509,6 @@ li{
     display: flex;
     left:90vw;
     top:20vw;
-    background: white;
     height:40vw;
     width:5vw;
 }
