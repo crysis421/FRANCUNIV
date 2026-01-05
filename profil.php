@@ -19,7 +19,7 @@
                 <i class="fa-solid fa-house">  &nbsp Home</i></a><br>
             <a href="classement.html">
                 <i class="fa-solid fa-trophy"> &nbsp Classement</i></a><br>
-            <a href="profil.html">
+            <a href="profil.php">
                 <i class="fa-solid fa-user"> &nbsp Profil</i></a>
         </ul>
     </div>
@@ -37,7 +37,7 @@
 <br><br><br><br>
 <a></a>
 <?php
-        include'basededonnee.php';
+        include 'basededonnee.php';
         global $db;
         $q = $db->query("SELECT * FROM users");
         $q ->execute();
