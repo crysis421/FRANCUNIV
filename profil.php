@@ -37,13 +37,13 @@
 <br><br><br><br>
 <a></a>
 <?php
-        include 'basededonnee.php';
-        global $db;
+        require "Database.php";
+        $db = new Database();
+        $db = $db->getConnection();
         $q = $db->query("SELECT * FROM users");
         $q ->execute();
         while ($user = $q -> fetch()){
             echo "id : ", $user['id']. "pseudo :" , $user['pseudo'];
-
         }
 
 

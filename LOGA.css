@@ -34,12 +34,6 @@ svg{
         transition: color 0.3s ease;
     }
 
-        #menuToggle a ul:hover {
-            color: red;
-            font-size: 30px;
-            transition: font-size 0.3s ease-out;
-        }
-
     #menuToggle input {
         display: block;
         width: 40px;
@@ -95,7 +89,7 @@ svg{
 
 #menu {
     position: fixed;
-    min-height: 101vh;
+    min-height: 100000px;
     box-sizing: border-box;
     background: black;
     width: 300px;
@@ -234,7 +228,7 @@ a:hover {
 path {
     fill: #82c46c;
     stroke: white;
-    stroke-width: 1;
+    stroke-width: 1.25;
 }
 
 path:hover {
