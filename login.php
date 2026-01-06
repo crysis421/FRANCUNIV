@@ -30,5 +30,17 @@
         </form>
     </div>
 </div>
+<?php
+    require "Database.php";
+    $db = new Database();
+    $db = $db->getConnection();
+    $q = $db->query("SELECT * FROM users");
+    if ( 'email' = $q['email']){
+
+    }else{
+        query("INSERT INTO users ('pseudo','email','password') VALUES ('txt','email','pswd')");
+    }
+?>
+
 </body>
 </html>

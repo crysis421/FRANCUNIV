@@ -24,7 +24,7 @@
         </ul>
     </div>
 </nav>
-<a id="signup" href="login.html"><button class="button">Sign Up / Login </button></a>
+<a id="signup" href="login.php"><button class="button">Sign Up / Login </button></a>
 <br><br><br><br><br><br>
 <div id="profil">
     <img id="photo" src="profil%20image.png" alt="Photo de profil" />
@@ -44,7 +44,5 @@
         while ($user = $q -> fetch_row()){
             echo "id : ", $user['id']. "pseudo :" , $user['pseudo'];
         }
-
-
        ?>
 </body>
