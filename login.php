@@ -35,7 +35,7 @@
     $db = new Database();
     $db = $db->getConnection();
     $q = $db->query("SELECT * FROM users");
-    if ( 'email' = $q['email']){
+    if ( 'email' != $q['email']){
 
     }else{
         query("INSERT INTO users ('pseudo','email','password') VALUES ('txt','email','pswd')");
