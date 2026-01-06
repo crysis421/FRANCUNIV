@@ -2,7 +2,7 @@
 <head>
     <link rel="stylesheet" href="LOGA.css">
     <script src="https://kit.fontawesome.com/26007f065f.js" crossorigin="anonymous"></script>
-    <title>Nyx</title>
+    <title>Profil</title>
 </head>
 <body>
 

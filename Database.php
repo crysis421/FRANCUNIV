@@ -7,9 +7,6 @@ ini_set('max_execution_time', 600);
 ///connection classique
 class Database
 {
-    $dsn = 'mysql:host=localhost;dbname=hana2028_LOGA;charset=utf8mb4';
-    $user = 'hana2028_patatoufs';
-    $pass = 'RdAnFK2x436cMVp';
     private $host = "localhost";
     private $username = "hana2028_patatoufs";
     private $password = "RdAnFK2x436cMVp";
@@ -24,12 +21,12 @@ class Database
 
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-
+            echo "connected";
         } catch (PDOException $e) {
             echo "Erreur de connexion : " . $e->getMessage();
         }
         return $this->conn;
     }
-
-
 }
+    echo "connected";
+?>
