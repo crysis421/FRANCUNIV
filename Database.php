@@ -11,7 +11,6 @@ class Database
     private $username = "hana2028_patatoufs";
     private $password = "RdAnFK2x436cMVp";
     private $conn;
-
     public function getConnection()
     {
         $this->conn = null;

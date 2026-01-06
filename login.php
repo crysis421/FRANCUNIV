@@ -18,6 +18,18 @@
             <input type="email" name="email" placeholder="Email" required="">
             <input type="password" name="pswd" placeholder="Password" required="">
             <button>Sign up</button>
+            <?php
+            require "Database.php";
+            $db = new Database();
+            $db = $db->getConnection();
+            $q = $db->query("SELECT * FROM users");
+            if ( 'email' != $q['email']){
+                query("INSERT INTO users ('pseudo','email','password') VALUES ('txt','email','pswd')");
+                public Yaf_Controller_Abstract::redirect(string $loga-univ.fr/index.html): bool;
+            }else{
+                echo "Deja un compte"
+            }
+            ?>
         </form>
     </div>
 
@@ -27,18 +39,18 @@
             <input type="email" name="email" placeholder="Email" required="">
             <input type="password" name="pswd" placeholder="Password" required="">
             <button>Login</button>
+            <?php
+            require "Database.php";
+            $db = new Database();
+            $db = $db->getConnection();
+            $q = $db->query("SELECT * FROM users");
+            if ( 'email' == $q['email']){
+
+            }
+            ?>
         </form>
     </div>
 </div>
-<?php
-    require "Database.php";
-    $db = new Database();
-    $db = $db->getConnection();
-    $q = $db->query("SELECT * FROM users");
-    if ( 'email' != $q['email']){
-        query("INSERT INTO users ('pseudo','email','password') VALUES ('txt','email','pswd')");
-    }
-?>
 
 </body>
 </html>
