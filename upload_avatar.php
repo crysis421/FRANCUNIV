@@ -38,6 +38,8 @@ if (!move_uploaded_file($file['tmp_name'], $destPath)) {
     die('Erreur lors de l\'enregistrement du fichier');
 }
 
+$_SESSION['profile_image'] = $newName;
+
 // 5. Enregistrer le nom dans la base de données
 $sql = "UPDATE user SET profile_image = ? WHERE id = ?";
 $stmt = $pdo->prepare($sql); // $pdo = ton objet PDO
