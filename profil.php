@@ -32,7 +32,11 @@ exit();}
 <a id="signup" href="login.php"><button class="button">Sign Up / Login </button></a>
 <br><br><br><br><br><br>
 <div id="profil">
-    <img id="photo" src="profil%20image.png" alt="Photo de profil" />
+    <label for="file">
+        <img id="photo" src="profil%20image.png" alt="Photo de profil" />
+        </svg>
+        <span class="tooltip">Add an image</span>
+    </label>
     <p id="name">Pseudo : <?=$_SESSION['pseudo']?></p>
     <p id="firstname">First Name :</p>
     <p id="age">Age :</p>
