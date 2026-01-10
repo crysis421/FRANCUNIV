@@ -1,8 +1,8 @@
-<?php
+<?/*php
 session_start();
 if(!isset($_SESSION['email'])){
 header('Location: login.php');
-exit();}
+exit();}*/
 ?>
 <!DOCTYPE html>
 <head>
@@ -32,9 +32,9 @@ exit();}
 <a id="signup" href="login.php"><button class="button">Sign Up / Login </button></a>
 <br><br><br><br><br><br>
 <div id="profil">
-    <div id ="photo">
+    <div id ="photo" class="fileUploadWrapper">
         <label for="file">
-            <img id="phot01" src="profil%20image.png" alt="Photo de profil" />
+            <img id="photo" src="profil%20image.png" alt="Photo de profil" />
             </svg>
             <span class="tooltip">Add an image</span>
         </label>
