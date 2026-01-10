@@ -20,14 +20,9 @@
             <button>Sign up</button>
             <?php
             require "Database.php";
-            $db = new Database();
-            $db = $db->getConnection();
-            $q = $db->query("SELECT * FROM users");
-            if ( 'email' != $q['email']){
-                query("INSERT INTO users ('pseudo','email','password') VALUES ('txt','email','pswd')");
-                public Yaf_Controller_Abstract::redirect(string $loga-univ.fr/index.html): bool;
-            }else{
-                echo "Deja un compte"
+            $q=Database::connect();
+            $S=$q->query("INSERT INTO user ( pseudo, email, password) VALUES ('pipi','pipi@gmail.com','pipi')");
+            $S->execute();
             }
             ?>
         </form>

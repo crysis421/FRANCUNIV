@@ -20,7 +20,6 @@ class Database
 
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-            echo "connected";
         } catch (PDOException $e) {
             echo "Erreur de connexion : " . $e->getMessage();
         }
@@ -32,13 +31,4 @@ class Database
         return $q;
     }
 }
-
-$q=Database::connect();
-$S=$q->query("INSERT INTO user ( pseudo, email, password) VALUES ('pipi','pipi@gmail.com','pipi')");
-$S->execute();
-$R=$S->fetchAll();
-foreach ($R as $r) {
-    echo $r["pseudo"]."<br>";
-}
-echo "la";
 ?>
