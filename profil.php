@@ -42,6 +42,7 @@ exit();}*/
                 <span class="tooltip">Add an image</span>
             </label>
             <input type="file" id="file" name="file"/>
+            <button type="submit">Enregistrer</button>
         </div>
     </form>
     <p id="name">Pseudo : <?= $_SESSION['pseudo'] ?></p>
