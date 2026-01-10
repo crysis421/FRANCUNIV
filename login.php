@@ -3,6 +3,7 @@
 <html>
 
 <?php
+session_start();
 //Sign Up
 if(isset($_POST['pseudo'])){
     require('Database.php');
