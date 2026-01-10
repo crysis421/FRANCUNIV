@@ -2,6 +2,7 @@
 session_start();
 require 'Database.php'; // ton fichier de connexion
 
+$pdo = Database::connect();
 // Id de l'utilisateur connecté (par exemple stocké en session)
 $userId = $_SESSION['id'] ?? null;
 if (!$userId) {
@@ -45,5 +46,5 @@ $stmt->execute([$newName, $userId]);
 // 6. Rediriger vers le profil
 header('Location: profil.php');
 exit;
-?>
+
 
