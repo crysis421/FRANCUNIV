@@ -10,7 +10,7 @@ if(isset($_POST['pseudo'])){
     try{
         $database = Database::connect();
         $pswd = password_hash($_POST['passwordSignUp'], PASSWORD_DEFAULT);
-        $requete = $database->query("Insert into user(id,pseudo,password,email,date) values (default,:pseudo,:password,:email,default)])");
+        $requete = $database->prepare("Insert into user(pseudo,password,email) values (:pseudo,:password,:email)");
         $requete->bindParam(':pseudo', $_POST['pseudo']);
         $requete->bindParam(':password', $pswd);
         $requete->bindParam(':email', $_POST['emailSignUp']);
@@ -28,7 +28,7 @@ if(isset($_POST['emailLogin'])){
     require('Database.php');
     try{
         $database = Database::connect();
-        $requete = $database->query("SELECT * FROM user WHERE email = :email");
+        $requete = $database->prepare("SELECT * FROM user WHERE email = :email");
         $requete->bindParam(':email', $_POST['emailLogin']);
         $requete->execute();
         $res = $requete->fetch();
