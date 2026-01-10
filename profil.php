@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<img src="logo%20loga.png" alt="LOGA"/>
+<img src="logo-loga.png" alt="LOGA"/>
 
 <nav role="navigation">
     <div id="menuToggle">

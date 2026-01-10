@@ -9,7 +9,7 @@ class Database
 {
     private $host = "localhost";
     private $username = "hana2028_patatoufs";
-    private $password = "RdAnFK2x436cMVp";
+    private $password = "Es6J-8w9e-azX+";
     private $conn;
     public function getConnection()
     {
@@ -27,5 +27,12 @@ class Database
         return $this->conn;
     }
 }
-    echo "connected";
+$d=new Database();
+$q=$d->getConnection();
+$S=$q->query("SELECT * FROM user");
+$S->execute();
+$R=$S->fetchAll();
+foreach ($R as $r) {
+    echo $r["username"]."<br>";
+}
 ?>
