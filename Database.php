@@ -26,17 +26,17 @@ class Database
         }
         return $this->conn;
     }
+    public static function connect(){
+        $d=new Database();
+        $q=$d->getConnection();
+        return $q;
+    }
 }
-$d=new Database();
-echo"la";
-$q=$d->getConnection();
-echo "la";
-$S=$q->query("SELECT * FROM user");
-echo "la";
+
+$q=Database::connect();
+$S=$q->query("INSERT INTO user ( pseudo, email, password) VALUES ('pipi','pipi@gmail.com','pipi')");
 $S->execute();
-echo "la";
 $R=$S->fetchAll();
-echo "la";
 foreach ($R as $r) {
     echo $r["pseudo"]."<br>";
 }
