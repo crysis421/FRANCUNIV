@@ -5,7 +5,6 @@
 <?php
 //Sign Up
 if(isset($_POST['pseudo'])){
-    echo $_POST['pseudo'].' '.$_POST['emailSignUp'].' '.$_POST['passwordSignUp'];
     require('Database.php');
     try{
         $database = Database::connect();
@@ -24,7 +23,6 @@ if(isset($_POST['pseudo'])){
 
 //Login
 if(isset($_POST['emailLogin'])){
-    echo $_POST['emailLogin'].' '.$_POST['passwordLogin'];
     require('Database.php');
     try{
         $database = Database::connect();
@@ -34,9 +32,9 @@ if(isset($_POST['emailLogin'])){
         $res = $requete->fetch();
         if(isset($res)){
             if(password_verify($_POST['passwordLogin'],$res['password'])){
-                echo 'Connected';
                 $_SESSION['pseudo'] = $res['pseudo'];
                 $_SESSION['email'] = $res['email'];
+                header('Location: profil.php');
             }
             else{
                 echo 'Wrong password';

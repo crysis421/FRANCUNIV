@@ -5,6 +5,11 @@
     <title>Profil</title>
 </head>
 <body>
+<?php
+if(!isset($_SESSION['email'])){
+    header('Location: login.php');
+}
+?>
 
 <img src="logo-loga.png" alt="LOGA"/>
 
@@ -28,21 +33,12 @@
 <br><br><br><br><br><br>
 <div id="profil">
     <img id="photo" src="profil%20image.png" alt="Photo de profil" />
-    <p id="name">Name : </p>
+    <p id="name">Pseudo : <?=$_SESSION['pseudo']?></p>
     <p id="firstname">First Name :</p>
     <p id="age">Age :</p>
-    <p id="email">Email :</p>
+    <p id="email">Email : <?=$_SESSION['email']?></p>
 
         </div>
 <br><br><br><br>
 <a></a>
-<?php
-        require "Database.php";
-        $db = new Database();
-        $db = $db->getConnection();
-        $q = $db->query("SELECT * FROM users");
-        while ($user = $q -> fetch_row()){
-            echo "id : ", $user['id']. "pseudo :" , $user['pseudo'];
-        }
-       ?>
 </body>
