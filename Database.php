@@ -9,7 +9,7 @@ class Database
 {
     private $host = "localhost";
     private $username = "hana2028_patatoufs";
-    private $password = "Es6J-8w9e-azX+";
+    private $password = "RdAnFK2x436cMVp";
     private $conn;
     public function getConnection()
     {
