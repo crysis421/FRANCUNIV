@@ -28,11 +28,17 @@ class Database
     }
 }
 $d=new Database();
+echo"la";
 $q=$d->getConnection();
+echo "la";
 $S=$q->query("SELECT * FROM user");
+echo "la";
 $S->execute();
+echo "la";
 $R=$S->fetchAll();
+echo "la";
 foreach ($R as $r) {
     echo $r["username"]."<br>";
 }
+echo "la";
 ?>
