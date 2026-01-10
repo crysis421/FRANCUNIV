@@ -42,6 +42,7 @@ exit();}*/
                 <span class="tooltip">Add an image</span>
             </label>
             <input type="file" id="file" name="file"/>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <button type="submit">Enregistrer</button>
         </div>
     </form>
