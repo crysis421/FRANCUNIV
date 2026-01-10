@@ -90,7 +90,7 @@ svg{
 #menu {
     position: fixed;
     min-height: 100000px;
-    background:black;
+    background:#F8F8F1;
     box-sizing: border-box;
     width: 300px;
     margin: -100px 0 0 -70px;
