@@ -1,4 +1,4 @@
-<?/*php
+<? /*php
 session_start();
 if(!isset($_SESSION['email'])){
 header('Location: login.php');
@@ -15,13 +15,13 @@ exit();}*/
 
 <nav role="navigation">
     <div id="menuToggle">
-        <input type="checkbox" />
+        <input type="checkbox"/>
         <span></span>
         <span></span>
         <span></span>
         <ul id="menu">
             <a href="index.html">
-                <i class="fa-solid fa-house">  &nbsp Home</i></a><br>
+                <i class="fa-solid fa-house"> &nbsp Home</i></a><br>
             <a href="classement.html">
                 <i class="fa-solid fa-trophy"> &nbsp Classement</i></a><br>
             <a href="profil.php">
@@ -29,21 +29,25 @@ exit();}*/
         </ul>
     </div>
 </nav>
-<a id="signup" href="login.php"><button class="button">Sign Up / Login </button></a>
+<a id="signup" href="login.php">
+    <button class="button">Sign Up / Login</button>
+</a>
 <br><br><br><br><br><br>
 <div id="profil">
-    <div id ="photo" class="fileUploadWrapper">
-        <label for="file">
-            <img id="photo" src="profil%20image.png" alt="Photo de profil" />
-            </svg>
-            <span class="tooltip">Add an image</span>
-        </label>
-        <input type="file" id="file" name="file" />
-    </div>
-    <p id="name">Pseudo : <?=$_SESSION['pseudo']?></p>
+    <form action="upload_avatar.php" method="post" enctype="multipart/form-data">
+        <div id="photo" class="fileUploadWrapper">
+            <label for="file">
+                <img id="photo" src="profil%20image.png" alt="Photo de profil"/>
+                </svg>
+                <span class="tooltip">Add an image</span>
+            </label>
+            <input type="file" id="file" name="file"/>
+        </div>
+    </form>
+    <p id="name">Pseudo : <?= $_SESSION['pseudo'] ?></p>
     <p id="firstname">First Name :</p>
     <p id="age">Age :</p>
-    <p id="email">Email : <?=$_SESSION['email']?></p>
-<br><br><br><br>
-<a></a>
+    <p id="email">Email : <?= $_SESSION['email'] ?></p>
+    <br><br><br><br>
+    <a></a>
 </body>

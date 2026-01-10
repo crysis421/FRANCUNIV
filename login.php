@@ -32,6 +32,7 @@ if(isset($_POST['emailLogin'])){
             if(password_verify($_POST['passwordLogin'],$res['password'])){
                 $_SESSION['pseudo'] = $res['pseudo'];
                 $_SESSION['email'] = $res['email'];
+                $_SESSION['id'] = $res['id'];
                 session_write_close();
                 header('Location: profil.php');
                 exit();
