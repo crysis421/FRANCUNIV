@@ -42,8 +42,6 @@ exit();}*/
                 : 'profil-image.png'; // image par défaut si pas encore de photo
                 ?>
                 <img src="<?= htmlspecialchars($avatar) ?>" alt="Photo de profil" style="width:120px;height:120px;border-radius:50%;">
-
-                <img id="photo" src="" alt="Photo de profil"/>
                 </svg>
                 <span class="tooltip">Add an image</span>
             </label>
