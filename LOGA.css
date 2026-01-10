@@ -226,7 +226,7 @@ a:hover {
 }
 path {
     fill: #82c46c;
-    stroke:white;
+    stroke:white;<img id="photo" src="profil%20image.png" alt="Photo de profil" />
     stroke-width: 1.25;
 }
 

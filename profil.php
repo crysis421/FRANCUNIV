@@ -32,7 +32,7 @@ exit();}
 <a id="signup" href="login.php"><button class="button">Sign Up / Login </button></a>
 <br><br><br><br><br><br>
 <div id="profil">
-    <div id ="photo" class="fileUploadWrapper">
+    <div id ="photo">
         <label for="file">
             <img id="phot01" src="profil%20image.png" alt="Photo de profil" />
             </svg>
