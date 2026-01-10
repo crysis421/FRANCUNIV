@@ -14,7 +14,7 @@ if(isset($_POST['pseudo'])){
         echo 'Compte créé avec succès';
         $database = null;
     }catch (Exception $e){
-        echo "Cette adresse email/pseudo est déja utilisé";
+        echo $e->getMessage();
         $database = null;
     }
 }
