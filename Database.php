@@ -38,7 +38,7 @@ echo "la";
 $R=$S->fetchAll();
 echo "la";
 foreach ($R as $r) {
-    echo $r["username"]."<br>";
+    echo $r["pseudo"]."<br>";
 }
 echo "la";
 ?>
