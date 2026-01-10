@@ -1,5 +1,9 @@
 <?php
-session_start(); ?>
+session_start();
+if(!isset($_SESSION['email'])){
+header('Location: login.php');
+exit();}
+?>
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="LOGA.css">
@@ -7,13 +11,6 @@ session_start(); ?>
     <title>Profil</title>
 </head>
 <body>
-<?php
-if(!isset($_SESSION['email'])){
-    header('Location: login.php');
-    exit();
-}
-?>
-
 <img src="logo-loga.png" alt="LOGA"/>
 
 <nav role="navigation">

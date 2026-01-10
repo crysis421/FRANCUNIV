@@ -1,10 +1,5 @@
 <?php
-session_start(); ?>
-<link rel="stylesheet" href="login.css">
-<!DOCTYPE html>
-<html>
-
-<?php
+session_start();
 //Sign Up
 if(isset($_POST['pseudo'])){
     require('Database.php');
@@ -56,10 +51,11 @@ if(isset($_POST['emailLogin'])){
 }
 
 ?>
-
+<html>
 <head>
     <title>Login/Sign Up</title>
     <link rel="stylesheet" type="text/css" href="slide navbar style.css">
+    <link rel="stylesheet" href="login.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
 
 </head>
