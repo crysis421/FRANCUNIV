@@ -33,6 +33,7 @@ if(isset($_POST['emailLogin'])){
                 $_SESSION['pseudo'] = $res['pseudo'];
                 $_SESSION['email'] = $res['email'];
                 $_SESSION['id'] = $res['id'];
+                $_SESSION['profile_image'] = $res['profile_image'];
                 session_write_close();
                 header('Location: profil.php');
                 exit();
