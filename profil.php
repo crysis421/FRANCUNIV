@@ -1,3 +1,5 @@
+<?php
+session_start(); ?>
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="LOGA.css">
@@ -6,9 +8,9 @@
 </head>
 <body>
 <?php
-session_start();
 if(!isset($_SESSION['email'])){
     header('Location: login.php');
+    exit();
 }
 ?>
 

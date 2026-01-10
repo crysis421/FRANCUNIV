@@ -1,9 +1,10 @@
+<?php
+session_start(); ?>
 <link rel="stylesheet" href="login.css">
 <!DOCTYPE html>
 <html>
 
 <?php
-session_start();
 //Sign Up
 if(isset($_POST['pseudo'])){
     require('Database.php');
@@ -15,6 +16,7 @@ if(isset($_POST['pseudo'])){
         $requete->bindParam(':password', $pswd);
         $requete->bindParam(':email', $_POST['emailSignUp']);
         $requete->execute();
+        echo 'Compte créé avec succès';
         $database = null;
     }catch (Exception $e){
         echo $e->getMessage();
@@ -35,7 +37,9 @@ if(isset($_POST['emailLogin'])){
             if(password_verify($_POST['passwordLogin'],$res['password'])){
                 $_SESSION['pseudo'] = $res['pseudo'];
                 $_SESSION['email'] = $res['email'];
+                session_write_close();
                 header('Location: profil.php');
+                exit();
             }
             else{
                 echo 'Wrong password';
