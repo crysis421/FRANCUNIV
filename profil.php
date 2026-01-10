@@ -37,9 +37,9 @@ exit();}*/
     <form action="upload_avatar.php" method="post" enctype="multipart/form-data">
         <div id="photo" class="fileUploadWrapper">
             <label for="file">
-                <?$avatar = !empty($_SESSION['profile_image'])
-                ? 'uploads/avatars/' . $_SESSION['profile_image']
-                : 'profil-image.png'; // image par défaut si pas encore de photo
+                <?$avatar = 'uploads/avatars/' . "avatar_8_1768082655.png" /*!empty($_SESSION['profile_image'])
+                ? 'uploads/avatars/' . "avatar_8_1768082655.png"
+                : 'profil-image.png'; // image par défaut si pas encore de photo*/
                 ?>
                 <img src="<?= htmlspecialchars($avatar) ?>" alt="Photo de profil" style="width:120px;height:120px;border-radius:50%;">
                 </svg>
