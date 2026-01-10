@@ -1,8 +1,9 @@
-<? /*php
+<?php
 session_start();
-if(!isset($_SESSION['email'])){
-header('Location: login.php');
-exit();}*/
+if (!isset($_SESSION['email'])) {
+    header('Location: login.php');
+    exit();
+}
 ?>
 <!DOCTYPE html>
 <head>
@@ -37,11 +38,15 @@ exit();}*/
     <form action="upload_avatar.php" method="post" enctype="multipart/form-data">
         <div id="photo" class="fileUploadWrapper">
             <label for="file">
-                <?
-                if($_SESSION['profile_image']!=null){ $avatar='uploads/avatars/' . $_SESSION['profile_image'];}
-                else{ $avatar='profil-image.png';} // image par défaut si pas encore de photo
+                <?php
+                if ($_SESSION['profile_image'] != null) {
+                    $avatar = 'uploads/avatars/' . $_SESSION['profile_image'];
+                } else {
+                    $avatar = 'profil-image.png';
+                } // image par déEs6J-8w9e-azX+faut si pas encore de photo
                 ?>
-                <img src="<?= htmlspecialchars($avatar) ?>" alt="Photo de profil" style="width:120px;height:120px;border-radius:50%;">
+                <img src="<?= htmlspecialchars($avatar) ?>" alt="Photo de profil"
+                     style="width:120px;height:120px;border-radius:50%;">
                 </svg>
                 <span class="tooltip">Add an image</span>
             </label>
