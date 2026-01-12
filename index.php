@@ -8,6 +8,11 @@
 <body>
 <?php
 session_start();
+if ($_SESSION['profile_image'] != null) {
+    $avatar = 'uploads/avatars/' . $_SESSION['profile_image'];
+} else {
+    $avatar = 'profil-image.png';
+}
 ?>
 <img src="logo-loga.png" alt="LOGA"/>
 <img id="pp" src="<?= htmlspecialchars($avatar) ?>" alt="Photo de profil"
