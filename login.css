@@ -90,19 +90,25 @@ button:hover{
     transform: scale(.6);
 }
 @media screen and (max-width:1000px) {
+    font-size:13px;
+    label{
+        margin: 30px;
+    }
     .main {
         width: 500px;
-        height: 800px;
+        height: 600px;
 
     }
     input {
-        height: 100px;
+        height: 60px;
+        font-size: 20px;
     }
     form{
         height:800px;
     }
     #button{
         height:100px;
+        font-size: 20px;
     }
     #chk:checked ~ .login{
         transform: translateY(-550px);
