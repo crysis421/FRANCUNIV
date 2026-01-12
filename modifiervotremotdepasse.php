@@ -9,8 +9,9 @@ if(isset($_POST['oldpassword'])){
         $requete->bindParam(':id', $_SESSION['id']);
         echo "la";
         $requete->execute();
+        $password= $requete->fetch();
         echo "la";
-        if(password_verify($_POST['oldpassword'], $requete->fetch())){
+        if(password_verify($_POST['oldpassword'], $password['password'])){
             $res=$database ->prepare("UPDATE user SET password = :password WHERE id = :id");
             echo "la";
             $pass=password_hash($_POST['newpassword'], PASSWORD_DEFAULT);
