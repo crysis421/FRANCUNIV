@@ -6,7 +6,9 @@
     <title>LOGA</title>
 </head>
 <body>
-
+<?php
+session_start();
+?>
 <img src="logo-loga.png" alt="LOGA"/>
 <img id="pp" src="<?= htmlspecialchars($avatar) ?>" alt="Photo de profil"
      style="width:120px;height:120px;border-radius:50%;">

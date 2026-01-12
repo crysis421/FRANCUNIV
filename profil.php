@@ -21,7 +21,7 @@ if (!isset($_SESSION['email'])) {
         <span></span>
         <span></span>
         <ul id="menu">
-            <a href="index.html">
+            <a href="index.php">
                 <i class="fa-solid fa-house"> &nbsp Home</i></a><br>
             <a href="classement.html">
                 <i class="fa-solid fa-trophy"> &nbsp Classement</i></a><br>
