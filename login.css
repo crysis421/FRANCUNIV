@@ -17,6 +17,7 @@ body{
     border-radius: 10px;
     box-shadow: 5px 20px 50px #000;
 }
+
 #chk{
     display: none;
 }
@@ -70,7 +71,7 @@ button:hover{
 .login{
     height: 460px;
     background: #eee;
-    border-radius: 60% / 10%;
+    border-radius: 80% / 10%;
     transform: translateY(-180px);
     transition: .8s ease-in-out;
 }
@@ -87,4 +88,23 @@ button:hover{
 }
 #chk:checked ~ .signup label{
     transform: scale(.6);
+}
+@media screen and (max-width:1000px) {
+    .main {
+        width: 500px;
+        height: 800px;
+
+    }
+    input {
+        height: 100px;
+    }
+    form{
+        height:800px;
+    }
+    #button{
+        height:100px;
+    }
+    #chk:checked ~ .login{
+        transform: translateY(-550px);
+    }
 }
