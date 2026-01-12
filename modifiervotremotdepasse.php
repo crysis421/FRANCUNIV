@@ -1,6 +1,6 @@
 <?php
 //Login
-if(isset($_POST['password'])){
+if(isset($_POST['oldpassword'])){
     require('Database.php');
     try{
         $database = Database::connect();
