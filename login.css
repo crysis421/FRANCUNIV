@@ -90,27 +90,25 @@ button:hover{
     transform: scale(.6);
 }
 @media screen and (max-width:1000px) {
-    font-size:13px;
-    label{
-        margin: 30px;
-    }
+    font-size: 15px;
     .main {
-        width: 0.6vw;
-        height: 0.8vh;
-
+        width: 600px;
+        height: 900px;
+        font-size: 15px;
     }
     input {
-        height: 60px;
-        font-size: 20px;
+        height: 49px;
+        font-size: 21px;
     }
     form{
-        height:800px;
+        height:900px;
+        font-size: 18px;
     }
     #button{
-        height:100px;
+        height:70px;
         font-size: 20px;
     }
     #chk:checked ~ .login{
-        transform: translateY(-0.6vh);
+        transform: translateY(-450px);
     }
 }
