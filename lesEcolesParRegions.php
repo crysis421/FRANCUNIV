@@ -6,7 +6,7 @@
 <body>
 
 <img src="logo-loga.png" alt="LOGA"/>
-
+<a href="profil.php"><img id="pp" src="<?= htmlspecialchars($avatar) ?>" alt="Photo de profil"></a>
 <nav role="navigation">
     <div id="menuToggle">
         <input type="checkbox"/>
@@ -16,7 +16,7 @@
         <ul id="menu">
             <a href="index.php">
                 <i class="fa-solid fa-house"> &nbsp Home</i></a><br>
-            <a href="classement.html">
+            <a href="classement.php">
                 <i class="fa-solid fa-trophy"> &nbsp Classement</i></a><br>
             <a href="profil.php">
                 <i class="fa-solid fa-user"> &nbsp Profil</i></a>

@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<?php
+session_start();
+if ($_SESSION['profile_image'] != null) {
+    $avatar = 'uploads/avatars/' . $_SESSION['profile_image'];
+} else {
+    $avatar = 'profil-image.png';
+}
+?><!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="LOGA.css">
     <script src="https://kit.fontawesome.com/26007f065f.js" crossorigin="anonymous"></script>
@@ -7,7 +14,7 @@
 <body>
 
 <img src="logo-loga.png" alt="LOGA"/>
-
+<a href="profil.php"><img id="pp" src="<?= htmlspecialchars($avatar) ?>" alt="Photo de profil"></a>
 <nav role="navigation">
     <div id="menuToggle">
         <input type="checkbox"/>

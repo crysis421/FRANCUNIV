@@ -23,7 +23,7 @@ if (!isset($_SESSION['email'])) {
         <ul id="menu">
             <a href="index.php">
                 <i class="fa-solid fa-house"> &nbsp Home</i></a><br>
-            <a href="classement.html">
+            <a href="classement.php">
                 <i class="fa-solid fa-trophy"> &nbsp Classement</i></a><br>
             <a href="profil.php">
                 <i class="fa-solid fa-user"> &nbsp Profil</i></a>
