@@ -10,6 +10,7 @@ if(isset($_POST['oldpassword'])){
         echo "la";
         $requete->execute();
         $password= $requete->fetch();
+        echo $password['password'];
         echo "la";
         if(password_verify($_POST['oldpassword'], $password['password'])){
             $res=$database ->prepare("UPDATE user SET password = :password WHERE id = :id");
