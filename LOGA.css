@@ -270,6 +270,7 @@ path:hover {
     left:95%;
     width:5%;
     height:10%;
+    border-radius:50%;
 
 }
 
@@ -548,6 +549,7 @@ li{
 #pb{
     height: 44vw;
     width: 80vw;
+
 }
 #pub{
     position: absolute;
@@ -566,7 +568,7 @@ h1{
     font-weight: 900;
     font-family: Serif, serif;
 }
-#changermotdepasse{
+#modifiervotremotdepasse{
     background:white;
     width:100%;
     left:80%;
