@@ -1,27 +1,23 @@
 <?php
+session_start();
 //Login
 if(isset($_POST['oldpassword'])){
     require('Database.php');
     try{
         $database = Database::connect();
         $requete = $database->prepare("SELECT * FROM user WHERE id = :id");
-        echo "la";
         $requete->bindParam(':id', $_SESSION['id']);
-        echo $_SESSION['id'];
-        echo "la";
         $requete->execute();
         $password= $requete->fetch();
-        echo $password['password'];
-        echo "la";
         if(password_verify($_POST['oldpassword'], $password['password'])){
             $res=$database ->prepare("UPDATE user SET password = :password WHERE id = :id");
-            echo "la";
+
             $pass=password_hash($_POST['newpassword'], PASSWORD_DEFAULT);
-            echo "la";
+
             $res->bindParam(':password', $pass );
-            echo "la";
+
             $res->bindParam(':id', $_SESSION['id']);
-            echo "la";
+
             $res->execute();
             echo "Password changed";
         } else{
