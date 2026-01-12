@@ -43,7 +43,7 @@ if (!isset($_SESSION['email'])) {
                     $avatar = 'uploads/avatars/' . $_SESSION['profile_image'];
                 } else {
                     $avatar = 'profil-image.png';
-                } // image par déEs6J-8w9e-azX+faut si pas encore de photo
+                } // image par défaut si pas encore de photo
                 ?>
                 <img src="<?= htmlspecialchars($avatar) ?>" alt="Photo de profil"
                      style="width:120px;height:120px;border-radius:50%;">
