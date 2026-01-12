@@ -4,7 +4,7 @@ if(isset($_POST['oldpassword'])){
     require('Database.php');
     try{
         $database = Database::connect();
-        $requete = $database->prepare("SELECT password FROM user WHERE id = :id");
+        $requete = $database->prepare("SELECT * FROM user WHERE id = :id");
         echo "la";
         $requete->bindParam(':id', $_SESSION['id']);
         echo "la";
