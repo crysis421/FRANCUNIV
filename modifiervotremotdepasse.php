@@ -7,6 +7,7 @@ if(isset($_POST['oldpassword'])){
         $requete = $database->prepare("SELECT * FROM user WHERE id = :id");
         echo "la";
         $requete->bindParam(':id', $_SESSION['id']);
+        echo $_SESSION['id'];
         echo "la";
         $requete->execute();
         $password= $requete->fetch();
