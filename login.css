@@ -95,8 +95,8 @@ button:hover{
         margin: 30px;
     }
     .main {
-        width: 500px;
-        height: 600px;
+        width: 0.6vw;
+        height: 0.8vh;
 
     }
     input {
@@ -111,6 +111,6 @@ button:hover{
         font-size: 20px;
     }
     #chk:checked ~ .login{
-        transform: translateY(-550px);
+        transform: translateY(-0.6vh);
     }
 }
