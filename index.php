@@ -15,7 +15,7 @@ if ($_SESSION['profile_image'] != null) {
 <body>
 
 <img src="logo-loga.png" alt="LOGA"/>
-<img id="pp" src="<?= htmlspecialchars($avatar) ?>" alt="Photo de profil">
+<a href="login.php"<img id="pp" src="<?= htmlspecialchars($avatar) ?>" alt="Photo de profil"></a>
 <nav role="navigation">
     <div id="menuToggle">
         <input type="checkbox"/>
