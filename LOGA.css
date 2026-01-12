@@ -90,7 +90,6 @@ svg{
 #menu {
     position: fixed;
     min-height: 100000px;
-    background:#2d102c;
     box-sizing: border-box;
     width: 300px;
     margin: -100px 0 0 -70px;
@@ -269,6 +268,8 @@ path:hover {
 #pp{
     top:10%;
     left:95%;
+    width:5%;
+    height:10%;
 
 }
 
@@ -564,4 +565,10 @@ h1{
     font-size:2vw;
     font-weight: 900;
     font-family: Serif, serif;
+}
+#changermotdepasse{
+    background:white;
+    width:100%;
+    left:80%;
+    top:50%;
 }

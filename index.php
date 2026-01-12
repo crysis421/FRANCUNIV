@@ -15,8 +15,7 @@ if ($_SESSION['profile_image'] != null) {
 <body>
 
 <img src="logo-loga.png" alt="LOGA"/>
-<img id="pp" src="<?= htmlspecialchars($avatar) ?>" alt="Photo de profil"
-     style="width:120px;height:120px;border-radius:50%;">
+<img id="pp" src="<?= htmlspecialchars($avatar) ?>" alt="Photo de profil">
 <nav role="navigation">
     <div id="menuToggle">
         <input type="checkbox"/>
@@ -24,7 +23,7 @@ if ($_SESSION['profile_image'] != null) {
         <span></span>
         <span></span>
         <ul id="menu">
-            <a href="index.html">
+            <a href="index.php">
                 <i class="fa-solid fa-house"> &nbsp Home</i></a><br>
             <a href="classement.html">
                 <i class="fa-solid fa-trophy"> &nbsp Classement</i></a><br>
