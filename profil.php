@@ -50,7 +50,7 @@ if (!isset($_SESSION['email'])) {
                 </svg>
                 <span class="tooltip">Add an image</span>
             </label>
-            <input type="file" id="file" name="file"/>
+            <input type="file" id="file" name="file" accept="image/*" required/>
             <br><br><br><br><br>
 
         </div>

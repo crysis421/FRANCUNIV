@@ -269,7 +269,10 @@ path:hover {
     position: relative;
     top: 11vw;
     left: 88%;
+    display: none;
 }
+form:has(#file:valid) #enregistrer {
+    display: inline-block;
 #pp{
     top:10%;
     left:95%;
