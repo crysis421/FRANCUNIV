@@ -48,7 +48,8 @@ if(isset($_GET['departement'])){
 }
 
 ?>
-<!-- bretagne:
+<!--
+Bretagne:
 
 - Université de Brest
 - Université de Bretagne-Sud (UBS) - Lorient

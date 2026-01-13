@@ -58,19 +58,19 @@ if ($_SESSION['profile_image'] != null) {
 <p id="ordre">S&eacute;lectionnez la r&eacute;gion de l'universit&eacute;</p>
 
 <form id="guadeloupe" method="get" action="lesEcolesParRegions.php">
-    <input type="hidden" name="departement" value="Guadeloupe">
+    <input type="hidden" name="departement" value="Outre Mer">
 </form>
 <form id="martinique" method="get" action="lesEcolesParRegions.php">
-    <input type="hidden" name="departement" value="Martinique">
+    <input type="hidden" name="departement" value="Outre Mer">
 </form>
 <form id="guyane" method="get" action="lesEcolesParRegions.php">
-    <input type="hidden" name="departement" value="Guyane">
+    <input type="hidden" name="departement" value="Outre Mer">
 </form>
 <form id="reunion" method="get" action="lesEcolesParRegions.php">
-    <input type="hidden" name="departement" value="Reunion">
+    <input type="hidden" name="departement" value="Outre Mer">
 </form>
 <form id="mayotte" method="get" action="lesEcolesParRegions.php">
-    <input type="hidden" name="departement" value="Mayotte">
+    <input type="hidden" name="departement" value="Outre Mer">
 </form>
 <form id="hautDeFrance" method="get" action="lesEcolesParRegions.php">
     <input type="hidden" name="departement" value="Haut De France">
