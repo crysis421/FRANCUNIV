@@ -273,6 +273,7 @@ path:hover {
 }
 form:has(#file:valid) #enregistrer {
     display: inline-block;
+}
 #pp{
     top:10%;
     left:95%;
