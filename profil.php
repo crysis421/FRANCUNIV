@@ -58,9 +58,9 @@ if (!isset($_SESSION['email'])) {
 
     </form>
     <p id="name">Pseudo : <?= $_SESSION['pseudo'] ?></p>
-    <p id="email">Email : <?= $_SESSION['email'] ?></p>
+    <p id="name">Email : <?= $_SESSION['email'] ?></p>
     <a id="modifiervotremotdepasse" href="modifiervotremotdepasse.php">Modifier votre mot de passe </a>
-    <p id="université">Université : </p>
+    <p id="name">Université : </p>
     <br><br><br><br>
 </div>
 <div id="commentaire">

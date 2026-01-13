@@ -262,7 +262,7 @@ path:hover {
     width:80vw;
     height:35vw;
     margin-left:10%;
-    margin-top:-3%;
+    margin-top:0%;
     background :#F8F8F1;
     color:#000;
     border-radius:10px;
@@ -276,7 +276,7 @@ path:hover {
     width:80vw;
     height:35vw;
     margin-left:10%;
-    margin-top:-3%;
+    margin-top:0%;
     background :#F8F8F1;
     color:#000;
     border-radius:10px;
@@ -317,12 +317,6 @@ form:has(#file:valid) #enregistrer {
     margin-left:10%;
     font-weight: bold;
     color: black;
-}
-#email{
-    margin-top:0%;
-    margin-left:10%;
-    font-weight: bold;
-    color:#000;
 }
 #logo{
     position: absolute;
