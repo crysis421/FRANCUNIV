@@ -57,11 +57,9 @@ if (!isset($_SESSION['email'])) {
         <button type="submit">Enregistrer</button>
 
     </form>
-    <a id="modifiervotremotdepasse" href="modifiervotremotdepasse.php">Modifier votre mot de passe </a>
     <p id="name">Pseudo : <?= $_SESSION['pseudo'] ?></p>
-    <p id="firstname">First Name :</p>
-    <p id="age">Age :</p>
     <p id="email">Email : <?= $_SESSION['email'] ?></p>
+    <a id="modifiervotremotdepasse" href="modifiervotremotdepasse.php">Modifier votre mot de passe </a>
     <br><br><br><br>
     <a></a>
 </body>
