@@ -261,9 +261,13 @@ path:hover {
     position: absolute;
     width: 200px;
     height: 200px;
-    left: 75%;
-    top: 20%;
+    left: 78%;
+    top: 10%;
     border-radius: 10px;
+}
+#enregistrer{
+    top:20%;
+    left:78%;
 }
 #pp{
     top:10%;

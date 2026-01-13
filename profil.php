@@ -54,7 +54,7 @@ if (!isset($_SESSION['email'])) {
             <br><br><br><br><br>
 
         </div>
-        <button type="submit">Enregistrer</button>
+        <button id="enregistrer" type="submit">Enregistrer</button>
 
     </form>
     <p id="name">Pseudo : <?= $_SESSION['pseudo'] ?></p>
