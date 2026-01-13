@@ -280,18 +280,6 @@ path:hover {
     font-weight: bold;
     color: black;
 }
-#firstname{
-    margin-top:0%;
-    margin-left:10%;
-    font-weight: bold;
-    color: black;
-}
-#age{
-    margin-top:0%;
-    margin-left:10%;
-    font-weight: bold;
-    color: black;
-}
 #email{
     margin-top:0%;
     margin-left:10%;
@@ -569,8 +557,8 @@ h1{
     font-family: Serif, serif;
 }
 #modifiervotremotdepasse{
-    background:white;
-    width:100%;
-    left:80%;
-    top:50%;
+    margin-top:0%;
+    margin-left:10%;
+    font-weight: bold;
+    color: black;
 }
