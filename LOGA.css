@@ -266,8 +266,9 @@ path:hover {
     border-radius: 10px;
 }
 #enregistrer{
-    top:20%;
-    left:78%;
+    position: relative;
+    top: 11vw;
+    left: 88%;
 }
 #pp{
     top:10%;
