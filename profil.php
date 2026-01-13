@@ -60,6 +60,13 @@ if (!isset($_SESSION['email'])) {
     <p id="name">Pseudo : <?= $_SESSION['pseudo'] ?></p>
     <p id="email">Email : <?= $_SESSION['email'] ?></p>
     <a id="modifiervotremotdepasse" href="modifiervotremotdepasse.php">Modifier votre mot de passe </a>
+    <p id="université">Université : </p>
     <br><br><br><br>
-    <a></a>
+</div>
+<div id="commentaire">
+
+</div>
+<div id="contact">
+
+</div>
 </body>
