@@ -73,7 +73,7 @@ if ($_SESSION['profile_image'] != null) {
     <input type="hidden" name="departement" value="Outre-Mer">
 </form>
 <form id="hautDeFrance" method="get" action="lesEcolesParRegions.php">
-    <input type="hidden" name="departement" value="Haut-De-France">
+    <input type="hidden" name="departement" value="Hauts-De-France">
 </form>
 <form id="normandie" method="get" action="lesEcolesParRegions.php">
     <input type="hidden" name="departement" value="Normandie">
