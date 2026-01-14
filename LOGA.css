@@ -597,11 +597,22 @@ h1{
 #modifiervotremotdepasse:hover{
     color:red;
 }
-a{
-    color:white;
-    height: 100vw;
-    background:white;
-    position:relative;
-    justify-content: center;
-    justify-items: center;
+.nomecole {
+    color: white;
+    height: 100vh;  /* vh pas vw pour hauteur */
+    background: #007bff;  /* couleur de fond visible */
+    display: flex;        /* flexbox */
+    align-items: center;  /* centre vertical */
+    justify-content: center; /* centre horizontal */
+    text-decoration: none; /* enlève soulignement */
+    font-size: 2rem;      /* taille texte */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.nomecole:hover {
+    background: #0056b3;
+    transform: scale(1.05);
 }

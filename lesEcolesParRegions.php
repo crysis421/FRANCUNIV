@@ -60,11 +60,11 @@ if ($_SESSION['profile_image'] != null) {
 </div>
 <div id="liste">
     <ul>
-        <?php
-        foreach($requete as $row){
-        ?>
-            <a href="<?=$row['nom']?>.php"> <?=$row['nom']?><br><br><br><br></a>
-        <?php }?>
+        <?php foreach($requete as $row){ ?>
+            <a class="nomecole" href="<?= htmlspecialchars($row['nom']) ?>.php">
+                <?= htmlspecialchars($row['nom']) ?><br><br><br><br>
+            </a>
+        <?php } ?>
     </ul>
 </div>
 <script src="LOGA.js"></script>
