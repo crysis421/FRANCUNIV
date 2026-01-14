@@ -62,9 +62,9 @@ if ($_SESSION['profile_image'] != null) {
     <ul>
         <?php
         foreach($requete as $row){
-            echo $row['nom'];
-            echo"la";
-        }?>
+        ?>
+        <p id="nomecole"> <?=$row['nom']?></p>
+        <?php }?>
     </ul>
 </div>
 <script src="LOGA.js"></script>
