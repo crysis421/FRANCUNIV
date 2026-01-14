@@ -1,3 +1,21 @@
+<?php session_start();
+    require('Database.php');
+    try{
+        $database = Database::connect();
+        $requete = $database->prepare("SELECT nom FROM universite WHERE region=:region");
+        $requete->bindParam(':region', $_GET['departement']);
+        $requete->execute();
+        $database = null;
+    }catch (Exception $e){
+        echo $e->getMessage();
+        $database = null;
+    }
+if ($_SESSION['profile_image'] != null) {
+    $avatar = 'uploads/avatars/' . $_SESSION['profile_image'];
+} else {
+    $avatar = 'profil-image.png';
+}
+?>
 <head>
     <link rel="stylesheet" href="LOGA.css">
     <script src="https://kit.fontawesome.com/26007f065f.js" crossorigin="anonymous"></script>
@@ -40,139 +58,23 @@
         name="searchbar"
     />
 </div>
+<div id="liste">
+    <ul>
+        <?php
+        foreach($requete as $row){
+            echo $row;
+        }?>
+    </ul>
+</div>
 <script src="LOGA.js"></script>
 
 <?php
 if(isset($_GET['departement'])){
     echo "<br><br><br><h1> Region : ".$_GET['departement'].'</h1>';
+
 }
 
 ?>
-<!--
-Bretagne:
 
-- Université de Brest
-- Université de Bretagne-Sud (UBS) - Lorient
-- Université de Rennes
-- Université de Rennes 2
-
-Haut de france :
-
-- Université d'Artois - Arras
-- Université de Picardie Jules Verne (UPJV) - Amiens
-- Université du Littoral Côte d'Opale (ULCO) - Dunkerque
-- Université Polytechnique Hauts-de-France - Valenciennes
-
-Normandie:
-
-- Université du Havre
-- Université de Caen Normandie
-- Université de Lille
-- Université de Rouen
-
-Ile de france :
-
-- Université de Cergy-Pontoise
-- Université Paris Cité
-- Université Gustave Eiffel
-- Université Paris Dauphine - PSL
-- Université Paris-Est Créteil Val-de-Marne (UPEC)
-- Université Paris Nanterre
-- Université Paris-Panthéon-Assas
-- Université Paris 1 - Panthéon-Sorbonne
-- Université Paris 3 - Sorbonne nouvelle
-- Université Paris 4 et Paris 6 - Sorbonne Université
-- Université Évry Paris-Saclay
-- Université Paris-Saclay - IUT d'Orsay
-- Université Paris-Saclay - Université de Versailles - Saint-Quentin-en-Yvelines
-- Université Paris Sciences et Lettres
-- Université Paris 8 - Vincennes-Saint-Denis
-- Université Sorbonne Paris Nord
-
-Grand est :
-
-- Université de Haute-Alsace (UHA) - Mulhouse
-- Université de Lorraine - Nancy
-- Université de Reims - Champagne-Ardenne (URCA)
-- Université de Strasbourg
-
-Bourgogne-Franche-Compte:
-
-- Université Bourgogne Europe
-- Université de Franche-Comté (UFC) - Besançon
-
-Centre-Val De Loire:
-
-- Université d'Orléans
-- Université de Tours
-
-Pays de la Loire:
-
-- Communauté d'universités et établissements (COMUE) Angers - Le Mans
-- Nantes Université
-
-Nouvelle-Aquitaine:
-
-- La Rochelle Université
-- Université Bordeaux-Montaigne
-- Université de Bordeaux
-- Université de Limoges
-- Université de Pau et Pays de l'Adour (UPPA)
-- Université de Poitiers
-
-Auvergne-Rhone-Alpes:
-
-- Université Clermont Auvergne (UCA)
-- Université ComUE Lyon
-- Université Grenoble Alpes (UGA)
-- Université Savoie Mont Blanc - Chambéry
-- Université Jean Monnet
-
-Occitanie:
-
-- Université de Nîmes (UNIM)
-- Université de Montpellier
-- Université de Montpellier Paul Valéry
-- Université de Perpignan Via Domitia
-- Université de technologie -Tarbes - Occitanie Pyrénées (UTTOP)
-- Université de Toulouse
-
-Provence-Alpes-Côte d'Azur:
-
-- Avignon université (AU)
-- Aix-Marseille université (AMU)
-- Université Côte d'Azur
-- Université de Toulon
-
-Corse:
-
-- Université de Corse Pasquale Paoli - Corte
-
-Mayotte:*
-Reunion:*
-
-- Université de La Réunion
-
-Guyane:*
-
-- Université de Guyane
-
-Nouvelle Calédonie:
-
-- Université de la Nouvelle-Calédonie
-
-Guadeloupe:
-*
-- Université des Antilles - Pôle Guadeloupe
-
-Martinique:*
-
-- Université des Antilles - Pôle Martinique
-
-Polynesie Francaise:
-
-- Université de la Polynésie Française (UPF)
-
--->
 
 </body>
