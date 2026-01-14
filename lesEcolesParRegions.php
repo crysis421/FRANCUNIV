@@ -63,7 +63,7 @@ if ($_SESSION['profile_image'] != null) {
         <?php
         foreach($requete as $row){
         ?>
-        <p id="nomecole"> <?=$row['nom']?></p>
+        <a id="nomecole"> <?=$row['nom']?></a>
         <?php }?>
     </ul>
 </div>
