@@ -74,7 +74,7 @@ if(isset($_GET['departement'])){
             <form action="lesEcolesParRegions.php" method="get">
             <a class="nomecole" href="universite.php">
                 <input type="hidden" name="universite" value="Outre-Mer">
-                <img src="https://uphf.hal.science/public/UPHF_bandeau.png" alt="logo test"/> <br><br><br><br><br>
+                <?= htmlspecialchars($row['nom']) ?><br><br><br><br>
             </a>
             </form>
         <?php } ?>
