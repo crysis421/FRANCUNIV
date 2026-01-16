@@ -610,7 +610,7 @@ h1{
     margin: 10px;
     border-radius: 10px;
     transition: all 0.3s;
-    font:1.5em/1em;
+    font-size:150%;
 }
 
 .nomecole:hover {
