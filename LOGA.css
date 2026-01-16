@@ -614,6 +614,10 @@ h1{
 }
 
 .nomecole:hover {
-    background: #0056b3;
+    background: #5feedb ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
     transform: scale(1.05);
 }

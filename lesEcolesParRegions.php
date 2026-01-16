@@ -72,7 +72,7 @@ if(isset($_GET['departement'])){
     <ul>
         <?php foreach($requete as $row){ ?>
             <form action="lesEcolesParRegions.php" method="get">
-            <a class="nomecole" href="universite.php">
+            <a class="nomecole" href="universite.php" style="background-image: url("<?=$row['banniere']?>")">
                 <input type="hidden" name="universite" value="Outre-Mer">
                 <?= htmlspecialchars($row['nom']) ?><br><br><br><br>
             </a>
