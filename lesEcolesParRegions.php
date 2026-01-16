@@ -71,9 +71,11 @@ if(isset($_GET['departement'])){
 <div id="liste">
     <ul>
         <?php foreach($requete as $row){ ?>
-            <a class="nomecole" href="<?= htmlspecialchars($row['nom']) ?>.php">
+            <form action="lesEcolesParRegions.php" method="get">
+            <a class="nomecole" href="universite.php">
                 <?= htmlspecialchars($row['nom']) ?><br><br><br><br>
             </a>
+            </form>
         <?php } ?>
     </ul>
 </div>
