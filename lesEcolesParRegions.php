@@ -71,10 +71,9 @@ if(isset($_GET['departement'])){
 <div id="liste">
     <ul>
         <?php foreach($requete as $row){
-            echo $row['banniere'];
             ?>
             <form action="lesEcolesParRegions.php" method="get">
-            <a class="nomecole" href="universite.php" style="background-image: url('<?=$row['banniere']?>')">
+            <a class="nomecole" href="universite.php" onmouseover= "this.style.backgroundImage = url(<?=$row['banniere']?>)" onmouseleave="this.style.backgroundImage = ''">
                 <input type="hidden" name="universite" value="Outre-Mer">
                 <?= htmlspecialchars($row['nom']) ?><br><br><br><br>
             </a>
