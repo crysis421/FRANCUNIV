@@ -1,20 +1,5 @@
 <?php session_start();
-    require('Database.php');
-    try{
-        $database = Database::connect();
-        $requete = $database->prepare("SELECT nom FROM universite WHERE region=:region");
-        $requete->bindParam(':region', $_GET['departement']);
-        $requete->execute();
-        $database = null;
-    }catch (Exception $e){
-        echo $e->getMessage();
-        $database = null;
-    }
-if ($_SESSION['profile_image'] != null) {
-    $avatar = 'uploads/avatars/' . $_SESSION['profile_image'];
-} else {
-    $avatar = 'profil-image.png';
-}
+
 ?>
 <head>
     <link rel="stylesheet" href="LOGA.css">
@@ -76,6 +61,22 @@ if(isset($_GET['departement'])){
 }
 
 ?>
-
-
+<?php
+    require('Database.php');
+    try{
+        $database = Database::connect();
+        $requete = $database->prepare("SELECT nom FROM universite WHERE region=:region");
+        $requete->bindParam(':region', $_GET['departement']);
+        $requete->execute();
+        $database = null;
+    }catch (Exception $e){
+        echo $e->getMessage();
+        $database = null;
+    }
+if ($_SESSION['profile_image'] != null) {
+    $avatar = 'uploads/avatars/' . $_SESSION['profile_image'];
+} else {
+    $avatar = 'profil-image.png';
+}
+?>
 </body>
