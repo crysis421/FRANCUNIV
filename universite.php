@@ -11,7 +11,7 @@ if ($_SESSION['profile_image'] != null) {
 <head>
     <link rel="stylesheet" href="LOGA.css">
     <script src="https://kit.fontawesome.com/26007f065f.js" crossorigin="anonymous"></script>
-    <title>"<?= $_GET['universite']?>"</title>
+    <title>"<?= htmlspecialchars($_GET['universite'])?>"</title>
 </head>
 
 </html>
