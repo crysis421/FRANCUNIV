@@ -73,7 +73,7 @@ if(isset($_GET['departement'])){
         <?php foreach($requete as $row){
             ?>
             <form id="univ" action="universite.php" method="get">
-            <a onclick="document.closest('form').submit();" class="nomecole"  onmouseover= "this.style.backgroundImage = 'url(<?=htmlspecialchars($row['banniere'])?>)'" onmouseout="this.style.backgroundImage = ''">
+            <a onclick="this.closest('form').submit();" class="nomecole"  onmouseover= "this.style.backgroundImage = 'url(<?=htmlspecialchars($row['banniere'])?>)'" onmouseout="this.style.backgroundImage = ''">
                 <input type="hidden" name="universite" value="<?= htmlspecialchars($row['nom']) ?>">
                 <?= htmlspecialchars($row['nom']) ?><br><br><br><br>
             </a>
