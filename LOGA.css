@@ -598,6 +598,7 @@ h1{
     color:red;
 }
 .nomecole {
+    color:white;
     height: 15%;  /* vh pas vw pour hauteur */
     background: transparent;  /* couleur de fond visible */ /* couleur de fond visible */
     display: flex;        /* flexbox */
