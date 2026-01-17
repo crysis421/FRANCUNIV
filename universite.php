@@ -13,4 +13,5 @@ if ($_SESSION['profile_image'] != null) {
     <script src="https://kit.fontawesome.com/26007f065f.js" crossorigin="anonymous"></script>
     <title><?php $_GET['universite']?></title>
 </head>
+
 </html>
