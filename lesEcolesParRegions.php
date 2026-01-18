@@ -16,7 +16,7 @@ if ($_SESSION['profile_image'] != null) {
     $avatar = 'profil-image.png';
 }
 ?>
-<head>
+<head xmlns="http://www.w3.org/1999/html">
     <link rel="stylesheet" href="LOGA.css">
     <script src="https://kit.fontawesome.com/26007f065f.js" crossorigin="anonymous"></script>
     <title>Regions</title>
@@ -60,6 +60,10 @@ if ($_SESSION['profile_image'] != null) {
 </div>
 
 <script src="LOGA.js"></script>
+<form>
+    <input type="radio" id="public" name="etat" value="Public"/> Public
+    <input type="radio" id="privée" name="etat" value="Privée"/> Privée
+</form>
 
 <?php
 if(isset($_GET['departement'])){
@@ -68,13 +72,14 @@ if(isset($_GET['departement'])){
 }
 
 ?>
+
 <div id="liste">
     <ul>
         <?php foreach($requete as $row){
             ?>
             <form id="univ" action="universite.php" method="get">
             <a onclick="this.closest('form').submit();" class="nomecole"  onmouseover= "this.style.backgroundImage = 'url(<?=htmlspecialchars($row['banniere'])?>)'" onmouseout="this.style.backgroundImage = ''">
-                <input type="hidden" name="universite" value="<?= htmlspecialchars($row['nom']) ?>">
+                <input type="hidden" name="universite" value="<?= htmlspecialchars($row['nom']) ?>"/>
                 <?= htmlspecialchars($row['nom']) ?><br><br><br><br>
             </a>
             </form>
