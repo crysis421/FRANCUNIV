@@ -17,15 +17,14 @@ if ($_SESSION['profile_image'] != null) {
 }
 
 ?>
-<html>
 <head>
     <link rel="stylesheet" href="LOGA.css">
     <script src="https://kit.fontawesome.com/26007f065f.js" crossorigin="anonymous"></script>
     <title>"<?= htmlspecialchars($_GET['universite']) ?>"</title>
 </head>
 <body>
-<img src="logo-loga.png" alt="LOGA"/>
-<img id="logo" src="url(<?= $requete['banniere'] ?>)" alt="LOGO"/>
+    <img src="logo-loga.png" alt="LOGA"/>
+    <img id="logo" src="url(<?= $requete['banniere'] ?>)" alt="LOGO"/>
     <nav role="navigation">
     <div id="menuToggle">
         <input type="checkbox"/>
@@ -64,4 +63,3 @@ if ($_SESSION['profile_image'] != null) {
 
     </div>
 </body>
-</html>
