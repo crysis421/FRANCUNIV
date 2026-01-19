@@ -1,12 +1,12 @@
 <?php session_start();
 require('Database.php');
-try{
+try {
     $database = Database::connect();
     $requete = $database->prepare("SELECT banniere FROM universite WHERE nom=:nom");
     $requete->bindParam(':nom', $_GET['universite']);
     $requete->execute();
     $database = null;
-}catch (Exception $e){
+} catch (Exception $e) {
     echo $e->getMessage();
     $database = null;
 }
@@ -21,12 +21,12 @@ if ($_SESSION['profile_image'] != null) {
 <head>
     <link rel="stylesheet" href="LOGA.css">
     <script src="https://kit.fontawesome.com/26007f065f.js" crossorigin="anonymous"></script>
-    <title>"<?= htmlspecialchars($_GET['universite'])?>"</title>
+    <title>"<?= htmlspecialchars($_GET['universite']) ?>"</title>
 </head>
 <body>
 <img src="logo-loga.png" alt="LOGA"/>
-<img id="logo" src="<?=$requete.fetch() ?>" alt="LOGO"/>
-<nav role="navigation">
+<img id="logo" src="<?= $requete . fetch() ?>" alt="LOGO"/>
+    <nav role="navigation">
     <div id="menuToggle">
         <input type="checkbox"/>
         <span></span>
@@ -41,8 +41,9 @@ if ($_SESSION['profile_image'] != null) {
                 <i class="fa-solid fa-user"> &nbsp Profil</i></a>
         </ul>
     </div>
-    <a id ="noteggmaps" href="https://maps.app.goo.gl/JdACBa5uks6GaUqB7" target="_blank">
-        Note Google Maps :  <i class="fa-solid fa-star"></i>
+    </nav>
+    <a id="noteggmaps" href="https://maps.app.goo.gl/JdACBa5uks6GaUqB7" target="_blank">
+        Note Google Maps : <i class="fa-solid fa-star"></i>
     </a>
     <div id="avis">
         <div id="avistitre">Avis</div>
@@ -53,9 +54,9 @@ if ($_SESSION['profile_image'] != null) {
                     </svg>
                     <span class="tooltip">Add an image</span>
                 </label>
-                <input type="file" id="file" name="file" />
+                <input type="file" id="file" name="file"/>
             </div>
-            <input required="" placeholder="Rediger un avis ..." type="text" id="messageInput" />
+            <input required="" placeholder="Rediger un avis ..." type="text" id="messageInput"/>
             <button id="sendButton">
                 <i class="fa-solid fa-arrow-right"></i>
             </button>
