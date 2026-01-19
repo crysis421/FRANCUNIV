@@ -2,7 +2,7 @@
 require('Database.php');
 try {
     $database = Database::connect();
-    $requete = $database->prepare("SELECT banniere FROM universite WHERE nom=:nom");
+    $requete = $database->prepare("SELECT banniere,noteggmaps,ggmaps FROM universite WHERE nom=:nom");
     $requete->bindParam(':nom', $_GET['universite']);
     $requete->execute();
     $database = null;
@@ -25,7 +25,7 @@ if ($_SESSION['profile_image'] != null) {
 </head>
 <body>
 <img src="logo-loga.png" alt="LOGA"/>
-<img id="logo" src="<?= $requete . fetch() ?>" alt="LOGO"/>
+<img id="logo" src="url(<?= $requete['banniere'] ?>)" alt="LOGO"/>
     <nav role="navigation">
     <div id="menuToggle">
         <input type="checkbox"/>
@@ -42,8 +42,8 @@ if ($_SESSION['profile_image'] != null) {
         </ul>
     </div>
     </nav>
-    <a id="noteggmaps" href="https://maps.app.goo.gl/JdACBa5uks6GaUqB7" target="_blank">
-        Note Google Maps : <i class="fa-solid fa-star"></i>
+    <a id="noteggmaps" href="<?= $requete['ggmaps'] ?>" target="_blank">
+        Note Google Maps :"<?= $requete['noteggmaps'] ?> <i class="fa-solid fa-star"></i>
     </a>
     <div id="avis">
         <div id="avistitre">Avis</div>
