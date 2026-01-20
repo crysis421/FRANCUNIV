@@ -258,33 +258,32 @@ path:hover {
 
 }
 
-#commentaire{
-    width:80vw;
-    height:35vw;
-    margin-left:10%;
-    margin-top:0%;
-    background :#F8F8F1;
-    color:#000;
-    border-radius:10px;
+#commentaire {
+    width: 40vw;
+    height: 35vw;
+    margin-left: 10%;
+    margin-top: 0%;
+    background: #F8F8F1;
+    color: #000;
+    border-radius: 10px;
     list-style-type: none;
     font-size: 25px;
     border-style: groove;
-    border-color:#5715a2;
-
+    border-color: #5715a2;
 }
-#contact{
-    width:80vw;
-    height:35vw;
-    margin-left:10%;
-    margin-top:0%;
-    background :#F8F8F1;
-    color:#000;
-    border-radius:10px;
+#contact {
+    width: 40vw;
+    height: 35vw;
+    position: absolute;
+    left: 50.7%;
+    top: 82.5%;
+    background: #F8F8F1;
+    color: #000;
+    border-radius: 10px;
     list-style-type: none;
     font-size: 25px;
     border-style: groove;
-    border-color:#5715a2;
-
+    border-color: #5715a2;
 }
 #photo {
     position: absolute;
