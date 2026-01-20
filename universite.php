@@ -44,6 +44,13 @@ if ($_SESSION['profile_image'] != null) {
 <a id="noteggmaps" href="<?= $requete['ggmaps'] ?>" target="_blank">
     Note Google Maps :"<?= $requete['noteggmaps'] ?> <i class="fa-solid fa-star"></i>
 </a>
+<div id="presentation">
+    <a> <?= $requete['presentation'] ?> </a>
+</div>
+<div id="membre">
+    <a> <?= $requete['membre'] ?> </a>
+</div>
+
 <div id="avis">
     <div id="avistitre">Avis</div>
     <div class="messageBox">

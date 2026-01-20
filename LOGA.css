@@ -313,7 +313,7 @@ form:has(#file:valid) #enregistrer {
 }
 
 #name{
-    margin-top:10%;
+    margin-top:0%;
     margin-left:10%;
     font-weight: bold;
     color: black;
