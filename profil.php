@@ -64,9 +64,10 @@ if (!isset($_SESSION['email'])) {
     <br><br><br><br>
 </div>
 <div id="commentaire">
-
+    <a> Commentaires </a>
 </div>
 <div id="contact">
+    <a> Contact </a>
 
 </div>
 </body>
