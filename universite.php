@@ -23,9 +23,9 @@ if ($_SESSION['profile_image'] != null) {
     <title>"<?= htmlspecialchars($_GET['universite']) ?>"</title>
 </head>
 <body>
-    <img src="logo-loga.png" alt="LOGA"/>
-    <img id="logo" src="url(<?= $requete['banniere'] ?>)" alt="LOGO"/>
-    <nav role="navigation">
+<img src="logo-loga.png" alt="LOGA"/>
+<img id="logo" src="url(<?= $requete['banniere'] ?>)" alt="LOGO"/>
+<nav role="navigation">
     <div id="menuToggle">
         <input type="checkbox"/>
         <span></span>
@@ -40,26 +40,26 @@ if ($_SESSION['profile_image'] != null) {
                 <i class="fa-solid fa-user"> &nbsp Profil</i></a>
         </ul>
     </div>
-    </nav>
-    <a id="noteggmaps" href="<?= $requete['ggmaps'] ?>" target="_blank">
-        Note Google Maps :"<?= $requete['noteggmaps'] ?> <i class="fa-solid fa-star"></i>
-    </a>
-    <div id="avis">
-        <div id="avistitre">Avis</div>
-        <div class="messageBox">
-            <div class="fileUploadWrapper">
-                <label for="file">
-                    <i class="fa-solid fa-image"></i>
-                    </svg>
-                    <span class="tooltip">Add an image</span>
-                </label>
-                <input type="file" id="file" name="file"/>
-            </div>
-            <input required="" placeholder="Rediger un avis ..." type="text" id="messageInput"/>
-            <button id="sendButton">
-                <i class="fa-solid fa-arrow-right"></i>
-            </button>
+</nav>
+<a id="noteggmaps" href="<?= $requete['ggmaps'] ?>" target="_blank">
+    Note Google Maps :"<?= $requete['noteggmaps'] ?> <i class="fa-solid fa-star"></i>
+</a>
+<div id="avis">
+    <div id="avistitre">Avis</div>
+    <div class="messageBox">
+        <div class="fileUploadWrapper">
+            <label for="file">
+                <i class="fa-solid fa-image"></i>
+                </svg>
+                <span class="tooltip">Add an image</span>
+            </label>
+            <input type="file" id="file" name="file"/>
         </div>
-
+        <input required="" placeholder="Rediger un avis ..." type="text" id="messageInput"/>
+        <button id="sendButton">
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
     </div>
+
+</div>
 </body>
