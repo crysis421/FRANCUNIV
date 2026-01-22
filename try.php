@@ -12,14 +12,11 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
 
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) { //Tant qu'il y a des données dans notre table
         try {
-            $ligne = explode(";", $data[0]);// On separe en plusieurs element la ligne qu'on stock dans une array
-            echo $ligne[0];
-            echo $data[1];
             if ($row == 0) { // On skip la premiere ligne qui sont juste le nom des colonnes
                 $requete = $addData->prepare("INSERT INTO universite( `nom`, `region`, `etat`) VALUES (:nom,:region,:etat)");
-                $requete->bindParam(':nom', $ligne[3]);
-                $requete->bindParam(':region', $ligne[6]);
-                if ($ligne[1] == '¨Public') {
+                $requete->bindParam(':nom', $data[3]);
+                $requete->bindParam(':region', $data[6]);
+                if ($data[1] == '¨Public') {
                     $requete->bindParam(':etat', $u, PDO::PARAM_BOOL);
                 } else {
                     $requete->bindParam(':etat', $z, PDO::PARAM_BOOL);
