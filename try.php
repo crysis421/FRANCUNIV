@@ -13,6 +13,7 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) { //Tant qu'il y a des données dans notre table
         try {
             foreach ($data as $key => $value) {
+                echo $key ."<br>";
                 echo $value."<br>";
             }
             if ($row == 0) { // On skip la premiere ligne qui sont juste le nom des colonnes
