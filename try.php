@@ -13,8 +13,8 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) { //Tant qu'il y a des données dans notre table
         try {
             foreach ($data as $key => $value) {
-                echo $key ."<br>";
-                echo $value."<br>";
+                echo $key . "<br>";
+                echo $value . "<br>";
             }
             if ($row == 0) { // On skip la premiere ligne qui sont juste le nom des colonnes
                 $requete = $addData->prepare("INSERT INTO universite( `nom`, `region`, `etat`) VALUES (:nom,:region,:etat)");
@@ -30,12 +30,11 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
             $row++;
             //On ferme la connection
             $addData = null;
-            //On ferme le fichier
-            fclose($handle);
-        }
-        catch (Exception $e) {
+        } catch (Exception $e) {
             echo $e->getMessage();
         }
-}
+    }
+    //On ferme le fichier
+    fclose($handle);
 }
 
