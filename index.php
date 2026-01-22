@@ -165,7 +165,7 @@ if ($_SESSION['profile_image'] != null) {
     <p>Support: support@loga-univ.fr</p>
     <p>Auteurs:<br>
         <br>
-        Romain Henry : Co-fondateur <br>
+        Romain Henry : Fondateur <br>
         Kilian Stievenard : Co-fondateur</p>
 </div>
 </body>
