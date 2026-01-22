@@ -61,8 +61,12 @@ if ($_SESSION['profile_image'] != null) {
 
 <script src="LOGA.js"></script>
 <form>
-    <input type="radio" id="public" name="etat" value="Public"/> Public
-    <input type="radio" id="privée" name="etat" value="Privée"/> Privée
+    <label>
+        <input type="radio" id="public" name="etat" value="Public" onclick="changerTexte()" > Public
+    </label>
+    <label>
+        <input type="radio" id="privée" name="etat" value="Privee" onclick="changerTexte()" /> Privée
+    </label>
 </form>
 
 <?php
@@ -86,5 +90,5 @@ if(isset($_GET['departement'])){
         <?php } ?>
     </ul>
 </div>
-
+<script src="lesEcolesParRegions.js"></script>
 </body>
