@@ -18,14 +18,23 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
             }
             if ($row != 0) { // On skip la premiere ligne qui sont juste le nom des colonnes
                 $requete = $addData->prepare("INSERT INTO universite(nom, region, etat) VALUES (:nom,:region,:etat)");
+                echo "laa";
                 $requete->bindParam(':nom', $data[2]);
+                echo "laa";
                 $requete->bindParam(':region', $data[3]);
+                echo "laa";
                 if ($data[0] == '¨Public') {
+                    echo "laa";
                     $requete->bindParam(':etat', $u, PDO::PARAM_BOOL);
+                    echo "laa";
                 } else {
+                    echo "laa";
                     $requete->bindParam(':etat', $z, PDO::PARAM_BOOL);
+                    echo "laa";
                 }
+                echo "laa";
                 $requete->execute();
+                echo "laa";
             }
             $row++;
             //On ferme la connection
