@@ -12,7 +12,9 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
 
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) { //Tant qu'il y a des données dans notre table
         try {
-            echo $data;
+            foreach ($data as $key => $value) {
+                echo $value."<br>";
+            }
             if ($row == 0) { // On skip la premiere ligne qui sont juste le nom des colonnes
                 $requete = $addData->prepare("INSERT INTO universite( `nom`, `region`, `etat`) VALUES (:nom,:region,:etat)");
                 $requete->bindParam(':nom', $data[3]);
