@@ -1,5 +1,5 @@
 <?php
-require(" Database.php");
+require("Database.php");
 echo "bonjour";
 //On vérifie le bon envoie du fichier et le type du fichier
 
