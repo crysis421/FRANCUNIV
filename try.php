@@ -16,6 +16,7 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
                 echo $key . "<br>";
                 echo $value . "<br>";
             }
+            echo "laa";
             if ($row != 0) { // On skip la premiere ligne qui sont juste le nom des colonnes
                 echo "laa";
                 $requete = $addData->prepare("INSERT INTO universite(nom, region, etat) VALUES (:nom,:region,:etat)");
