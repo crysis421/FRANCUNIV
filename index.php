@@ -161,5 +161,11 @@ if ($_SESSION['profile_image'] != null) {
 
 <div id="pub"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1244565890243313"
                       crossorigin="anonymous"></script></div>
-
+<div id="basdepage">
+    <p>Support: support@loga-univ.fr</p>
+    <p>Auteurs:<br>
+        <br>
+        Romain Henry : Co-fondateur <br>
+        Kilian Stievenard : Co-fondateur</p>
+</div>
 </body>

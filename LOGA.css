@@ -619,3 +619,19 @@ h1{
     background-position: center;
     color: transparent;
 }
+#basdepage{
+    background:#271246;
+    border-top-color: black ;
+    border-style: solid;
+    border-top-width: 2px;
+    justify-content: end;
+    position:absolute;
+    height:20%;
+    width:100%;
+}
+p{
+    color:white;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+}
