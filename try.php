@@ -40,7 +40,6 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
             }
             $row++;
             //On ferme la connection
-            $addData = null;
         } catch (Exception $e) {
             echo $e->getMessage();
         }
