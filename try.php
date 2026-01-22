@@ -14,7 +14,7 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
         try {
             $ligne = explode(";", $data[0]);// On separe en plusieurs element la ligne qu'on stock dans une array
             echo $ligne[0];
-            echo $data[0];
+            echo $data[1];
             if ($row == 0) { // On skip la premiere ligne qui sont juste le nom des colonnes
                 $requete = $addData->prepare("INSERT INTO universite( `nom`, `region`, `etat`) VALUES (:nom,:region,:etat)");
                 $requete->bindParam(':nom', $ligne[3]);
