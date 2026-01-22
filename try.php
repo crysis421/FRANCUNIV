@@ -1,6 +1,6 @@
 <?php
 require(" Database.php");
-
+echo "bonjour";
 //On vérifie le bon envoie du fichier et le type du fichier
 
 $row = 0; //Nombre de ligne du CSV
