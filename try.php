@@ -53,10 +53,11 @@ echo "la";
 //On ferme le fichier
 
 }*/
+echo
 $var = [];
 $var1 = [];
 $var2 = [];
-if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
+if (($handle = fopen("fr-esr-parcoursup .csv", "r")) !== FALSE) {
     $addData = Database::connect(); //Nouvelle connection pour ajouter toutes les données
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
         if ($row != 0) {
