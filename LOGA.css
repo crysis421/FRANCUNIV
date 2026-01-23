@@ -652,7 +652,7 @@ p{
     display: flex;
     flex-wrap: wrap;
     border-radius: 0.5rem;
-    background-color: #EEE;
+    background-color: #271246;
     box-sizing: border-box;
     box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
     padding: 0.25rem;
@@ -677,7 +677,7 @@ p{
     border-radius: 0.5rem;
     border: none;
     padding: .5rem 0;
-    color: rgba(51, 65, 85, 1);
+    color: black;
     transition: all .15s ease-in-out;
 }
 
