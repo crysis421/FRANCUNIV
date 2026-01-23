@@ -24,7 +24,7 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
                 echo "laa";
                 $requete->bindParam(':univ', $data[2]);
                 echo "laa";
-                /*if ($data[0] == '¨Public') {
+                /*if ($data[0] == 'Public') {
                     echo "laa";
                     $requete->bindParam(':etat', $u, PDO::PARAM_BOOL);
                     echo "laa";
