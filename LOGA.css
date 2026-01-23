@@ -637,4 +637,9 @@ p{
 }
 #ggmaps.hover{
     color:red;
+    font-size:20px;
+}
+form{
+    text-align: center;
+    justify-content: center;
 }
