@@ -36,16 +36,10 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
                 echo "laa";
                 $requete->execute();
                 echo "laa";*/
-                /*$requete = $addData->prepare("UPDATE `universite` SET `ggmaps`=:ggmaps WHERE nom=:nom");*/
+                $requete = $addData->prepare("UPDATE `universite` SET `ggmaps`=:ggmaps WHERE nom=:nom");
                 $valeur="https://www.google.com/maps?q=".$data[5];
-                /*$requete->bindParam(':ggmaps', $valeur);
-                $requete->bindParam(':nom', $data[2]);*/
-                echo $valeur;
-                echo "laa<br>";
-                echo $data[5];
-                echo "laa<br>";
-                echo $data[2];
-                echo "laa<br>";
+                $requete->bindParam(':ggmaps', $valeur);
+                $requete->bindParam(':nom', $data[2]);
             }
 
             $row++;
