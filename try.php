@@ -6,7 +6,7 @@ $row = 0; //Nombre de ligne du CSV
 $u = 1;
 $z = 0;
 echo "la";
-if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
+if (($handle = fopen("fr-esr-parcoursup .csv", "r")) !== FALSE) {
     $addData = Database::connect(); //Nouvelle connection pour ajouter toutes les données
 
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) { //Tant qu'il y a des données dans notre table
