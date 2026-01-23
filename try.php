@@ -47,7 +47,7 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
 //On ferme le fichier
 
 }
-$var = [];
+/*$var = [];
 $var1=[];
 if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
     $addData = Database::connect(); //Nouvelle connection pour ajouter toutes les données
@@ -66,7 +66,7 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
         }
         $row++;
     }
-}
+}*/
 $r=0;
 foreach ($var as $var ){
     echo "<br>";
