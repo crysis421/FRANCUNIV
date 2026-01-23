@@ -6,7 +6,7 @@ $row = 0; //Nombre de ligne du CSV
 $u = 1;
 $z = 0;
 
-if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
+/*if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
     $addData = Database::connect(); //Nouvelle connection pour ajouter toutes les données
 
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) { //Tant qu'il y a des données dans notre table
@@ -14,7 +14,7 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
             /*foreach ($data as $key => $value) {
                 echo $key . "<br>";
                 echo $value . "<br>";
-            }*/
+            }
             echo "laa";
             if ($row != 0) { // On skip la premiere ligne qui sont juste le nom des colonnes
                 /*echo "laa";
@@ -35,7 +35,7 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
                 }
                 echo "laa";
                 $requete->execute();
-                echo "laa";*/
+                echo "laa";
                 $requete = $addData->prepare("UPDATE `universite` SET `ggmaps`=:ggmaps WHERE nom=:nom");
                 $valeur="https://www.google.com/maps?q=".$data[5];
                 $requete->bindParam(':ggmaps', $valeur);
@@ -52,7 +52,7 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
 }
 //On ferme le fichier
 
-}
+}*/
 $var = [];
 $var1 = [];
 $var2 = [];
