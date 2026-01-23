@@ -24,7 +24,9 @@ if ($_SESSION['profile_image'] != null) {
 </head>
 <body>
 <img src="logo-loga.png" alt="LOGA"/>
+<p>hello</p>
 <img id="logo" src="url(<?= $requete['banniere'] ?>)" alt="LOGO"/>
+<p> hello</p>
 <nav role="navigation">
     <div id="menuToggle">
         <input type="checkbox"/>
