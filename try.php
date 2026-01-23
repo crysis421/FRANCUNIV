@@ -86,7 +86,7 @@ foreach ($var as $var) {
             echo "laa";
             $requete->bindParam(':region', $var1[$r]);
             echo "laa";
-            $requete->bindParam(':etet', $var2[$r]);
+            $requete->bindParam(':etat', $var2[$r]);
             echo "laa";
             $requete->execute();
             echo "laa";
