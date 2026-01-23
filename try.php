@@ -10,7 +10,7 @@ $z = 0;
 if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
     $addData = Database::connect(); //Nouvelle connection pour ajouter toutes les données
 
-    while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) { //Tant qu'il y a des données dans notre table
+    /*while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) { //Tant qu'il y a des données dans notre table
         try {
             foreach ($data as $key => $value) {
                 echo $key . "<br>";
@@ -33,7 +33,7 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
                     echo "laa";
                     $requete->bindParam(':etat', $z, PDO::PARAM_BOOL);
                     echo "laa";
-                }*/
+                }
                 echo "laa";
                 $requete->execute();
                 echo "laa";
@@ -44,9 +44,27 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
             echo $e->getMessage();
             echo "laa<br>";
         }
-    }
-    //On ferme le fichier
+}*/
+//On ferme le fichier
 
+}
+$var = [];
+if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
+    $addData = Database::connect(); //Nouvelle connection pour ajouter toutes les données
+    while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+        try {
+            if (in_array($data[2], $var)) {
+
+            } else {
+                array_push($var, $data[2]);
+            }
+        } catch (Exception $e) {
+            echo $e;
+        }
+    }
+}
+foreach ($var as $var) {
+    echo $var . "<br>";
 }
 fclose($handle);
 
