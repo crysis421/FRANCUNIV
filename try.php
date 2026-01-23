@@ -40,6 +40,7 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
                 $valeur="https://www.google.com/maps?q=".$data[5];
                 $requete->bindParam(':ggmaps', $valeur);
                 $requete->bindParam(':nom', $data[2]);
+                $requete->execute();
             }
 
             $row++;
