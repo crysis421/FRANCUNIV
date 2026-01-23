@@ -60,7 +60,7 @@ if ($_SESSION['profile_image'] != null) {
 </div>
 
 <script src="LOGA.js"></script>
-<form>
+<form id="radio">
     <label>
         <input type="radio" id="public" name="etat" value="Public" onclick="changerTexte()" > Public
     </label>
