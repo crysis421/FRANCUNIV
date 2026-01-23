@@ -42,6 +42,7 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
             //On ferme la connection
         } catch (Exception $e) {
             echo $e->getMessage();
+            echo "laa<br>";
         }
     }
     //On ferme le fichier
