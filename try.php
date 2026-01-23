@@ -17,7 +17,7 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
             }*/
             echo "laa";
             if ($row != 0) { // On skip la premiere ligne qui sont juste le nom des colonnes
-               /* echo "laa";
+                /*echo "laa";
                 $requete = $addData->prepare("Insert into formation(nom, univ) VALUES (:nom,:univ)");
                 echo "laa";
                 $requete->bindParam(':nom', $data[4]);
@@ -53,7 +53,7 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
 //On ferme le fichier
 
 }
-/*$var = [];
+$var = [];
 $var1 = [];
 $var2 = [];
 if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
@@ -104,6 +104,6 @@ foreach ($var as $var) {
         echo "laa<br>";
     }
     $r++;
-}*/
+}
 fclose($handle);
 
