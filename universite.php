@@ -41,14 +41,17 @@ if ($_SESSION['profile_image'] != null) {
         </ul>
     </div>
 </nav>
-<a id="noteggmaps" href="<?= $requete['ggmaps'] ?>" target="_blank">
-    Note Google Maps :"<?= $requete['noteggmaps'] ?> <i class="fa-solid fa-star"></i>
+<a id="ggmaps" href="<?= $requete['ggmaps'] ?>" target="_blank">Adresse de l'université
 </a>
 <div id="presentation">
-    <a> <?= $requete['presentation'] ?> </a>
+    <p id="presentation">Vous voici sur la page de <?= htmlspecialchars($_GET['universite']) ?> <br>
+        .Sur cette page vous pourrez voir toutes les formations proposer par<?= htmlspecialchars($_GET['universite']) ?>, ainsi que les personnes qui y étudient <br>
+        De plus une page "Annonce" est mis à disposition pour toute personne de l'université qui le souhaitent. Vous pourriez aussi noter et donner votre avis <br>
+        sur l'université uniquement si vous y êtes inscrit.
+    </p>
 </div>
 <div id="membre">
-    <a> <?= $requete['membre'] ?> </a>
+    <a></a>
 </div>
 
 <div id="avis">
