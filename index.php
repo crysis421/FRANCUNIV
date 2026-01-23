@@ -58,22 +58,22 @@ if ($_SESSION['profile_image'] != null) {
 <p id="ordre">S&eacute;lectionnez la r&eacute;gion de l'universit&eacute;</p>
 
 <form id="guadeloupe" method="get" action="lesEcolesParRegions.php">
-    <input type="hidden" name="departement" value="Outre-Mer">
+    <input type="hidden" name="departement" value="Outre Mer">
 </form>
 <form id="martinique" method="get" action="lesEcolesParRegions.php">
-    <input type="hidden" name="departement" value="Outre-Mer">
+    <input type="hidden" name="departement" value="Outre Mer">
 </form>
 <form id="guyane" method="get" action="lesEcolesParRegions.php">
-    <input type="hidden" name="departement" value="Outre-Mer">
+    <input type="hidden" name="departement" value="Outre Mer">
 </form>
 <form id="reunion" method="get" action="lesEcolesParRegions.php">
-    <input type="hidden" name="departement" value="Outre-Mer">
+    <input type="hidden" name="departement" value="Outre Mer">
 </form>
 <form id="mayotte" method="get" action="lesEcolesParRegions.php">
-    <input type="hidden" name="departement" value="Outre-Mer">
+    <input type="hidden" name="departement" value="Outre Mer">
 </form>
 <form id="hautDeFrance" method="get" action="lesEcolesParRegions.php">
-    <input type="hidden" name="departement" value="Hauts-De-France">
+    <input type="hidden" name="departement" value="Hauts De France">
 </form>
 <form id="normandie" method="get" action="lesEcolesParRegions.php">
     <input type="hidden" name="departement" value="Normandie">
@@ -85,28 +85,28 @@ if ($_SESSION['profile_image'] != null) {
     <input type="hidden" name="departement" value="Pays de la Loire">
 </form>
 <form id="centreValDeLoire" method="get" action="lesEcolesParRegions.php">
-    <input type="hidden" name="departement" value="Centre-Val de Loire">
+    <input type="hidden" name="departement" value="Centre Val de Loire">
 </form>
 <form id="ileDeFrance" method="get" action="lesEcolesParRegions.php">
-    <input type="hidden" name="departement" value="Île-de-France">
+    <input type="hidden" name="departement" value="Ile de France">
 </form>
 <form id="grandEst" method="get" action="lesEcolesParRegions.php">
     <input type="hidden" name="departement" value="Grand Est">
 </form>
 <form id="bourgogneFrancheCompte" method="get" action="lesEcolesParRegions.php">
-    <input type="hidden" name="departement" value="Bourgogne-Franche-Comté">
+    <input type="hidden" name="departement" value="Bourgogne Franche Comte">
 </form>
 <form id="nouvelleAquitaine" method="get" action="lesEcolesParRegions.php">
-    <input type="hidden" name="departement" value="Nouvelle-Aquitaine">
+    <input type="hidden" name="departement" value="Nouvelle Aquitaine">
 </form>
 <form id="auvergneRhoneAlpes" method="get" action="lesEcolesParRegions.php">
-    <input type="hidden" name="departement" value="Auvergne-Rhône-Alpes">
+    <input type="hidden" name="departement" value="Auvergne Rhone Alpes">
 </form>
 <form id="occitanie" method="get" action="lesEcolesParRegions.php">
     <input type="hidden" name="departement" value="Occitanie">
 </form>
 <form id="provenceAlpesCoteAzur" method="get" action="lesEcolesParRegions.php">
-    <input type="hidden" name="departement" value="Provence-Alpes-Côte d'Azur">
+    <input type="hidden" name="departement" value="Provence Alpes Cote d Azur">
 </form>
 <form id="corse" method="get" action="lesEcolesParRegions.php">
     <input type="hidden" name="departement" value="Corse">
