@@ -60,18 +60,21 @@ if ($_SESSION['profile_image'] != null) {
 </div>
 
 <script src="LOGA.js"></script>
-<form id="radio">
-    <label>
-        <input type="radio" id="Tous" name="etat" value="Tous" onclick="changerTexte()" /> Tous
+<div class="radio-inputs" id="radio">
+    <label class="radio">
+        <input type="radio" name="radio" checked="" id="Tous">
+        <span class="name">Tous</span>
     </label>
-    <label>
-        <input type="radio" id="public" name="etat" value="Public" onclick="changerTexte()" > Public
-    </label>
-    <label>
-        <input type="radio" id="privée" name="etat" value="Privee" onclick="changerTexte()" /> Privée
+    <label class="radio">
+        <input type="radio" name="radio" id="Public">
+        <span class="name">Public</span>
     </label>
 
-</form>
+    <label class="radio">
+        <input type="radio" name="radio" is="Privee">
+        <span class="name">Privée</span>
+    </label>
+</div>
 
 <?php
 if(isset($_GET['departement'])){
