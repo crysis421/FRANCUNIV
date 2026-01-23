@@ -60,7 +60,7 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
                 } else {
                     array_push($var, $data[2]);
                     array_push($var1, $data[3]);
-                    if ($data[0] == '¨Public') {
+                    if ($data[0] == 'Public') {
                         $e=1;
                     } else {
                         $e = 0;
