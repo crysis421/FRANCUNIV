@@ -1,6 +1,5 @@
 <?php
 require("Database.php");
-echo "bonjour";
 //On vérifie le bon envoie du fichier et le type du fichier
 
 $row = 0; //Nombre de ligne du CSV
@@ -70,8 +69,9 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
 }
 $r=0;
 foreach ($var as $var ){
-    echo "nom" . $var . "<br>";
-    echo "region" . $var1[$r] . "<br>";
+    echo "<br>";
+    echo  "nom :" . $var . "<br>";
+    echo "region :" . $var1[$r] . "<br>";
     $r ++;
 }
 fclose($handle);
