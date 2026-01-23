@@ -61,7 +61,7 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
                     array_push($var, $data[2]);
                     array_push($var1, $data[3]);
                     if ($data[0] == 'Public') {
-                        $e=1;
+                        $e = 1;
                     } else {
                         $e = 0;
                     }
@@ -75,30 +75,18 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
         $row++;
     }
 }
-/*while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) { //Tant qu'il y a des données dans notre table
+$r = 0;
+foreach ($var as $var) {
     try {
-        foreach ($data as $key => $value) {
-            echo $key . "<br>";
-            echo $value . "<br>";
-        }
-        echo "laa";
         if ($row != 0) { // On skip la premiere ligne qui sont juste le nom des colonnes
             echo "laa";
-            $requete = $addData->prepare("Insert into universite(nom, region) VALUES (:nom,:region)");
+            $requete = $addData->prepare("Insert into universite(nom, region,etat) VALUES (:nom,:region,:etat)");
             echo "laa";
             $requete->bindParam(':nom', $var);
             echo "laa";
-            $requete->bindParam(':region', $var1);
+            $requete->bindParam(':region', $var1[$r]);
             echo "laa";
-            if ($data[0] == '¨Public') {
-                echo "laa";
-                $requete->bindParam(':etat', $u, PDO::PARAM_BOOL);
-                echo "laa";
-            } else {
-                echo "laa";
-                $requete->bindParam(':etat', $z, PDO::PARAM_BOOL);
-                echo "laa";
-            }
+            $requete->bindParam(':etet', $var2[$r]);
             echo "laa";
             $requete->execute();
             echo "laa";
@@ -109,14 +97,6 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
         echo $e->getMessage();
         echo "laa<br>";
     }
-
-}*/
-$r = 0;
-foreach ($var as $var) {
-    echo "<br>";
-    echo "nom :" . $var . "<br>";
-    echo "region :" . $var1[$r] . "<br>";
-    echo "etat :" . $var2[$r] . "<br>";
     $r++;
 }
 fclose($handle);
