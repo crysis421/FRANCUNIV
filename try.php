@@ -65,7 +65,9 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
     }
 }
 foreach ($var as $var) {
-    echo $var . "<br>";
+    echo "nom" .$var[0] . "<br>";
+    echo "univ" .$var[1] . "<br>";
+
 }
 fclose($handle);
 
