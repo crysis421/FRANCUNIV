@@ -2,7 +2,7 @@
 require('Database.php');
 try {
     $database = Database::connect();
-    $requete = $database->prepare("SELECT banniere,noteggmaps,ggmaps FROM universite WHERE nom=:nom");
+    $requete = $database->prepare("SELECT banniere,ggmaps FROM universite WHERE nom=:nom");
     $requete->bindParam(':nom', $_GET['universite']);
     $requete->execute();
     $database = null;
