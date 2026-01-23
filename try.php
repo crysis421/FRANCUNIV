@@ -48,15 +48,16 @@ if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
 //On ferme le fichier
 
 }
-$var = [];
+$var = [[],[]];
 if (($handle = fopen("fr-esr-parcoursup.csv", "r")) !== FALSE) {
     $addData = Database::connect(); //Nouvelle connection pour ajouter toutes les données
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
         try {
-            if (in_array($data[2], $var)) {
+            if (in_array($data[2], $var[0])) {
 
             } else {
-                array_push($var, $data[2]);
+                array_push($var[0], $data[2]);
+                array_push($var[1], $data[3]);
             }
         } catch (Exception $e) {
             echo $e;
