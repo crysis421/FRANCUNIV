@@ -379,7 +379,7 @@ iframe{
     color:white;
 }
 .messageBox {
-    position:absolute;
+    position:relative;
     top:65%;
     width: 38vw;
     height: 5vw;
