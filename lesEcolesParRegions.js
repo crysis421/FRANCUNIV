@@ -20,7 +20,7 @@ function supprimer() {
 
 document.querySelector('#Tous').addEventListener("click", (event) => {
     supprimer()
-    for (let etatPrKey in etat_pr) {
+    for (let etatPrKey of etat_pr) {
         document.querySelector("#liste").appendChild(etatPrKey)
     }
     for (let etatPukey of etat_pu) {
