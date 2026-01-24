@@ -1,110 +1,34 @@
 <?php
 require("Database.php");
-//On vérifie le bon envoie du fichier et le type du fichier
-
-$row = 0; //Nombre de ligne du CSV
-$u = 1;
-$z = 0;
-echo "la";
-if (($handle = fopen("fr-esr-parcoursup .csv", "r")) !== FALSE) {
-    $addData = Database::connect(); //Nouvelle connection pour ajouter toutes les données
-
+// colonne univ
+function addUnivFormation()
+{
+    $row = 0; //Nombre de ligne du CSV
+    $addData = Database::connect();
+    $requete = $addData->prepare("SELECT id,nom from universite");
+    $requete->execute();
+    $res = $requete->fetchAll();
+    $handle = fopen("fr-esr-parcoursup .csv", "r");
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) { //Tant qu'il y a des données dans notre table
         try {
-            /*foreach ($data as $key => $value) {
-                echo $key . "<br>";
-                echo $value . "<br>";
-            }*/
-            echo "laa";
             if ($row != 0) { // On skip la premiere ligne qui sont juste le nom des colonnes
-                /*echo "laa";
-                $requete = $addData->prepare("Insert into formation(nom, univ) VALUES (:nom,:univ)");
-                echo "laa";
+                $requete = $addData->prepare("UPDATE `formation` SET univ=:univ WHERE nom=:nom");
                 $requete->bindParam(':nom', $data[4]);
-                echo "laa";
-                $requete->bindParam(':univ', $data[2]);
-                echo "laa";
-                if ($data[0] == 'Public') {
-                    echo "laa";
-                    $requete->bindParam(':etat', $u, PDO::PARAM_BOOL);
-                    echo "laa";
-                } else {
-                    echo "laa";
-                    $requete->bindParam(':etat', $z, PDO::PARAM_BOOL);
-                    echo "laa";
+                foreach ($res as $univ){
+                    if($univ['nom'] == $data[2]){
+                        $requete->bindParam(':univ', $univ['id']);
+                    }
                 }
-                echo "laa";
-                $requete->execute();*/
-                echo "laa";
-                $requete = $addData->prepare("UPDATE `universite` SET `ggmaps`=:ggmaps WHERE nom=:nom");
-                $valeur="https://www.google.com/maps?q=".$data[5];
-                $requete->bindParam(':ggmaps', $valeur);
-                $requete->bindParam(':nom', $data[2]);
                 $requete->execute();
             }
-
             $row++;
             //On ferme la connection
         } catch (Exception $e) {
             echo $e->getMessage();
             echo "laa<br>";
         }
-}
-//On ferme le fichier
-
-}
-/*
-$var = [];//nom de l'univ
-$var1 = [];// region
-$var2 = [];// public ou privée
-if (($handle = fopen("fr-esr-parcoursup .csv", "r")) !== FALSE) {
-    $addData = Database::connect(); //Nouvelle connection pour ajouter toutes les données
-    while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
-        if ($row != 0) {
-            try {
-                if (in_array($data[2], $var)) {
-
-                } else {
-                    array_push($var, $data[2]);
-                    array_push($var1, $data[3]);
-                    if ($data[0] == 'Public') {
-                        $e = 1;
-                    } else {
-                        $e = 0;
-                    }
-                    array_push($var2, $e);
-
-                }
-            } catch (Exception $e) {
-                echo $e;
-            }
-        }
-        $row++;
     }
+    fclose($handle);
 }
-$r = 0;
-foreach ($var as $var) {
-    try {
-        if ($row != 0) { // On skip la premiere ligne qui sont juste le nom des colonnes
-            echo "laa";
-            $requete = $addData->prepare("Insert into universite(nom, region,etat) VALUES (:nom,:region,:etat)");
-            echo "laa";
-            $requete->bindParam(':nom', $var);
-            echo "laa";
-            $requete->bindParam(':region', $var1[$r]);
-            echo "laa";
-            $requete->bindParam(':etat', $var2[$r]);
-            echo "laa";
-            $requete->execute();
-            echo "laa";
-        }
-        $row++;
-        //On ferme la connection
-    } catch (Exception $e) {
-        echo $e->getMessage();
-        echo "laa<br>";
-    }
-    $r++;
-}*/
-fclose($handle);
+addUnivFormation();
 
