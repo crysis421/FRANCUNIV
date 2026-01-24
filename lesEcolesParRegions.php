@@ -2,7 +2,7 @@
     require('Database.php');
     try{
         $database = Database::connect();
-        $requete = $database->prepare("SELECT nom,banniere FROM universite WHERE region=:region");
+        $requete = $database->prepare("SELECT nom,banniere,etat FROM universite WHERE region=:region");
         $requete->bindParam(':region', $_GET['departement']);
         $requete->execute();
         $database = null;
@@ -71,7 +71,7 @@ if ($_SESSION['profile_image'] != null) {
     </label>
 
     <label class="radio">
-        <input type="radio" name="radio" is="Privee">
+        <input type="radio" name="radio" id="Privee">
         <span class="name">Privée</span>
     </label>
 </div>
@@ -85,10 +85,13 @@ if(isset($_GET['departement'])){
 ?>
 
 <div id="liste">
-    <ul>
+    <ul id="liste">
         <?php foreach($requete as $row){
             ?>
-            <form id="univ" action="universite.php" method="get">
+
+            <form id="univ" action="universite.php" method="get" class="<?php if ($row['etat']==1){
+                echo htmlspecialchars("public");}else{echo htmlspecialchars("privee")
+            ;} ?>">
             <a onclick="this.closest('form').submit();" class="nomecole"  onmouseover= "this.style.backgroundImage = 'url(<?=htmlspecialchars($row['banniere'])?>)'" onmouseout="this.style.backgroundImage = ''">
                 <input type="hidden" name="universite" value="<?= htmlspecialchars($row['nom']) ?>"/>
                 <?= htmlspecialchars($row['nom']) ?><br><br><br><br>
