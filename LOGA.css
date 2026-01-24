@@ -373,7 +373,7 @@ iframe{
 .messageBox {
     position:relative;
     top:65%;
-    width: 100%;
+    width: 97%;
     height: 5vw;
     display: flex;
     align-items: center;
