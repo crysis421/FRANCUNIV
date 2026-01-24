@@ -25,9 +25,6 @@ if ($_SESSION['profile_image'] != null) {
 </head>
 <body>
 <img src="logo-loga.png" alt="LOGA"/>
-<p>hello</p>
-<img id="logo" src="url(<?= $universite['banniere'] ?>)" alt="LOGO"/>
-<p> hello</p>
 <nav role="navigation">
     <div id="menuToggle">
         <input type="checkbox"/>
@@ -44,11 +41,11 @@ if ($_SESSION['profile_image'] != null) {
         </ul>
     </div>
 </nav>
-<div id="ggmaps"><a id="ggmaps" href="<?= $universite['ggmaps'] ?>" target="_blank">Adresse de l'université
-    </a></div>
+<a id="ggmaps" href="<?= $universite['ggmaps'] ?>" target="_blank">Adresse de l'université
+    </a>
 <div id="presentation">
-    <p id="presentation">Vous voici sur la page de <?= htmlspecialchars($_GET['universite']) ?> <br>
-        .Sur cette page vous pourrez voir toutes les formations proposer par<?= htmlspecialchars($_GET['universite']) ?>
+    <p id="presentation">Vous voici sur la page de <?= htmlspecialchars($_GET['universite']) ?> .<br>
+        Sur cette page vous pourrez voir toutes les formations proposer par<?= htmlspecialchars($_GET['universite']) ?>
         , ainsi que les personnes qui y étudient <br>
         De plus une page "Annonce" est mis à disposition pour toute personne de l'université qui le souhaitent. Vous
         pourriez aussi noter et donner votre avis <br>
@@ -58,9 +55,14 @@ if ($_SESSION['profile_image'] != null) {
 <div id="membre">
     <a></a>
 </div>
-
+<div id="annonce">
+    <h1 style="background-color: black; border-style:groove;border-color:green;border-radius: 100px "> Annonce </h1>
+</div>
+<div id="listeformation">
+    <div id="annonceformation">Formation</div>
+</div>
 <div id="avis">
-    <div id="avistitre">Avis</div>
+    <h1> Avis</h1>
     <div class="messageBox">
         <div class="fileUploadWrapper">
             <label for="file">
