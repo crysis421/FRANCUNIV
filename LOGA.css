@@ -630,7 +630,7 @@ p{
     justify-content: center;
     text-align: center;
 }
-#ggmaps.hover{
+#ggmaps:hover{
     color:red;
     font-size:20px;
     transform: translate(-0.25rem, -0.25rem);
