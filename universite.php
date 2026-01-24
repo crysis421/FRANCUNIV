@@ -26,7 +26,7 @@ if ($_SESSION['profile_image'] != null) {
 <body>
 <img src="logo-loga.png" alt="LOGA"/>
 <p>hello</p>
-<img id="logo" src="url(<?= $universite['banniere']/?>)" alt="LOGO"/>
+<img id="logo" src="url(<?= $universite['banniere']?>)" alt="LOGO"/>
 <p> hello</p>
 <nav role="navigation">
     <div id="menuToggle">
