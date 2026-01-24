@@ -346,7 +346,7 @@ iframe{
 #avis{
     position:relative;
     width:40vw;
-    height:20vw;
+    height:30vw;
     left:10%;
     top:-70px;
     background :#F8F8F1;
@@ -379,8 +379,8 @@ iframe{
     color:white;
 }
 .messageBox {
-    position: relative;
-    top:70%;
+    position:absolute;
+    top:65%;
     width: 38vw;
     height: 5vw;
     display: flex;
@@ -390,7 +390,8 @@ iframe{
     padding: 0 15px;
     border-radius: 10px;
     border: 1px solid rgb(63, 63, 63);
-    justify-content: space-around
+    justify-content: space-around;
+    bottom:0%;
 
 }
 .messageBox:focus-within {
@@ -685,4 +686,7 @@ p{
 .radio-inputs .radio input:checked + .name {
     background-color: #fff;
     font-weight: 600;
+}
+#presentation{
+    margin-top:10%;
 }
