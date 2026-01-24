@@ -58,6 +58,9 @@ if ($_SESSION['profile_image'] != null) {
 <div id="annonce">
     <div id="annoncetitre">Annonce</div>
 </div>
+<div id="listeformation">
+    <div id="annonceformation">Formation</div>
+</div>
 <div id="avis">
     <div id="avistitre">Avis</div>
     <div class="messageBox">
