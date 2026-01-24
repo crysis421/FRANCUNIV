@@ -21,21 +21,21 @@ function supprimer() {
 document.querySelector('#Tous').addEventListener("click", (event) => {
     supprimer()
     for (let etatPrKey in etat_pr) {
-        document.querySelector("#liste").add(etatPrKey)
+        document.querySelector("#liste").appendChild(etatPrKey)
     }
     for (let etatPukey in etat_pu) {
-        document.querySelector("#liste").add(etatPukey)
+        document.querySelector("#liste").appendChild(etatPukey)
     }
 })
 document.querySelector('#Public').addEventListener("click", (event) => {
     supprimer()
     for (let etatPukey in etat_pu) {
-        document.querySelector("#liste").add(etatPukey)
+        document.querySelector("#liste").appendChild(etatPukey)
     }
 })
 document.querySelector('#Privee').addEventListener("click", (event) => {
     supprimer()
     for (let etatPrkey in etat_pr) {
-        document.querySelector("#liste").add(etatPrkey)
+        document.querySelector("#liste").appendChild(etatPrkey)
     }
 })
