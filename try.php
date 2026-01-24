@@ -54,9 +54,9 @@ if (($handle = fopen("fr-esr-parcoursup .csv", "r")) !== FALSE) {
 
 }
 /*
-$var = [];
-$var1 = [];
-$var2 = [];
+$var = [];//nom de l'univ
+$var1 = [];// region
+$var2 = [];// public ou privée
 if (($handle = fopen("fr-esr-parcoursup .csv", "r")) !== FALSE) {
     $addData = Database::connect(); //Nouvelle connection pour ajouter toutes les données
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
