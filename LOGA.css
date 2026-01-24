@@ -334,15 +334,6 @@ iframe{
     border-radius: 10px;
 
 }
-
-#noteggmaps{
-    position:relative;
-    color:white;
-    font-weight: bold;
-    left:85%;
-    text-decoration: none;
-    top:0vw;
-}
 #avis{
     position:relative;
     width:40vw;
@@ -643,6 +634,11 @@ p{
     color:red;
     font-size:20px;
     transform: translate(-0.25rem, -0.25rem);
+}
+#ggmaps{
+    color:white;
+    justify-content: end;
+    position: absolute;
 }
 #radio {
     text-align: center;
