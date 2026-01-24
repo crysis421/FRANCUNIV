@@ -18,7 +18,7 @@ function addUnivFormation()
     $handle = fopen("fr-esr-parcoursup .csv", "r");
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) { //Tant qu'il y a des données dans notre table
         try {
-            if ($row != 0 and !in_array($data[4],$res)) { // On skip la premiere ligne qui sont juste le nom des colonnes
+            if ($row != 0 and in_array($data[4],$res)) { // On skip la premiere ligne qui sont juste le nom des colonnes
                 $requete = $addData->prepare("UPDATE `formation` SET univ=:univ WHERE nom=:nom");
                 $requete->bindParam(':nom', $data[4]);
                 echo "Formation : ".$data[4]."<br>";
