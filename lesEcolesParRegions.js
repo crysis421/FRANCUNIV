@@ -4,14 +4,14 @@ console.log(etat_pu,etat_pr)
 function supprimer() {
     for (let i of etat_pu) {
         try {
-            document.querySelector("#liste").remove(i)
+            document.querySelector("#liste").removeChild(i)
         }catch {
 
         }
     }
     for (let i of etat_pr) {
         try {
-            document.querySelector("#liste").remove(i)
+            document.querySelector("#liste").removeChild(i)
         }catch{
 
         }
