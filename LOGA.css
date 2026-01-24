@@ -336,9 +336,9 @@ iframe{
 }
 #avis{
     position:relative;
-    width:40vw;
+    width:50%;
     height:30vw;
-    left:10%;
+    left:50%;
     top:-70px;
     background :#F8F8F1;
     color:#000;
@@ -350,7 +350,7 @@ iframe{
     margin-top: 10%;
 }
 #avistitre{
-    width:40vw;
+    width:100%;
     height:5vw;
     position: relative;
     display: flex;
@@ -373,7 +373,7 @@ iframe{
 .messageBox {
     position:relative;
     top:65%;
-    width: 38vw;
+    width: 100%;
     height: 5vw;
     display: flex;
     align-items: center;
@@ -641,6 +641,7 @@ p{
     position: absolute;
     right: 5%;
     top: 20%;
+    font-weight: bold;
 }
 #radio {
     text-align: center;
@@ -693,9 +694,8 @@ p{
 }
 #annonce{
     position:relative;
-    width:40vw;
+    width:50%;
     height:30vw;
-    left:60%;
     top:-70px;
     background :#F8F8F1;
     color:#000;
