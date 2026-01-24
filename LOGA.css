@@ -692,17 +692,17 @@ p{
 
 }
 #annonce{
-    position:relative;
-    width:50%;
-    height:30vw;
-    top:-70px;
-    background :linear-gradient(to bottom, red 20%, white 10% 90%);
-    color:#000;
-    border-radius:10px;
+    position: relative;
+    width: 50%;
+    height: 30vw;
+    top: -70px;
+    background: linear-gradient(to bottom, #4A1A7F 20%, white 10% 90%);
+    color: #000;
+    border-radius: 100px;
     list-style-type: none;
     font-size: 25px;
     border-style: groove;
-    border-color:#5715a2;
+    border-color: #5715a2;
     margin-top: 10%;
 }
 #listeformation{

@@ -56,13 +56,13 @@ if ($_SESSION['profile_image'] != null) {
     <a></a>
 </div>
 <div id="annonce">
-    <h1 style="background-color: black; border-style:groove;border-color:green;border-radius: 100px "> Annonce </h1>
+    <h1 style="color:black "> Annonce </h1>
 </div>
 <div id="listeformation">
-    <h1 style="background-color: black; border-style:groove;border-color:green;border-radius: 100px "> Formation </h1>
+    <h1 style="color:black "> Formation </h1>
 </div>
 <div id="avis">
-    <h1 style="background-color: black; border-style:groove;border-color:green;border-radius: 100px "> Avis </h1>
+    <h1 style="color:black "> Avis </h1>
     <div class="messageBox">
         <div class="fileUploadWrapper">
             <label for="file">
