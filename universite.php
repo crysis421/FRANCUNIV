@@ -25,9 +25,6 @@ if ($_SESSION['profile_image'] != null) {
 </head>
 <body>
 <img src="logo-loga.png" alt="LOGA"/>
-<p>hello</p>
-<img id="logo" src="url(<?= $universite['banniere'] ?>)" alt="LOGO"/>
-<p> hello</p>
 <nav role="navigation">
     <div id="menuToggle">
         <input type="checkbox"/>
@@ -58,7 +55,9 @@ if ($_SESSION['profile_image'] != null) {
 <div id="membre">
     <a></a>
 </div>
-
+<div id="annonce">
+    <div id="annoncetitre">Annonce</div>
+</div>
 <div id="avis">
     <div id="avistitre">Avis</div>
     <div class="messageBox">
