@@ -339,7 +339,7 @@ iframe{
     width: 50%;
     height: 30vw;
     top: -70px;
-    background: linear-gradient(to bottom, #4A1A7F 20%, white 10% 90%);
+    background: linear-gradient(to bottom, #4A1A7F 20%, white 10% 80%,#2d2d2d 80%);
     color: #000;
     border-radius: 100px;
     list-style-type: none;
@@ -378,10 +378,7 @@ iframe{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #2d2d2d;
     padding: 0 15px;
-    border-radius: 10px;
-    border: 1px solid rgb(63, 63, 63);
     justify-content: space-around;
     bottom:0%;
 
