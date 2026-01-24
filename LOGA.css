@@ -707,7 +707,7 @@ p{
     margin-top: 10%;
 }
 #annoncetitre{
-    width:40vw;
+    width:100%;
     height:5vw;
     position: relative;
     display: flex;
