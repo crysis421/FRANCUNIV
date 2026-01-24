@@ -1,6 +1,6 @@
 let etat_pu = document.querySelectorAll('.public')
 let etat_pr = document.querySelectorAll('.privee')
-
+console.log(etat_pu,etat_pr)
 function supprimer() {
     for (let i in etat_pu) {
         try {
