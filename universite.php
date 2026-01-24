@@ -26,7 +26,7 @@ if ($_SESSION['profile_image'] != null) {
 <body>
 <img src="logo-loga.png" alt="LOGA"/>
 <p>hello</p>
-<img id="logo" src="url(<?= $universite['banniere']?>)" alt="LOGO"/>
+<img id="logo" src="url(<?= $universite['banniere'] ?>)" alt="LOGO"/>
 <p> hello</p>
 <nav role="navigation">
     <div id="menuToggle">
@@ -44,12 +44,14 @@ if ($_SESSION['profile_image'] != null) {
         </ul>
     </div>
 </nav>
-<a id="ggmaps" href="<?= $universite['ggmaps'] ?>" target="_blank">Adresse de l'université
-</a>
+<div id="ggmaps"><a id="ggmaps" href="<?= $universite['ggmaps'] ?>" target="_blank">Adresse de l'université
+    </a></div>
 <div id="presentation">
     <p id="presentation">Vous voici sur la page de <?= htmlspecialchars($_GET['universite']) ?> <br>
-        .Sur cette page vous pourrez voir toutes les formations proposer par<?= htmlspecialchars($_GET['universite']) ?>, ainsi que les personnes qui y étudient <br>
-        De plus une page "Annonce" est mis à disposition pour toute personne de l'université qui le souhaitent. Vous pourriez aussi noter et donner votre avis <br>
+        .Sur cette page vous pourrez voir toutes les formations proposer par<?= htmlspecialchars($_GET['universite']) ?>
+        , ainsi que les personnes qui y étudient <br>
+        De plus une page "Annonce" est mis à disposition pour toute personne de l'université qui le souhaitent. Vous
+        pourriez aussi noter et donner votre avis <br>
         sur l'université uniquement si vous y êtes inscrit.
     </p>
 </div>
