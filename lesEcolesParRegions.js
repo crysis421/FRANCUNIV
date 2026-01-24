@@ -1,14 +1,41 @@
-function changerTexte() {
-    const radios = document.getElementsByName("etat");
-    const resultat = document.getElementById("resultat");
+let etat_pu = document.querySelectorAll('.public')
+let etat_pr = document.querySelectorAll('.privee')
 
-    for (let radio of radios) {
-        if (radio.checked) {
-            if (radio.value === "Public") {
-                resultat.textContent = "Tu as choisi l’option 1";
-            } else if (radio.value === "Privee") {
-                resultat.textContent = "Tu as choisi l’option 2";
-            }
+function supprimer() {
+    for (let i in etat_pu) {
+        try {
+            document.querySelector("#liste").remove(i)
+        }catch {
+
+        }
+    }
+    for (let i in etat_pr) {
+        try {
+            document.querySelector("#liste").remove(i)
+        }catch{
+
         }
     }
 }
+
+document.querySelector('#Tous').addEventListener("click", (event) => {
+    supprimer()
+    for (let etatPrKey in etat_pr) {
+        document.querySelector("#liste").add(etatPrKey)
+    }
+    for (let etatPukey in etat_pu) {
+        document.querySelector("#liste").add(etatPukey)
+    }
+})
+document.querySelector('#Public').addEventListener("click", (event) => {
+    supprimer()
+    for (let etatPukey in etat_pu) {
+        document.querySelector("#liste").add(etatPukey)
+    }
+})
+document.querySelector('#Privee').addEventListener("click", (event) => {
+    supprimer()
+    for (let etatPrkey in etat_pr) {
+        document.querySelector("#liste").add(etatPrkey)
+    }
+})
