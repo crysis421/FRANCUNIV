@@ -44,8 +44,8 @@ if ($_SESSION['profile_image'] != null) {
         </ul>
     </div>
 </nav>
-<div id="ggmaps"><a id="ggmapstext" href="<?= $universite['ggmaps'] ?>" target="_blank">Adresse de l'université
-    </a></div>
+<a id="ggmaps" href="<?= $universite['ggmaps'] ?>" target="_blank">Adresse de l'université
+    </a>
 <div id="presentation">
     <p id="presentation">Vous voici sur la page de <?= htmlspecialchars($_GET['universite']) ?> .<br>
         Sur cette page vous pourrez voir toutes les formations proposer par<?= htmlspecialchars($_GET['universite']) ?>

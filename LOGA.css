@@ -630,7 +630,7 @@ p{
     justify-content: center;
     text-align: center;
 }
-#ggmapstext.hover{
+#ggmaps.hover{
     color:red;
     font-size:20px;
     transform: translate(-0.25rem, -0.25rem);
@@ -640,7 +640,7 @@ p{
     justify-content: end;
     position: absolute;
     right: 5%;
-    top: 15%;
+    top: 20%;
 }
 #radio {
     text-align: center;
