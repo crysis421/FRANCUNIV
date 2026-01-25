@@ -59,12 +59,12 @@ document.querySelector("#imgDossier").addEventListener("click", event => {
 document.querySelector("#query").addEventListener("change", (event) => {
     supprimer()
     for (let etatPrKey of etat_pr) {
-        if(etatPrKey.innerHTML.includes(document.getElementById("query").value)) {
+        if(etatPrKey.innerHTML.toLowerCase().includes(document.getElementById("query").value.toLowerCase())) {
             document.querySelector("#liste").appendChild(etatPrKey)
         }
     }
     for (let etatPrKey of etat_pu) {
-        if(etatPrKey.innerHTML.includes(document.getElementById("query").value)) {
+        if(etatPrKey.innerHTML.toLowerCase().includes(document.getElementById("query").value.toLowerCase())) {
             document.querySelector("#liste").appendChild(etatPrKey)
         }
     }
