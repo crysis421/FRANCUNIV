@@ -1,21 +1,23 @@
 let etat_pu = document.querySelectorAll('.public')
 let etat_pr = document.querySelectorAll('.privee')
 console.log(etat_pu, etat_pr)
-for (let i of etat_pu) {
-    try {
-        document.querySelector("#liste").removeChild(i)
-    } catch {
 
+function supprimer() {
+    for (let i of etat_pu) {
+        try {
+            document.querySelector("#liste").removeChild(i)
+        } catch {
+
+        }
+    }
+    for (let i of etat_pr) {
+        try {
+            document.querySelector("#liste").removeChild(i)
+        } catch {
+
+        }
     }
 }
-for (let i of etat_pr) {
-    try {
-        document.querySelector("#liste").removeChild(i)
-    } catch {
-
-    }
-}
-
 
 document.querySelector('#Tous').addEventListener("click", (event) => {
     supprimer()
