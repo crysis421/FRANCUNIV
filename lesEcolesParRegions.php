@@ -76,8 +76,8 @@ if ($_SESSION['profile_image'] != null) {
     </label>
 </div>
 <div id="filtre">
-    <i class="fa-solid fa-folder-open"></i>
-    <div class="checkbox-inputs" id="filtrecheckbox">
+    <i class="fa-solid fa-folder-open" id="filtrecheckbox"></i>
+    <div class="checkbox-inputs" >
         <label class="checkbox">
             <input type="checkbox" name="filtre" checked="" id="Licence">
             <span class="name">Licence</span><br>

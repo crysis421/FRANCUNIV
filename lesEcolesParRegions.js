@@ -51,5 +51,15 @@ document.querySelector("#filtre").addEventListener("click", event => {
 })
 
 document.querySelector("#query").addEventListener("change", (event) => {
-    document.body.innerHTML = `SALUT`+document.querySelector("#query").value
+    supprimer()
+    for (let etatPrKey of etat_pr) {
+        if(etatPrKey.innerHTML.includes(document.getElementById("query").value)) {
+            document.querySelector("#liste").appendChild(etatPrKey)
+        }
+    }
+    for (let etatPrKey of etat_pu) {
+        if(etatPrKey.innerHTML.includes(document.getElementById("query").value)) {
+            document.querySelector("#liste").appendChild(etatPrKey)
+        }
+    }
 })
