@@ -722,7 +722,7 @@ p{
     display: block;
     position: fixed;
     top: 15%;
-    right:2%;
+    right:5%;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
