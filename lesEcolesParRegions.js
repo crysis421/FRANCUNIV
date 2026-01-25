@@ -1,22 +1,21 @@
 let etat_pu = document.querySelectorAll('.public')
 let etat_pr = document.querySelectorAll('.privee')
-console.log(etat_pu,etat_pr)
-function supprimer() {
-    for (let i of etat_pu) {
-        try {
-            document.querySelector("#liste").removeChild(i)
-        }catch {
+console.log(etat_pu, etat_pr)
+for (let i of etat_pu) {
+    try {
+        document.querySelector("#liste").removeChild(i)
+    } catch {
 
-        }
-    }
-    for (let i of etat_pr) {
-        try {
-            document.querySelector("#liste").removeChild(i)
-        }catch{
-
-        }
     }
 }
+for (let i of etat_pr) {
+    try {
+        document.querySelector("#liste").removeChild(i)
+    } catch {
+
+    }
+}
+
 
 document.querySelector('#Tous').addEventListener("click", (event) => {
     supprimer()
@@ -38,4 +37,8 @@ document.querySelector('#Privee').addEventListener("click", (event) => {
     for (let etatPrkey of etat_pr) {
         document.querySelector("#liste").appendChild(etatPrkey)
     }
+})
+
+document.querySelector("#filtre").addEventListener("click", function () {
+    document.getElementById("#filtrecheckbox").style.display='block';
 })

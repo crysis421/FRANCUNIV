@@ -6,3 +6,4 @@ btn.addEventListener("click",()=>{
     search.classList.toggle("active");//toggle metode add and remove in the same time class
     input.focus();//i put focus in my input
 })
+
