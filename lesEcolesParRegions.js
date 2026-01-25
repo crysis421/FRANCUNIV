@@ -49,3 +49,7 @@ document.querySelector("#filtre").addEventListener("click", event => {
     }
 
 })
+
+document.querySelector("#query").addEventListener("change", (event) => {
+    document.body.innerHTML = `SALUT`+document.querySelector("#query").value
+})
