@@ -48,7 +48,7 @@ document.querySelector('#Privee').addEventListener("click", (event) => {
 })
 
 document.querySelector("#imgDossier").addEventListener("click", event => {
-    if (document.getElementById("filtrecheckbox").style.display == 'block') {
+    if (document.getElementById("filtrecheckbox").style.display === 'block') {
         document.getElementById("filtrecheckbox").style.display = 'none';
     } else {
         document.getElementById("filtrecheckbox").style.display = 'block';
