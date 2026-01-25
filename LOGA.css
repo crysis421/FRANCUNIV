@@ -595,12 +595,11 @@ h1{
     align-items: center;  /* centre vertical */
     justify-content: center; /* centre horizontal */
     text-decoration: none; /* enlève soulignement */
-    font-size: 2rem;      /* taille texte */
+    font-size: 5rem;      /* taille texte */
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
     transition: all 0.3s;
-    font-size:150%;
     position: relative;
     top:8vw;
 }
@@ -609,7 +608,6 @@ h1{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    color: transparent;
 }
 #basdepage{
     background:#271246;
