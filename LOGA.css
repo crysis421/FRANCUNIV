@@ -730,7 +730,7 @@ p{
 #filtrecheckbox{
     display: none;
 }
-i.fa-solid.fa-filter {
+#filtre i{
      font-size: 40px;
      color: white;
  }
