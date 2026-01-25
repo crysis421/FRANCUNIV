@@ -75,7 +75,7 @@ if ($_SESSION['profile_image'] != null) {
         <span class="name">Privée</span>
     </label>
 </div>
-<nav role="navigation">
+
 <div class="checkbox-inputs" id="filtre">
     <label class="checkbox">
         <input type="checkbox" name="filtre" checked="" id="Licence">
@@ -96,7 +96,6 @@ if ($_SESSION['profile_image'] != null) {
         <span class="name">CPGE </span>
     </label>
 </div>
-</nav>
 <?php
 if(isset($_GET['departement'])){
     echo "<br><br><br><h1> Region : ".$_GET['departement'].'</h1>';
