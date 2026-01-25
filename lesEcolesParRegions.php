@@ -1,15 +1,15 @@
 <?php session_start();
-    require('Database.php');
-    try{
-        $database = Database::connect();
-        $requete = $database->prepare("SELECT nom,banniere,etat FROM universite WHERE region=:region");
-        $requete->bindParam(':region', $_GET['departement']);
-        $requete->execute();
-        $database = null;
-    }catch (Exception $e){
-        echo $e->getMessage();
-        $database = null;
-    }
+require('Database.php');
+try {
+    $database = Database::connect();
+    $requete = $database->prepare("SELECT nom,banniere,etat FROM universite WHERE region=:region");
+    $requete->bindParam(':region', $_GET['departement']);
+    $requete->execute();
+    $database = null;
+} catch (Exception $e) {
+    echo $e->getMessage();
+    $database = null;
+}
 if ($_SESSION['profile_image'] != null) {
     $avatar = 'uploads/avatars/' . $_SESSION['profile_image'];
 } else {
@@ -45,17 +45,17 @@ if ($_SESSION['profile_image'] != null) {
     <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
         <g>
             <path
-                d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
             ></path>
         </g>
     </svg>
 
     <input
-        id="query"
-        class="input"
-        type="search"
-        placeholder="Search..."
-        name="searchbar"
+            id="query"
+            class="input"
+            type="search"
+            placeholder="Search..."
+            name="searchbar"
     />
 </div>
 
@@ -75,30 +75,32 @@ if ($_SESSION['profile_image'] != null) {
         <span class="name">Privée</span>
     </label>
 </div>
+<div id="filtre">
+    <i class="fa-solid fa-filter"></i>
+    <div class="checkbox-inputs" id="filtrecheckbox">
+        <label class="checkbox">
+            <input type="checkbox" name="filtre" checked="" id="Licence">
+            <span class="name">Licence</span>
+        </label>
+        <label class="radio">
+            <input type="checkbox" name="filtre" id="BTS / BUT">
+            <span class="name">BTS / BUT</span>
+        </label>
 
-<div class="checkbox-inputs" id="filtre">
-    <label class="checkbox">
-        <input type="checkbox" name="filtre" checked="" id="Licence">
-        <span class="name">Licence</span>
-    </label>
-    <label class="radio">
-        <input type="checkbox" name="filtre" id="BTS / BUT">
-        <span class="name">BTS / BUT</span>
-    </label>
+        <label class="radio">
+            <input type="checkbox" name="filtre" id="Master">
+            <span class="name">Master </span>
+        </label>
 
-    <label class="radio">
-        <input type="checkbox" name="filtre" id="Master">
-        <span class="name">Master </span>
-    </label>
-
-    <label class="radio">
-        <input type="checkbox" name="filtre" id="CPGE">
-        <span class="name">CPGE </span>
-    </label>
+        <label class="radio">
+            <input type="checkbox" name="filtre" id="CPGE">
+            <span class="name">CPGE </span>
+        </label>
+    </div>
 </div>
 <?php
-if(isset($_GET['departement'])){
-    echo "<br><br><br><h1> Region : ".$_GET['departement'].'</h1>';
+if (isset($_GET['departement'])) {
+    echo "<br><br><br><h1> Region : " . $_GET['departement'] . '</h1>';
 
 }
 
@@ -106,16 +108,20 @@ if(isset($_GET['departement'])){
 
 <div id="liste">
     <ul id="liste">
-        <?php foreach($requete as $row){
+        <?php foreach ($requete as $row) {
             ?>
 
-            <form id="univ" action="universite.php" method="get" class="<?php if ($row['etat']==1){
-                echo htmlspecialchars("public");}else{echo htmlspecialchars("privee")
-            ;} ?>">
-            <a onclick="this.closest('form').submit();" class="nomecole"  onmouseover= "this.style.backgroundImage = 'url(<?=htmlspecialchars($row['banniere'])?>)'" onmouseout="this.style.backgroundImage = ''">
-                <input type="hidden" name="universite" value="<?= htmlspecialchars($row['nom']) ?>"/>
-                <?= htmlspecialchars($row['nom']) ?><br><br><br><br>
-            </a>
+            <form id="univ" action="universite.php" method="get" class="<?php if ($row['etat'] == 1) {
+                echo htmlspecialchars("public");
+            } else {
+                echo htmlspecialchars("privee");
+            } ?>">
+                <a onclick="this.closest('form').submit();" class="nomecole"
+                   onmouseover="this.style.backgroundImage = 'url(<?= htmlspecialchars($row['banniere']) ?>)'"
+                   onmouseout="this.style.backgroundImage = ''">
+                    <input type="hidden" name="universite" value="<?= htmlspecialchars($row['nom']) ?>"/>
+                    <?= htmlspecialchars($row['nom']) ?><br><br><br><br>
+                </a>
             </form>
         <?php } ?>
     </ul>
