@@ -40,5 +40,5 @@ document.querySelector('#Privee').addEventListener("click", (event) => {
 })
 
 document.querySelector("#filtre").addEventListener("click", event=> {
-    document.getElementById("#filtrecheckbox").style.display='block';
+    document.getElementById("filtrecheckbox").style.display='block';
 })
