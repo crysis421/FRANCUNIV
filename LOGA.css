@@ -734,3 +734,8 @@ p{
      font-size: 40px;
      color: white;
  }
+#basdepage a{
+    position:relative;
+    justify-content:end;
+    display: flex;
+}

@@ -162,6 +162,8 @@ if ($_SESSION['profile_image'] != null) {
 <div id="pub"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1244565890243313"
                       crossorigin="anonymous"></script></div>
 <div id="basdepage">
+    <a>Les universités et formations proviennent du site data.gouv. Les dossiers dates de 2026 (sauf master qui date de 2022)<br>
+    Pour toute demande d'ajout d'universités/formations merci de contacter le support par mail </a>
     <p>Support: support@loga-univ.fr</p>
     <p>Auteurs:<br>
         <br>
