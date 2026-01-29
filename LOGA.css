@@ -720,7 +720,7 @@ h1{
 
 #filtre {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 15%;
     right:5%;
     z-index: 1;
