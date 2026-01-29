@@ -6,7 +6,7 @@ try {
     $requete->bindParam(':nom', $_GET['universite']);
     $requete->execute();
     $universite = $requete->fetch(PDO::FETCH_ASSOC);
-    $liste= $database->prepare("SELECT nom FROM formation WHERE univ=:univ");
+    $liste = $database->prepare("SELECT nom FROM formation WHERE univ=:univ");
     $liste->bindParam(':univ', $universite['id']);
     $liste->execute();
     $database = null;
@@ -46,7 +46,7 @@ if ($_SESSION['profile_image'] != null) {
     </div>
 </nav>
 <a id="ggmaps" href="<?= $universite['ggmaps'] ?>" target="_blank">Adresse de l'université
-    </a>
+</a>
 <div id="presentation">
     <p id="presentation">Vous voici sur la page de <?= htmlspecialchars($_GET['universite']) ?> .<br>
         Sur cette page vous pourrez voir toutes les formations proposer par<?= htmlspecialchars($_GET['universite']) ?>
@@ -65,9 +65,10 @@ if ($_SESSION['profile_image'] != null) {
 <div id="listeformation">
     <h1 style="color:black "> Formation </h1>
     <ul><?php foreach ($liste as $liste) {
-        ?>
-        <a href="" ><?= htmlspecialchars($liste['nom'])?> </a>
-        </ul>
+            ?>
+            <a href=""><?= htmlspecialchars($liste['nom']) ?> </a>
+        <?php } ?>
+    </ul>
 
 </div>
 <div id="avis">
