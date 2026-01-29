@@ -9,13 +9,9 @@ try {
     $liste = $database->prepare("SELECT nom FROM formation WHERE univ=:univ");
     $liste->bindParam(':univ', $universite['id']);
     $liste->execute();
+    $liste1 = $liste->fetchAll(PDO::FETCH_ASSOC);
     $database = null;
-    foreach ($liste as $ligne) {
-        echo $ligne['nom'];
-    }
-    foreach ($universite as $ligne) {
-        echo $ligne['nom'];
-    }
+
 } catch (Exception $e) {
     echo $e->getMessage();
     $database = null;
@@ -66,7 +62,7 @@ if ($_SESSION['profile_image'] != null) {
 </div>
 <div id="listeformation">
     <h1 style="color:black "> Formation </h1>
-    <ul><?php foreach ($liste as $liste) {
+    <ul><?php foreach ($liste1 as $liste) {
             ?>
             <a href=""> <?= htmlspecialchars($liste['nom']) ?> </a>
         <?php } ?>
