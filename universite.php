@@ -67,7 +67,7 @@ if ($_SESSION['profile_image'] != null) {
                 <span class="name">Licence</span><br>
             </label>
             <label class="radio">
-                <input type="radio" name="filtre" id="BTS/BUT">
+                <input type="radio" name="filtre" id="BTSBUT">
                 <span class="name">BTS / BUT</span><br>
             </label>
 

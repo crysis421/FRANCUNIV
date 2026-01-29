@@ -17,7 +17,7 @@ document.querySelector('#Licence').addEventListener("click", (event) => {
         }
     }
 })
-document.querySelector('#BTS/BUT').addEventListener("click", (event) => {
+document.querySelector('#BTSBUT').addEventListener("click", (event) => {
     supprimer()
     for (let etatPrKey of formation) {
         if (etatPrKey.innerHTML.includes('BTS') || etatPrKey.innerHTML.includes('BUT') ) {
