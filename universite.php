@@ -9,7 +9,7 @@ try {
     $liste = $database->prepare("SELECT nom FROM formation WHERE univ=:univ");
     $liste->bindParam(':univ', $universite['id']);
     $liste->execute();
-    $liste1 = $liste->fetchAll(PDO::FETCH_ASSOC);
+    $liste1 = $liste->fetch(PDO::FETCH_ASSOC);
     $database = null;
     echo $liste1['nom'];
 } catch (Exception $e) {
