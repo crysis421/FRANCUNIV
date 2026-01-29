@@ -2,11 +2,18 @@
 require('Database.php');
 try {
     $database = Database::connect();
-    $requete = $database->prepare("SELECT banniere,ggmaps FROM universite WHERE nom=:nom");
+    $requete = $database->prepare("SELECT id,banniere,ggmaps FROM universite WHERE nom=:nom");
     $requete->bindParam(':nom', $_GET['universite']);
     $requete->execute();
-    $database = null;
     $universite = $requete->fetch(PDO::FETCH_ASSOC);
+    $liste = $database->prepare("SELECT nom FROM formation WHERE univ=:univ");
+    $liste->bindParam(':univ', $universite['id']);
+    $liste->execute();
+    $liste1 = $liste->fetchAll(PDO::FETCH_ASSOC);
+    $database = null;
+    foreach ($liste1 as $liste){
+        echo $liste;
+    }
 } catch (Exception $e) {
     echo $e->getMessage();
     $database = null;
@@ -42,7 +49,7 @@ if ($_SESSION['profile_image'] != null) {
     </div>
 </nav>
 <a id="ggmaps" href="<?= $universite['ggmaps'] ?>" target="_blank">Adresse de l'université
-    </a>
+</a>
 <div id="presentation">
     <p id="presentation">Vous voici sur la page de <?= htmlspecialchars($_GET['universite']) ?> .<br>
         Sur cette page vous pourrez voir toutes les formations proposer par<?= htmlspecialchars($_GET['universite']) ?>
@@ -52,14 +59,17 @@ if ($_SESSION['profile_image'] != null) {
         sur l'université uniquement si vous y êtes inscrit.
     </p>
 </div>
-<div id="membre">
-    <a></a>
-</div>
 <div id="annonce">
     <h1 style="color:black "> Annonce </h1>
 </div>
 <div id="listeformation">
     <h1 style="color:black "> Formation </h1>
+    <ul><?php foreach ($liste1 as $liste) {
+            ?>
+            <a href=""> <?= htmlspecialchars($liste['nom']) ?> </a>
+        <?php } ?>
+    </ul>
+
 </div>
 <div id="avis">
     <h1 style="color:black "> Avis </h1>
@@ -78,5 +88,8 @@ if ($_SESSION['profile_image'] != null) {
         </button>
     </div>
 
+
 </div>
+<div id="membre">
+    <h1 style="color:black "> Membre </h1>
 </body>
