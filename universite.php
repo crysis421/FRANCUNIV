@@ -12,7 +12,7 @@ try {
     $liste1 = $liste->fetchAll(PDO::FETCH_ASSOC);
     $database = null;
     echo $liste1;
-
+    echo $universite['id'];
 } catch (Exception $e) {
     echo $e->getMessage();
     $database = null;
