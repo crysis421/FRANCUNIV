@@ -10,7 +10,9 @@ try {
     $liste->bindParam(':univ', $universite['id']);
     $liste->execute();
     $database = null;
-
+    foreach ($liste as $ligne) {
+        echo $ligne['nom'];
+    }
 } catch (Exception $e) {
     echo $e->getMessage();
     $database = null;
@@ -56,9 +58,6 @@ if ($_SESSION['profile_image'] != null) {
         sur l'université uniquement si vous y êtes inscrit.
     </p>
 </div>
-<div id="membre">
-    <a></a>
-</div>
 <div id="annonce">
     <h1 style="color:black "> Annonce </h1>
 </div>
@@ -66,7 +65,7 @@ if ($_SESSION['profile_image'] != null) {
     <h1 style="color:black "> Formation </h1>
     <ul><?php foreach ($liste as $liste) {
             ?>
-            <a href=""><?= htmlspecialchars($liste['nom']) ?> </a>
+            <a href=""> <?= htmlspecialchars($liste['nom']) ?> </a>
         <?php } ?>
     </ul>
 
