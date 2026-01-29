@@ -61,7 +61,7 @@ if ($_SESSION['profile_image'] != null) {
 </div>
 <div id="listeformation">
     <div id="filtre">
-        <div class="checkbox-inputs" id="filtrecheckbox">
+        <div class="radio-inputs" id="radio">
             <label class="radio">
                 <input type="radio" name="filtre" checked="" id="Licence">
                 <span class="name">Licence</span><br>
@@ -125,4 +125,5 @@ if ($_SESSION['profile_image'] != null) {
         Romain Henry : Fondateur <br>
         Kilian Stievenard : Co-fondateur</p>
 </div>
+<script src="universite.js"></script>
 </body>
