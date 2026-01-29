@@ -60,8 +60,8 @@ if ($_SESSION['profile_image'] != null) {
     <h1 style="color:black "> Annonce </h1>
 </div>
 <div id="listeformation">
-    <div id="filtre">
-        <div class="radio-inputs" id="radio">
+    <div id="filtre1">
+        <div class="radio-inputs" id="radio1">
             <label class="radio">
                 <input type="radio" name="filtre" checked="" id="Licence">
                 <span class="name">Licence</span><br>

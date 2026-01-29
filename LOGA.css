@@ -643,7 +643,7 @@ h1{
 #radio {
     text-align: center;
     top:25%;
-    position:absolute;
+    position:relative;
     left: 43%;
 }
 .radio-inputs {
@@ -773,3 +773,17 @@ h1{
     top: 30%;
     left:45%;
 }
+#radio1 {
+     text-align: center;
+     top:25%;
+     position:absolute;
+     left: 43%;
+ }
+#filtre1 {
+     display: block;
+     top: 15%;
+     right:5%;
+     z-index: 1;
+     -webkit-user-select: none;
+     user-select: none;
+ }
