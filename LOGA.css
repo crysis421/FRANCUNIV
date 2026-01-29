@@ -618,7 +618,7 @@ h1{
     border-top-width: 2px;
     justify-content: end;
     position:absolute;
-    height:20%;
+    height:30%;
     width:100%;
 }
 p{
@@ -739,6 +739,6 @@ p{
     justify-content:end;
     display: flex;
     color:white;
-    top:100%;
+    top:80%;
     font-size: small;
 }
