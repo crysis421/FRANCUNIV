@@ -28,6 +28,7 @@ if ($_SESSION['profile_image'] != null) {
     <title>"<?= htmlspecialchars($_GET['universite']) ?>"</title>
 </head>
 <body>
+<script src="universite.js"></script>
 <img src="logo-loga.png" alt="LOGA"/>
 <nav role="navigation">
     <div id="menuToggle">
@@ -90,6 +91,7 @@ if ($_SESSION['profile_image'] != null) {
     </ul>
 
 </div>
+
 <div id="avis">
     <h1 style="color:black "> Avis </h1>
     <div class="messageBox">
@@ -125,5 +127,5 @@ if ($_SESSION['profile_image'] != null) {
         Romain Henry : Fondateur <br>
         Kilian Stievenard : Co-fondateur</p>
 </div>
-<script src="universite.js"></script>
+
 </body>
