@@ -48,7 +48,7 @@ function addFormation()
         try {
             if ($row != 0 and !in_array($data[4],$res)) { // On skip la premiere ligne qui sont juste le nom des colonnes
 
-                $requete = $addData->prepare("INSERT INTO formation(nom,note,univ) VALUES (:nom,0,null)");
+                $requete = $addData->prepare("INSERT INTO formation(nom,note,univ) VALUES (:nom,0,0)");
                 $requete->bindParam(':nom', $data[4]);
                 echo "Formation : ".$data[4]."<br>";
                 $requete->execute();
