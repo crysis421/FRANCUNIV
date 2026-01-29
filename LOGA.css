@@ -778,12 +778,11 @@ h1{
      text-align: center;
      top:25%;
      position:absolute;
-     left: 43%;
+    width: 100%;
  }
 #filtre1 {
      display: block;
      top: 15%;
-    width: 100%;
      right:5%;
      z-index: 1;
      -webkit-user-select: none;
