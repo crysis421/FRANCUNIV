@@ -63,7 +63,7 @@ if ($_SESSION['profile_image'] != null) {
     <h1 style="color:black "> Formation </h1>
     <ul><?php foreach ($liste1 as $liste) {
             ?>
-            <a href=""> <?= htmlspecialchars($liste['nom']) ?> </a>
+           <li><a href=""> <?= htmlspecialchars($liste['nom']) ?> </a></li>
         <?php } ?>
     </ul>
 
