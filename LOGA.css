@@ -310,7 +310,12 @@ form:has(#file:valid) #enregistrer {
     border-radius:50%;
 
 }
-
+p{
+    color:white;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+}
 #name{
     margin-top:7%;
     margin-left:10%;
