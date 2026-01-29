@@ -78,5 +78,8 @@ if ($_SESSION['profile_image'] != null) {
         </button>
     </div>
 
+
 </div>
+<div id="membre">
+    <h1 style="color:black "> Formation </h1>
 </body>
