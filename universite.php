@@ -13,6 +13,9 @@ try {
     foreach ($liste as $ligne) {
         echo $ligne['nom'];
     }
+    foreach ($universite as $ligne) {
+        echo $ligne['nom'];
+    }
 } catch (Exception $e) {
     echo $e->getMessage();
     $database = null;
