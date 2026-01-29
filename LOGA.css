@@ -731,7 +731,7 @@ h1{
  }
 #basdepage a{
     position:relative;
-    justify-content:flex-end;;
+    justify-content:flex-end;
     display: flex;
     color:white;
     top:70%;
