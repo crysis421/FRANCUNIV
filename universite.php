@@ -60,10 +60,32 @@ if ($_SESSION['profile_image'] != null) {
     <h1 style="color:black "> Annonce </h1>
 </div>
 <div id="listeformation">
+    <div id="filtre">
+        <div class="checkbox-inputs" id="filtrecheckbox">
+            <label class="radio">
+                <input type="radio" name="filtre" checked="" id="Licence">
+                <span class="name">Licence</span><br>
+            </label>
+            <label class="radio">
+                <input type="radio" name="filtre" id="BTS/BUT">
+                <span class="name">BTS / BUT</span><br>
+            </label>
+
+            <label class="radio">
+                <input type="radio" name="filtre" id="CPGE">
+                <span class="name">CPGE </span><br>
+            </label>
+
+            <label class="radio">
+                <input type="radio" name="filtre" id="Autres">
+                <span class="name">Autres </span><br>
+            </label>
+        </div>
+    </div>
     <h1 style="color:black "> Formation </h1>
-    <ul><?php foreach ($liste1 as $liste) {
+    <ul id="souslisteformation"><?php foreach ($liste1 as $liste) {
             ?>
-           <li><a href=""> <?= htmlspecialchars($liste['nom']) ?> </a></li>
+           <li><a id="a" href=""> <?= htmlspecialchars($liste['nom']) ?> </a></li>
         <?php } ?>
     </ul>
 

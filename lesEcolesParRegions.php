@@ -82,17 +82,17 @@ if ($_SESSION['profile_image'] != null) {
             <input type="checkbox" name="filtre" checked="" id="Licence">
             <span class="name">Licence</span><br>
         </label>
-        <label class="radio">
+        <label class="checkbox">
             <input type="checkbox" name="filtre" id="BTS / BUT">
             <span class="name">BTS / BUT</span><br>
         </label>
 
-        <label class="radio">
+        <label class="checkbox">
             <input type="checkbox" name="filtre" id="Master">
             <span class="name">Master </span><br>
         </label>
 
-        <label class="radio">
+        <label class="checkbox">
             <input type="checkbox" name="filtre" id="CPGE">
             <span class="name">CPGE </span><br>
         </label>
