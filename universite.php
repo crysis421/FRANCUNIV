@@ -11,7 +11,7 @@ try {
     $liste->execute();
     $liste1 = $liste->fetchAll(PDO::FETCH_ASSOC);
     $database = null;
-    foreach ($liste1 as $liste1) {
+    foreach ($liste1 as $liste1){
         echo $liste1;
     }
 } catch (Exception $e) {
