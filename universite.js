@@ -1,4 +1,4 @@
-let formation = document.querySelectorAll('#a')
+let formation = document.querySelectorAll('.a')
 
 function supprimer() {
     for (let i of formation) {
