@@ -2,11 +2,15 @@
 require('Database.php');
 try {
     $database = Database::connect();
-    $requete = $database->prepare("SELECT banniere,ggmaps FROM universite WHERE nom=:nom");
+    $requete = $database->prepare("SELECT id,banniere,ggmaps FROM universite WHERE nom=:nom");
     $requete->bindParam(':nom', $_GET['universite']);
     $requete->execute();
-    $database = null;
     $universite = $requete->fetch(PDO::FETCH_ASSOC);
+    $liste= $database->prepare("SELECT nom FROM formation WHERE univ=:univ");
+    $liste->bindParam(':univ', $universite['id']);
+    $liste->execute();
+    $database = null;
+
 } catch (Exception $e) {
     echo $e->getMessage();
     $database = null;
@@ -60,6 +64,11 @@ if ($_SESSION['profile_image'] != null) {
 </div>
 <div id="listeformation">
     <h1 style="color:black "> Formation </h1>
+    <ul><?php foreach ($liste as $liste) {
+        ?>
+        <a href="" ><?= htmlspecialchars($liste['nom'])?> </a>
+        </ul>
+
 </div>
 <div id="avis">
     <h1 style="color:black "> Avis </h1>
@@ -81,5 +90,5 @@ if ($_SESSION['profile_image'] != null) {
 
 </div>
 <div id="membre">
-    <h1 style="color:black "> Formation </h1>
+    <h1 style="color:black "> Membre </h1>
 </body>
