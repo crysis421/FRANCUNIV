@@ -763,6 +763,9 @@ h1{
 #support{
     color:white;
     justify-items: center;
-    justify-content: end;
+    justify-content:left;
     text-align: center;
+    position: absolute;
+    top: 10%;
+    left:50%;
 }
