@@ -40,16 +40,22 @@ function addFormation()
 {
     $row = 0; //Nombre de ligne du CSV
     $addData = Database::connect();
-    $requete = $addData->prepare("SELECT nom from formation");
+    $requete = $addData->prepare("SELECT id,nom from universite");
     $requete->execute();
     $res = $requete->fetchAll();
+    $lesUnivs = [];
+    foreach ($res as $univ) {
+        $lesUnivs[$univ['nom']] = $univ['id'];
+    }
     $handle = fopen("fr-esr-parcoursup .csv", "r");
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) { //Tant qu'il y a des données dans notre table
         try {
-            if ($row != 0 and !in_array($data[4],$res)) { // On skip la premiere ligne qui sont juste le nom des colonnes
+            if ($row != 0) { // On skip la premiere ligne qui sont juste le nom des colonnes
 
-                $requete = $addData->prepare("INSERT INTO formation(nom,note,univ) VALUES (:nom,0,0)");
+                $requete = $addData->prepare("INSERT INTO formation(nom,note,univ) VALUES (:nom,0,:univ)");
                 $requete->bindParam(':nom', $data[4]);
+                $u = $lesUnivs[$data[2]];
+                $requete->bindParam(':univ', $u);
                 echo "Formation : ".$data[4]."<br>";
                 $requete->execute();
             }
