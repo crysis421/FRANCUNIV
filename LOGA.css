@@ -643,7 +643,7 @@ h1{
 #radio {
     text-align: center;
     top:25%;
-    position:relative;
+    position:absolute;
     left: 43%;
 }
 .radio-inputs {
@@ -720,7 +720,6 @@ h1{
 
 #filtre {
     display: block;
-    position: fixed;
     top: 15%;
     right:5%;
     z-index: 1;
