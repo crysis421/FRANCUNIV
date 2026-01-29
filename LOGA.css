@@ -736,7 +736,7 @@ p{
  }
 #basdepage a{
     position:relative;
-    justify-content:end;
+    justify-content:center;
     display: flex;
     color:white;
     top:80%;
