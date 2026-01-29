@@ -12,7 +12,7 @@ function supprimer() {
 document.querySelector('#Licence').addEventListener("click", (event) => {
     supprimer()
     for (let etatPrKey of formation) {
-        if (etatPrKey.contains('Licence')) {
+        if (etatPrKey.includes('Licence')) {
             document.querySelector("#souslisteformation").appendChild(etatPrKey)
         }
     }
@@ -20,7 +20,7 @@ document.querySelector('#Licence').addEventListener("click", (event) => {
 document.querySelector('#BTS/BUT').addEventListener("click", (event) => {
     supprimer()
     for (let etatPrKey of formation) {
-        if (etatPrKey.contains('BTS') || etatPrKey.contains('BUT') ) {
+        if (etatPrKey.includes('BTS') || etatPrKey.includes('BUT') ) {
             document.querySelector("#souslisteformation").appendChild(etatPrKey)
         }
     }
@@ -28,7 +28,7 @@ document.querySelector('#BTS/BUT').addEventListener("click", (event) => {
 document.querySelector('#CPGE').addEventListener("click", (event) => {
     supprimer()
     for (let etatPrKey of formation) {
-        if (etatPrKey.contains('CPGE') ) {
+        if (etatPrKey.includes('CPGE') ) {
             document.querySelector("#souslisteformation").appendChild(etatPrKey)
         }
     }
@@ -36,7 +36,7 @@ document.querySelector('#CPGE').addEventListener("click", (event) => {
 document.querySelector('#Autres').addEventListener("click", (event) => {
     supprimer()
     for (let etatPrKey of formation) {
-        if (!etatPrKey.contains('CPGE') && !etatPrKey.contains('BTS') && !etatPrKey.contains('Licence') && !etatPrKey.contains('BUT') ) {
+        if (!etatPrKey.includes('CPGE') && !etatPrKey.includes('BTS') && !etatPrKey.includes('Licence') && !etatPrKey.includes('BUT') ) {
             document.querySelector("#souslisteformation").appendChild(etatPrKey)
         }
     }
