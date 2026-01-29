@@ -165,8 +165,8 @@ if ($_SESSION['profile_image'] != null) {
 
     <a><br>Les universités et formations proviennent du site data.gouv. Les dossiers dates de 2026 (sauf master qui date de 2022).
     Pour toute demande d'ajout d'universités/formations, merci de contacter le support par mail </a>
-    <p>Support: support@loga-univ.fr</p>
-    <p>Auteurs:<br>
+    <p id="support">Support: support@loga-univ.fr</p>
+    <p id="auteurs">Auteurs:<br>
         <br>
         Romain Henry : Fondateur <br>
         Kilian Stievenard : Co-fondateur</p>
