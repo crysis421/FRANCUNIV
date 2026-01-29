@@ -783,6 +783,7 @@ h1{
 #filtre1 {
      display: block;
      top: 15%;
+    width: 100%;
      right:5%;
      z-index: 1;
      -webkit-user-select: none;
