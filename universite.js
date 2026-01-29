@@ -3,7 +3,7 @@ let formation = document.querySelectorAll('#a')
 function supprimer() {
     for (let i of formation) {
         try {
-            document.querySelector("#liste").removeChild(i)
+            document.querySelector("#souslisteformation").removeChild(i)
         } catch {
         }
     }
