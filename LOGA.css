@@ -618,15 +618,10 @@ h1{
     border-top-width: 2px;
     justify-content: end;
     position:absolute;
-    height:30%;
+    height:15%;
     width:100%;
 }
-p{
-    color:white;
-    justify-items: center;
-    justify-content: center;
-    text-align: center;
-}
+
 #ggmaps:hover{
     color:red;
     font-size:20px;
@@ -739,13 +734,14 @@ p{
     justify-content:center;
     display: flex;
     color:white;
-    top:80%;
+    top:70%;
     font-size: small;
 }
 #membre {
     position: relative;
     width:100%;
     height: 30vw;
+    top: -70px;
     top: -70px;
     background: linear-gradient(to bottom, #9FDA61 20%, white 10% 90%);
     color: #000;
@@ -755,4 +751,16 @@ p{
     border-style: groove;
     border-color: #5715a2;
     margin-top: 10%;
+}
+#auteurs{
+    color:white;
+    justify-items: center;
+    justify-content:left;
+    text-align: center;
+}
+#support{
+    color:white;
+    justify-items: center;
+    justify-content: end;
+    text-align: center;
 }
