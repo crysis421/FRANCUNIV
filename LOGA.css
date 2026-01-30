@@ -823,11 +823,17 @@ path:hover,
     justify-content: center;   /* centre le contenu horizontalement */
     margin-bottom: 15px;       /* espace entre radio et le titre "Formation" */
 }
-
+#radio1{
+    position: absolute;
+    margin: 15% auto 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
 #radio1.radio-inputs {
     display: flex;
     justify-content: center;
-    gap: 8px;                  /* espace entre les boutons */
+               /* espace entre les boutons */
     padding: 6px 10px;
     border-radius: 8px;
     background: #321d51;
@@ -839,6 +845,7 @@ path:hover,
     align-items: center;
     justify-content: center;
     padding: 4px 8px;
+    width: 100%;
 }
 /* Liste des formations */
 #souslisteformation {
