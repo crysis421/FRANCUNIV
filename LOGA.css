@@ -1021,18 +1021,6 @@ main {
     transform: translateY(-1px);
     font-size: 0.95rem;
 }
-html {
-    background: red !important;
-}
-
-body {
-    background: blue !important;
-}
-
-#basdepage {
-    background: green !important;
-}
-
 
 
 
