@@ -818,26 +818,6 @@ h1 {
     margin-top: 10%;
 }
 
-#auteurs {
-    color: white;
-    justify-items: center;
-    justify-content: left;
-    text-align: center;
-    position: absolute;
-    top: 10%;
-    left: 5%;
-}
-
-#support {
-    color: white;
-    justify-items: center;
-    justify-content: left;
-    text-align: center;
-    position: absolute;
-    top: 30%;
-    left: 45%;
-}
-
 #radio1 {
     text-align: center;
     top: 25%;
@@ -1012,7 +992,7 @@ main {
     color: #ffffff;
     font-size: 0.85rem;
 
-    /* 👉 mise en ligne propre */
+    /*  mise en ligne propre */
     display: flex;
     justify-content: space-between; /* espace entre gauche et droite */
     align-items: flex-start;
