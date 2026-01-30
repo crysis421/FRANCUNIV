@@ -564,6 +564,7 @@ path:hover,
     background-color: #fff;
     font-weight: 600;
     color: #000;
+    width: 100%;
 }
 
 /* ============================
@@ -693,7 +694,7 @@ path:hover,
 /* Conteneur des boutons radio */
 #radio {
     position: absolute;
-    margin: 120px auto 0 auto;   /* descend sous le header / searchbar */
+    margin: 15% auto 0 auto;   /* descend sous le header / searchbar */
     left: 50%;
     transform: translateX(-50%); /* centre horizontalement */
     text-align: center;
@@ -727,7 +728,7 @@ path:hover,
 #filtre {
     display: block;
     position: absolute;
-    top: 120px;      /* même hauteur que #radio (ligne horizontale) */
+    top: 20%;      /* même hauteur que #radio (ligne horizontale) */
     right: 5%;
     z-index: 1;
     -webkit-user-select: none;
