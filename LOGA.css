@@ -1054,3 +1054,7 @@ main {
     transform: translateY(-1px);
     font-size: 0.95rem;
 }
+#condition{
+    position: static;
+    margin-top: 8px;
+}
