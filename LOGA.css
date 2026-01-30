@@ -828,6 +828,7 @@ path:hover,
     padding: 6px 10px;
     border-radius: 8px;
     background: #321d51;
+    width: 100%;
 }
 
 /* Chaque "bouton" */
