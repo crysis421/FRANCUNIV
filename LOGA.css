@@ -54,7 +54,7 @@ a:hover {
 
 /* CHANGEMENT design : logo centré en haut, taille fixe */
 img[alt="LOGA"] {
-    position: fixed;
+    position: absolute;
     top: 12px;
     left: 50%;
     transform: translateX(-50%);
@@ -65,7 +65,7 @@ img[alt="LOGA"] {
 
 /* CHANGEMENT design : avatar fixe en haut à droite */
 #pp {
-    position: fixed;
+    position: absolute;
     top: 12px;
     right: 16px;
     width: 44px;
@@ -174,7 +174,7 @@ img[alt="LOGA"] {
 /* --- Barre de recherche en haut à droite --- */
 
 .group {
-    position: fixed;
+    position: absolute;
     top: 16px;
     right: 80px;
     display: flex;
@@ -225,7 +225,7 @@ img[alt="LOGA"] {
 
 /* Lien Google Maps (en haut à droite) */
 #ggmaps {
-    position: fixed;
+    position: absolute;
     top: 64px;
     right: 18px;
     color: #ffffff;
