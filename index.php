@@ -6,6 +6,7 @@ if ($_SESSION['profile_image'] != null) {
     $avatar = 'profil-image.png';
 }
 ?><!DOCTYPE html>
+<html>
 <head>
     <link rel="stylesheet" href="LOGA.css">
     <script src="https://kit.fontawesome.com/26007f065f.js" crossorigin="anonymous"></script>
@@ -175,3 +176,4 @@ if ($_SESSION['profile_image'] != null) {
         merci de contacter le support par mail </h6>
 </div>
 </body>
+</html>
