@@ -60,6 +60,7 @@ if ($_SESSION['profile_image'] != null) {
     <h1 style="color:black "> Annonce </h1>
 </div>
 <div id="listeformation">
+    <h1 style="color:black "> Formation </h1>
     <div id="filtre1">
         <div class="radio-inputs" id="radio1">
             <label class="radio">
@@ -82,7 +83,6 @@ if ($_SESSION['profile_image'] != null) {
             </label>
         </div>
     </div>
-    <h1 style="color:black "> Formation </h1>
     <ul id="souslisteformation"><?php foreach ($liste1 as $liste) {
             ?>
            <li class="a"><a  href=""> <?= htmlspecialchars($liste['nom']) ?> </a></li>
