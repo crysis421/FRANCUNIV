@@ -692,7 +692,7 @@ path:hover,
 
 /* Conteneur des boutons radio */
 #radio {
-    position: relative;
+    position: absolute;
     margin: 120px auto 0 auto;   /* descend sous le header / searchbar */
     left: 50%;
     transform: translateX(-50%); /* centre horizontalement */
