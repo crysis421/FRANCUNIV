@@ -780,8 +780,14 @@ path:hover,
 }
 /* ===== Mise en forme des sections de la page universite.php ===== */
 
-#presentation,
-#annonce,
+#presentation{
+    width: 80%;
+    margin: 30px auto;      /* espace entre les blocs */
+    padding: 20px;          /* espace interne -> texte pas collé aux bords */
+    border-radius: 12px;
+}
+
+#annonce
 #listeformation,
 #avis,
 #membre {
