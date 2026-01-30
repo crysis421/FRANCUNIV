@@ -534,7 +534,6 @@ path:hover,
 .radio-inputs {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
     border-radius: 0.5rem;
     background-color: #321d51;
     box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
@@ -704,7 +703,6 @@ path:hover,
 .radio-inputs {
     position: relative;          /* plus de absolute */
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     border-radius: 0.5rem;
