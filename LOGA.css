@@ -861,7 +861,7 @@ body {
 
 /* Logo + photo de profil + barre de recherche alignés */
 img[alt="LOGA"] {
-    position: fixed;
+    position: absolute;
     top: 14px;
     left: 50%;
     transform: translateX(-50%);
@@ -871,7 +871,7 @@ img[alt="LOGA"] {
 }
 
 #pp {
-    position: fixed;
+    position: absolute;
     top:40px;
     left:98%;
     width: 44px;
@@ -884,7 +884,7 @@ img[alt="LOGA"] {
 
 /* Barre de recherche en haut à droite */
 .group {
-    position: fixed;
+    position: absolute;
     top: 16px;
     right: 80px;
     margin: 0;
