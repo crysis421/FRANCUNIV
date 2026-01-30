@@ -164,7 +164,7 @@ if ($_SESSION['profile_image'] != null) {
                       crossorigin="anonymous"></script></div>
 <div id="basdepage">
 
-    <h6 id="condition"><br>Les universités et formations proviennent du site data.gouv.
+    <h6 id="condition">Les universités et formations proviennent du site data.gouv.
         <br>Les dossiers dates de 2026 (sauf master qui date de 2022).<br>
     Pour toute demande d'ajout d'universités/formations,<br>
         merci de contacter le support par mail </h6>

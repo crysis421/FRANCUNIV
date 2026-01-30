@@ -1002,7 +1002,6 @@ main {
     padding: 0 18px;
 }
 
-/* Pied de page */
 #basdepage {
     position: static;
     width: 100%;
@@ -1012,22 +1011,32 @@ main {
     padding: 16px 24px 26px 24px;
     color: #ffffff;
     font-size: 0.85rem;
+
+    /* 👉 mise en ligne propre */
+    display: flex;
+    justify-content: space-between; /* espace entre gauche et droite */
+    align-items: flex-start;
+    gap: 16px;
 }
+
+#basdepage h6,
 #basdepage p {
     color: #ffffff;
-    text-align: left;
     margin: 0;
 }
 
-#auteurs {
-    position: static;
-    margin-bottom: 8px;
+/* bloc texte long à gauche */
+#condition {
+    max-width: 55%; /* ou 60%, à ajuster */
+    font-weight: 400;
 }
 
-#support {
-    position: static;
-    margin-top: 8px;
+/* blocs à droite */
+#support,
+#auteurs {
+    text-align: right;
 }
+
 
 /* Lien Google Maps */
 #ggmaps {
@@ -1043,8 +1052,4 @@ main {
     color: var(--accent);
     transform: translateY(-1px);
     font-size: 0.95rem;
-}
-#condition{
-    position: static;
-    margin-left: 80%;
 }
