@@ -81,7 +81,7 @@ img[alt="LOGA"] {
 #menuToggle {
     display: block;
     position: fixed;
-    top: 16px;          /* au lieu de 7% */
+    top: 7%;          /* au lieu de 7% */
     left: 18px;
     z-index: 30;
     -webkit-user-select: none;
