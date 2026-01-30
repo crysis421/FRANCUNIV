@@ -82,7 +82,7 @@ img[alt="LOGA"] {
     display: block;
     position: fixed;
     top: 7%;          /* au lieu de 7% */
-    left: 18px;
+    left: 7%;
     z-index: 30;
     -webkit-user-select: none;
     user-select: none;
