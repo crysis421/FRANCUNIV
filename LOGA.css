@@ -1021,13 +1021,18 @@ main {
     transform: translateY(-1px);
     font-size: 0.95rem;
 }
-html, body {
-    border: 2px solid red !important;
+html {
+    background: red !important;
+}
+
+body {
+    background: blue !important;
 }
 
 #basdepage {
-    border: 2px solid lime !important;
+    background: green !important;
 }
+
 
 
 
