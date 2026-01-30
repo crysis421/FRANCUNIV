@@ -1022,8 +1022,12 @@ main {
     font-size: 0.95rem;
 }
 html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    border: 2px solid red !important;
 }
+
+#basdepage {
+    border: 2px solid lime !important;
+}
+
+
 
