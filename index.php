@@ -10,6 +10,7 @@ if ($_SESSION['profile_image'] != null) {
     <link rel="stylesheet" href="LOGA.css">
     <script src="https://kit.fontawesome.com/26007f065f.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="logo-loga.png" sizes="32x32">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
     <title>LOGA</title>
 </head>
 <body>
