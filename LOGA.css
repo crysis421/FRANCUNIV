@@ -1014,7 +1014,7 @@ main {
 /* blocs à droite */
 #support,
 #auteurs {
-    text-align: right;
+    text-align: left;
 }
 
 
