@@ -823,13 +823,6 @@ path:hover,
     justify-content: center;   /* centre le contenu horizontalement */
     margin-bottom: 15px;       /* espace entre radio et le titre "Formation" */
 }
-#radio1{
-    position: absolute;
-    margin: 15% auto 0 auto;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-}
 #radio1.radio-inputs {
     display: flex;
     justify-content: center;
