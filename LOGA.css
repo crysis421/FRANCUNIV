@@ -1021,3 +1021,9 @@ main {
     transform: translateY(-1px);
     font-size: 0.95rem;
 }
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
