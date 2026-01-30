@@ -686,6 +686,99 @@ path:hover,
         display: block;
     }
 }
+/* ============================
+   POSITIONNEMENT RADIO + FILTRE (page des régions)
+   ============================ */
+
+/* Conteneur des boutons radio */
+#radio {
+    position: relative;
+    margin: 120px auto 0 auto;   /* descend sous le header / searchbar */
+    left: 50%;
+    transform: translateX(-50%); /* centre horizontalement */
+    text-align: center;
+}
+
+/* Style du bloc radio */
+.radio-inputs {
+    position: relative;          /* plus de absolute */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: #321d51;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 300px;
+    font-size: 14px;
+}
+
+/* Boutons radio individuels (si besoin) */
+.radio-inputs .radio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 8px;
+}
+
+/* Icône "filtre" (dossier) à droite, au même niveau vertical que les radios */
+#filtre {
+    display: block;
+    position: absolute;
+    top: 120px;      /* même hauteur que #radio (ligne horizontale) */
+    right: 5%;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#filtre i {
+    font-size: 32px;
+    color: white;
+}
+
+/* Le panneau des checkboxes reste relatif au filtre */
+#filtrecheckbox {
+    display: none;
+    position: absolute;
+    top: 120%;      /* sous l’icône */
+    right: 0;
+    background: #321d51;
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+
+/* Exemple d’affichage quand tu ajoutes une classe .open via JS */
+#filtrecheckbox.open {
+    display: block;
+}
+
+/* ============================
+   RESPONSIVE : empiler sur mobile
+   ============================ */
+@media (max-width: 768px) {
+
+    #radio {
+        margin-top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #filtre {
+        position: static;          /* repasse dans le flux normal */
+        margin: 12px auto 0 auto;  /* sous les radios, centré */
+        text-align: center;
+    }
+
+    #filtrecheckbox {
+        top: 110%;    /* ajuste si besoin */
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
 
 
 
