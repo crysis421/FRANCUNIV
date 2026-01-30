@@ -32,9 +32,9 @@ body {
     font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--text-main);
     background:
-            radial-gradient(circle at top left, #7240c8 0, transparent 55%),
-            radial-gradient(circle at bottom right, #2c0b5a 0, transparent 55%),
-            var(--bg);
+            radial-gradient(circle at top left, #9a6dff 0, transparent 55%),
+            radial-gradient(circle at bottom right, #5a34c8 0, transparent 55%),
+            #1b0c33; /* fond général un peu éclairci */
     display: flex;                   /* CHANGEMENT : pour coller le footer en bas */
     flex-direction: column;
 }
