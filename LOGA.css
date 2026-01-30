@@ -785,6 +785,7 @@ path:hover,
     margin: 30px auto;      /* espace entre les blocs */
     padding: 20px;          /* espace interne -> texte pas collé aux bords */
     border-radius: 12px;
+    margin-top: 10%;
 }
 
 #annonce
