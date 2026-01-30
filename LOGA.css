@@ -780,6 +780,81 @@ path:hover,
         transform: translateX(50%);
     }
 }
+/* ===== Mise en forme des sections de la page universite.php ===== */
+
+#presentation,
+#annonce,
+#listeformation,
+#avis,
+#membre {
+    width: 80%;
+    margin: 30px auto;      /* espace entre les blocs */
+    padding: 20px;          /* espace interne -> texte pas collé aux bords */
+    background: rgba(255,255,255,0.9);
+    border-radius: 12px;
+}
+
+/* Au cas où un display:flex existait quelque part */
+#annonce,
+#listeformation,
+#avis,
+#membre {
+    display: block;         /* pas de centrage vertical par flex */
+}
+
+/* Titres en haut des div + un peu d’espace dessous */
+#annonce h1,
+#listeformation h1,
+#avis h1,
+#membre h1 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Paragraphes un minimum espacés */
+#presentation p {
+    margin: 0;
+    line-height: 1.5;
+}
+/* ===== Bloc radio "Licence / BTS / CPGE / Autres" ===== */
+
+#filtre1 {
+    display: flex;
+    justify-content: center;   /* centre le contenu horizontalement */
+    margin-bottom: 15px;       /* espace entre radio et le titre "Formation" */
+}
+
+#radio1.radio-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 8px;                  /* espace entre les boutons */
+    padding: 6px 10px;
+    border-radius: 8px;
+    background: #321d51;
+}
+
+/* Chaque "bouton" */
+#radio1 .radio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 8px;
+}
+/* Liste des formations */
+#souslisteformation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#souslisteformation li {
+    margin-bottom: 8px;
+}
+
+#souslisteformation li a {
+    text-decoration: none;
+    color: #1a1252;
+}
 
 
 
