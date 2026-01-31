@@ -2,9 +2,16 @@
 require('Database.php');
 try {
     $database = Database::connect();
-    $requete = $database->prepare("SELECT nom,banniere,etat FROM universite WHERE region=:region");
+    $requete = $database->prepare("SELECT id,nom,banniere,etat FROM universite WHERE region=:region");
     $requete->bindParam(':region', $_GET['departement']);
     $requete->execute();
+    $formations = [];
+    foreach($requete['id'] as $id){
+        $formation = $database->prepare("SELECT nom FROM formation WHERE univ=:univ");
+        $formation->bindParam(':univ', $id);
+        $formation->execute();
+        $formations[$id] = $formation->fetchAll();
+    }
     $database = null;
 } catch (Exception $e) {
     echo $e->getMessage();
@@ -86,7 +93,7 @@ if ($_SESSION['profile_image'] != null) {
             <span class="name">Licence</span><br>
         </label>
         <label class="radio">
-            <input type="radio" name="filtre" id="BTS / BUT">
+            <input type="radio" name="filtre" id="BTS/BUT">
             <span class="name">BTS / BUT</span><br>
         </label>
 
