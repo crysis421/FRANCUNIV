@@ -32,7 +32,7 @@ if ($_SESSION['profile_image'] != null) {
             <a href="profil.php">
                 <i class="fa-solid fa-user"> &nbsp Profil</i></a>
             <a href="modifiervotremotdepasse.php">
-                <i class="fa-solid fa-gear"> &nbsp Paramètre</i></a>
+                <i class="fa-solid fa-gear"> &nbsp Parametre</i></a>
 
         </ul>
     </div>
