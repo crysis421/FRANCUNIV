@@ -57,7 +57,7 @@ if ($_SESSION['profile_image'] != null) {
 
 <br><br><br><br>
 
-<div id ="ordre1"><p id="ordre">S&eacute;lectionnez la r&eacute;gion de l'universit&eacute;</p></div>
+<p id="ordre">S&eacute;lectionnez la r&eacute;gion de l'universit&eacute;</p>
 
 <form id="guadeloupe" method="get" action="lesEcolesParRegions.php">
     <input type="hidden" name="departement" value="Outre Mer">
