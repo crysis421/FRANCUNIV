@@ -1,4 +1,5 @@
-<?php?>
+<?php ?>
+
 <html>
 <head>
     <link rel="stylesheet" href="LOGA.css">
