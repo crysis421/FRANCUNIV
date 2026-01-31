@@ -151,6 +151,7 @@ if (isset($_GET['departement'])) {
         Kilian Stievenard : Co-fondateur</p>
 </div>
 <script src="lesEcolesParRegions.js">
+    console.log('donneesJS.id');
     let donneesJS = <?php echo json_encode($formations); ?>;
     console.log('donneesJS.id');
 </script>
