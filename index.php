@@ -162,26 +162,6 @@ if ($_SESSION['profile_image'] != null) {
     <!-- CORSE -->
     <path id="Corse1" d="m1148.8 884.34-5.75 3.9297 0.7891 3.8301 3.0605 3.9297-3.4004 2.6309 1.5508 3.0605-2.3398 2.709v3.4199l3.9297 3.5v5.3203l-2.3399 4.9902-2.6308 1.1602-3.0801-4.2207-5.3789 0.42969-1.1602-0.8086h-4.8105l-4.1797 3.9297-1.5899 6.4805-9.8203 1.959-7.6601 6.5-1.5293 4.2207-3.8106-0.3711-1.959-2.3398-1.1015 6.5996-2.709 1.1016-0.791 6.1289 1.1601 2.6894-4.2402 3.1406-0.9883 2.6621-0.1719-0.0313-3.1484 0.19727v4.2129l3.9297 2.709 6.5 3.7695 0.4297 3.1016-3.9297 1.1582-6.1309 1.1602v2.6504l2.2813 2.3203 0.4297 7.6602 8.3789 2.6309 3.041 0.72851 2.6894 4.3398-1.9589 2.6914-3.0411 1.1191-2.3398 4.2598-2.2207 2.7109 1.1211 6.8497 5.7305-0.3711 1.5293 1.1601 5.4003-2.6894 1.5293 1.5293-2.6894 5.7714 2.6289 2.4903-4.5898 3.4394-3.1192 6.8301 8.3789 1.959 11.781 1.1016-4.9512 5.7695s-2.3389-0.8997-3.3789-0.4297h-0.2012v0.3691c-0.51 2.28-1.3688 4.4705-2.5488 6.4805l3.8105 4.1797 6.9082 4.2207 12.98 3.4395 3.791 1.5507 3.5 1.5293-2.3398 4.1993 6.1484-0.3497 1.1406 2.8301h6.1504l1.5293-7.289-3.9297-0.7911 5.4004-5.7089-1.9609-1.961 0.3711-3.4199 6.9101-3.8105 0.3692-4.1993-4.5899-0.3711-3.0996 2.5704v-3.7891l6.1289-0.3496 1.961-4.6113 1.5293-13.43-1.0586-5.8496-0.1211-5.5-0.209 0.1367-0.2305-10.857 9.17-13.02v-21.6l-3.9297-7.1894-1.1797-22.971-2.6914-4.2402-4.709-3.8301-0.791-14.221 2.2812-6.5391-3.0605-10.35-1.961-8.4004-1.6093-2.3398-3.1797-1.9004zm-64.1 76.748v-8e-3l-0.031 0.01z" onclick="document.getElementById('corse').submit();" onmouseover="document.querySelector('#ordre').innerHTML=('Corse')"  onmouseout="document.querySelector('#ordre').innerHTML=('S&eacute;lectionnez la r&eacute;gion de l universit&eacute;')"/>
 </svg>
-<p id="guadeloupe2">Guadeloupe</p>
-<p id="martinique2">Martinique</p>
-<p id="guyane2">Guyane</p>
-<p id="reunion2">Reunion</p>
-<p id="mayotte2">Mayotte</p>
-<p id="hautdefrance2">Haut de france</p>
-<p id="Normandie2">Normandie</p>
-<p id="Bretagne2">Bretagne</p>
-<p id="PaysdelaLoire2">Pays de la Loire</p>
-<p id="CentrevaldeLoire2">Centre val de Loire</p>
-<p id="iledefrance2">Ile de france</p>
-<p id="Grandest2">Grand est</p>
-<p id="BourgogneFrancheComte2">Bourgogne Franche Comte</p>
-<p id="NouvelleAquitaine2">Nouvelle Aquitaine</p>
-<p id="AuvergneRhoneAlpes2">Auvergne Rhone Alpes</p>
-<p id="Occitanie2">Occitanie</p>
-<p id="ProvenceAlpesCotedAzur2">Provence Alpes Cote dAzur</p>
-<p id="Corse2">Corse</p>
-
-
 <div id="pub"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1244565890243313"
                       crossorigin="anonymous"></script></div>
 <div id="basdepage">
