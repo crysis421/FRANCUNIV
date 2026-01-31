@@ -148,18 +148,7 @@ if ($_SESSION['profile_image'] != null) {
 </svg>
 <div id="pub"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1244565890243313"
                       crossorigin="anonymous"></script></div>
-<div id="basdepage">
-    <p id="auteurs">Auteurs:<br>
-        <br>
-         <form action="profil.php" method="post" ><input type="hidden" name="idfondateur" value="8"><submit> Fondateur : Romain </submit>></input></form>  <br>
-     <form action="profil.php" method="post" ><input type="hidden" name="idcofondateur" value="6"><submit> Co-fondateur : Kilian Stievenard</submit></input></form> </p>
-
-    <p id="support">Support: support@loga-univ.fr</p>
-    <h6 id="condition">Les universités et formations proviennent du site data.gouv.
-        <br>Les dossiers dates de 2026 (sauf master qui date de 2022).<br>
-        Pour toute demande d'ajout d'universités/formations,<br>
-        merci de contacter le support par mail </h6>
-</div>
+<?php require('basdepage.php') ?>
 <script src="LOGA.js"></script>
 </body>
 </html>

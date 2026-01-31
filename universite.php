@@ -99,16 +99,5 @@ if ($_SESSION['profile_image'] != null) {
     <h1 style="color:black "> Membre </h1>
 </div>
 
-<div id="basdepage">
-    <p id="auteurs">Auteurs:<br>
-        <br>
-        Fondateur : Romain Henry  <br>
-        Co-fondateur : Kilian Stievenard </p>
-
-    <p id="support">Support: support@loga-univ.fr</p>
-    <h6 id="condition">Les universités et formations proviennent du site data.gouv.
-        <br>Les dossiers dates de 2026 (sauf master qui date de 2022).<br>
-        Pour toute demande d'ajout d'universités/formations,<br>
-        merci de contacter le support par mail </h6>
-</div>
+<?php require('basdepage.php') ?>
 </body>
