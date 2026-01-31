@@ -76,24 +76,27 @@ if ($_SESSION['profile_image'] != null) {
     </label>
 </div>
 <div id="filtre">
-    <i class="fa-solid fa-folder-open" id="imgDossier"></i>
-    <div class="checkbox-inputs" id="filtrecheckbox">
-        <label class="checkbox">
-            <input type="checkbox" name="filtre" checked="" id="Licence">
+    <div class="radio-inputs" id="filtreradio">
+        <label class="radio">
+            <input type="radio" name="filtre" checked="" id="TOUS">
+            <span class="name">Tous</span><br>
+        </label>
+        <label class="radio">
+            <input type="radio" name="filtre" checked="" id="Licence">
             <span class="name">Licence</span><br>
         </label>
-        <label class="checkbox">
-            <input type="checkbox" name="filtre" id="BTS / BUT">
+        <label class="radio">
+            <input type="radio" name="filtre" id="BTS / BUT">
             <span class="name">BTS / BUT</span><br>
         </label>
 
-        <label class="checkbox">
-            <input type="checkbox" name="filtre" id="Master">
+        <label class="radio">
+            <input type="radio" name="filtre" id="Master">
             <span class="name">Master </span><br>
         </label>
 
-        <label class="checkbox">
-            <input type="checkbox" name="filtre" id="CPGE">
+        <label class="radio">
+            <input type="radio" name="filtre" id="CPGE">
             <span class="name">CPGE </span><br>
         </label>
     </div>

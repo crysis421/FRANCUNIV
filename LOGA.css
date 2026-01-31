@@ -739,7 +739,7 @@ path:hover,
 }
 
 /* Le panneau des checkboxes reste relatif au filtre */
-#filtrecheckbox {
+#filtreradio {
     display: none;
     position: absolute;
     top: 120%;      /* sous l’icône */
@@ -750,10 +750,6 @@ path:hover,
     box-shadow: 0 8px 20px rgba(0,0,0,0.35);
 }
 
-/* Exemple d’affichage quand tu ajoutes une classe .open via JS */
-#filtrecheckbox.open {
-    display: block;
-}
 
 /* ============================
    RESPONSIVE : empiler sur mobile
@@ -772,7 +768,7 @@ path:hover,
         text-align: center;
     }
 
-    #filtrecheckbox {
+    #filtreradio {
         top: 110%;    /* ajuste si besoin */
         right: 50%;
         transform: translateX(50%);

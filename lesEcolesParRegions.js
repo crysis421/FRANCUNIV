@@ -47,13 +47,9 @@ document.querySelector('#Privee').addEventListener("click", (event) => {
     }
 })
 
-document.querySelector("#imgDossier").addEventListener("click", event => {
-    if (document.getElementById("filtrecheckbox").style.display === 'block') {
-        document.getElementById("filtrecheckbox").style.display = 'none';
-    } else {
-        document.getElementById("filtrecheckbox").style.display = 'block';
-    }
-
+document.querySelector("#TOUS").addEventListener("click", event => {
+    supprimer()
+    resetResearch()
 })
 
 document.querySelector("#query").addEventListener("change", (event) => {
