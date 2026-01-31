@@ -166,8 +166,8 @@ if ($_SESSION['profile_image'] != null) {
 <div id="basdepage">
     <p id="auteurs">Auteurs:<br>
         <br>
-        Romain Henry : Fondateur <br>
-        Kilian Stievenard : Co-fondateur</p>
+         Fondateur : Romain Henry  <br>
+         Co-fondateur : Kilian Stievenard </p>
 
     <p id="support">Support: support@loga-univ.fr</p>
     <h6 id="condition">Les universités et formations proviennent du site data.gouv.
