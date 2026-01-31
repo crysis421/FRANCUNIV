@@ -150,5 +150,8 @@ if (isset($_GET['departement'])) {
         Romain Henry : Fondateur <br>
         Kilian Stievenard : Co-fondateur</p>
 </div>
-<script src="lesEcolesParRegions.js"></script>
+<script src="lesEcolesParRegions.js">
+    let donneesJS = <?php echo json_encode($formations); ?>;
+    console.log(donneesJS);
+</script>
 </body>
