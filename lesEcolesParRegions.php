@@ -6,6 +6,7 @@ try {
     $requete = $database->prepare("SELECT id,nom,banniere,etat FROM universite WHERE region=:region");
     $requete->bindParam(':region', $_GET['departement']);
     $requete->execute();
+    $requete = $requete->fetchAll();
     $formations = [];
     echo 'la';
     foreach($requete['id'] as $id){
