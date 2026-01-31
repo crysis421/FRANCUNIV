@@ -8,6 +8,6 @@ btn.addEventListener("click",()=>{
     input.focus();//i put focus in my input
 })
 
-document.querySelector('#haut de france').addEventListener("hover", (event)=>{
+document.querySelector('#hautdefrance').addEventListener("hover", (event)=>{
     console.log("hellojs")
 })
