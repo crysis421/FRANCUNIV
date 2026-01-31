@@ -29,7 +29,7 @@ elseif(!isset($_SESSION['email'])) {
             <a href="classement.php">
                 <i class="fa-solid fa-trophy"> &nbsp Classement</i></a><br>
             <a href="profil.php">
-                <i class="fa-solid fa-user"> &nbsp Profil</i></a>
+                <i class="fa-solid fa-user"> &nbsp Profil</i></a><br>
             <a href="modifiervotremotdepasse.php">
                 <i class="fa-solid fa-gear"> &nbsp Parametre</i></a>
         </ul>
