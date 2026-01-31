@@ -29,7 +29,7 @@ html {
 body {
     margin: 0;
     min-height: 100vh;
-    max-height: 100vw;/* CHANGEMENT : plus de 101vh */
+    max-height: 200vw;/* CHANGEMENT : plus de 101vh */
     font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--text-main);
     background:
