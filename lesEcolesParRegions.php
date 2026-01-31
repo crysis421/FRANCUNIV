@@ -78,7 +78,7 @@ if ($_SESSION['profile_image'] != null) {
 <div id="filtre">
     <div class="radio-inputs" id="filtreradio">
         <label class="radio">
-            <input type="radio" name="filtre" checked="" id="TOUS">
+            <input type="radio" name="filtre" checked="" id="Tous1">
             <span class="name">Tous</span><br>
         </label>
         <label class="radio">

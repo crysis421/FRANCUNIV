@@ -47,7 +47,7 @@ document.querySelector('#Privee').addEventListener("click", (event) => {
     }
 })
 
-document.querySelector("#TOUS").addEventListener("click", event => {
+document.querySelector("#Tous1").addEventListener("click", event => {
     supprimer()
     resetResearch()
 })
