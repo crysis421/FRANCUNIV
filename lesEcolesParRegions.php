@@ -1,12 +1,15 @@
 <?php session_start();
 require('Database.php');
+echo 'la';
 try {
     $database = Database::connect();
     $requete = $database->prepare("SELECT id,nom,banniere,etat FROM universite WHERE region=:region");
     $requete->bindParam(':region', $_GET['departement']);
     $requete->execute();
     $formations = [];
+    echo 'la';
     foreach($requete['id'] as $id){
+        echo 'la';
         $formation = $database->prepare("SELECT nom FROM formation WHERE univ=:univ");
         $formation->bindParam(':univ', $id);
         $formation->execute();
