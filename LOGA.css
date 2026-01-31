@@ -244,7 +244,8 @@ img[alt="LOGA"] {
    TITRE & TEXTE
    ============================ */
 
-#ordre{position: fixed;
+#ordre{
+    position: fixed;
     margin-top: 110px;
     text-align: center;
     font-size: clamp(1.4rem, 2.2vw, 2rem); /* CHANGEMENT : plus de 2vw direct */
@@ -274,7 +275,7 @@ p {
 #svg-carte-france {
     display: block;
     width: min(900px, 100% - 32px);   /* CHANGEMENT : responsive */
-    margin: 40px auto 0 auto;
+    margin: 200px auto 0 auto;
 }
 
 /* Styles des régions (SVG) */
