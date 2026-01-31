@@ -1,55 +1,55 @@
 document.querySelector('#hautdefrance1').addEventListener("mouseover", (event) => {
     console.log("hellojs")
 })
-document.querySelector('#hautdefrance1').addEventListener("mouseover", (event) => {
+document.querySelector('#guadeloupe1').addEventListener("mouseover", (event) => {
     console.log("hellojs")
 })
-document.querySelector('#hautdefrance1').addEventListener("mouseover", (event) => {
+document.querySelector('#martinique1').addEventListener("mouseover", (event) => {
     console.log("hellojs")
 })
-document.querySelector('#hautdefrance1').addEventListener("mouseover", (event) => {
+document.querySelector('#guyane1').addEventListener("mouseover", (event) => {
     console.log("hellojs")
 })
-document.querySelector('#hautdefrance1').addEventListener("mouseover", (event) => {
+document.querySelector('#reunion1').addEventListener("mouseover", (event) => {
     console.log("hellojs")
 })
-document.querySelector('#hautdefrance1').addEventListener("mouseover", (event) => {
+document.querySelector('#mayotte1').addEventListener("mouseover", (event) => {
     console.log("hellojs")
 })
-document.querySelector('#hautdefrance1').addEventListener("mouseover", (event) => {
+document.querySelector('#Normandie1').addEventListener("mouseover", (event) => {
     console.log("hellojs")
 })
-document.querySelector('#hautdefrance1').addEventListener("mouseover", (event) => {
+document.querySelector('#Bretagne1').addEventListener("mouseover", (event) => {
     console.log("hellojs")
 })
-document.querySelector('#hautdefrance1').addEventListener("mouseover", (event) => {
+document.querySelector('#PaysdelaLoire1').addEventListener("mouseover", (event) => {
     console.log("hellojs")
 })
-document.querySelector('#hautdefrance1').addEventListener("mouseover", (event) => {
+document.querySelector('#CentrevaldeLoire1').addEventListener("mouseover", (event) => {
     console.log("hellojs")
 })
-document.querySelector('#hautdefrance1').addEventListener("mouseover", (event) => {
+document.querySelector('#iledefrance1').addEventListener("mouseover", (event) => {
     console.log("hellojs")
 })
-document.querySelector('#hautdefrance1').addEventListener("mouseover", (event) => {
+document.querySelector('#Grandest1').addEventListener("mouseover", (event) => {
     console.log("hellojs")
 })
-document.querySelector('#hautdefrance1').addEventListener("mouseover", (event) => {
+document.querySelector('#BourgogneFrancheComte1').addEventListener("mouseover", (event) => {
     console.log("hellojs")
 })
-document.querySelector('#hautdefrance1').addEventListener("mouseover", (event)=>{
+document.querySelector('#NouvelleAquitaine1').addEventListener("mouseover", (event)=>{
     console.log("hellojs")
 })
-document.querySelector('#hautdefrance1').addEventListener("mouseover", (event)=>{
+document.querySelector('#AuvergneRhoneAlpes1').addEventListener("mouseover", (event)=>{
     console.log("hellojs")
 })
-document.querySelector('#hautdefrance1').addEventListener("mouseover", (event)=>{
+document.querySelector('#Occitanie1').addEventListener("mouseover", (event)=>{
     console.log("hellojs")
 })
-document.querySelector('#hautdefrance1').addEventListener("mouseover", (event)=>{
+document.querySelector('#ProvenceAlpesCotedAzur1').addEventListener("mouseover", (event)=>{
     console.log("hellojs")
 })
-document.querySelector('#hautdefrance1').addEventListener("mouseover", (event)=>{
+document.querySelector('#Corse').addEventListener("mouseover", (event)=>{
     console.log("hellojs")
 })
 
