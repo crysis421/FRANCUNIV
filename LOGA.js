@@ -1,3 +1,3 @@
-document.querySelector('#hautDeFrance').addEventListener("mouseover", (event)=>{
+document.querySelector('#hautdefrance1').addEventListener("mouseover", (event)=>{
     console.log("hellojs")
 })
