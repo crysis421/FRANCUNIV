@@ -17,24 +17,7 @@ elseif(!isset($_SESSION['email'])) {
 <body>
 <img src="logo-loga.png" alt="LOGA"/>
 
-<nav role="navigation">
-    <div id="menuToggle">
-        <input type="checkbox"/>
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul id="menu">
-            <a href="index.php">
-                <i class="fa-solid fa-house"> &nbsp Home</i></a><br>
-            <a href="classement.php">
-                <i class="fa-solid fa-trophy"> &nbsp Classement</i></a><br>
-            <a href="profil.php">
-                <i class="fa-solid fa-user"> &nbsp Profil</i></a><br>
-            <a href="modifiervotremotdepasse.php">
-                <i class="fa-solid fa-gear"> &nbsp Parametre</i></a>
-        </ul>
-    </div>
-</nav>
+<?php require('menu.php') ?>
 <a id="signup" href="login.php">
     <button class="button">Sign Up / Login</button>
 </a>
