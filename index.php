@@ -53,7 +53,7 @@ if ($_SESSION['profile_image'] != null) {
     />
 </div>
 
-<script src="LOGA.js"></script>
+
 
 <br><br><br><br>
 
@@ -175,5 +175,6 @@ if ($_SESSION['profile_image'] != null) {
         Pour toute demande d'ajout d'universités/formations,<br>
         merci de contacter le support par mail </h6>
 </div>
+<script src="LOGA.js"></script>
 </body>
 </html>
