@@ -8,13 +8,11 @@ try {
     $requete->execute();
     $requete = $requete->fetchAll();
     $formations = [];
-    echo 'la';
-    foreach($requete['id'] as $id){
-        echo 'la';
+    foreach($requete as $row){
         $formation = $database->prepare("SELECT nom FROM formation WHERE univ=:univ");
-        $formation->bindParam(':univ', $id);
+        $formation->bindParam(':univ', $row['id']);
         $formation->execute();
-        $formations[$id] = $formation->fetchAll();
+        $formations[$row['nom']] = $formation->fetchAll();
     }
     $database = null;
 } catch (Exception $e) {
