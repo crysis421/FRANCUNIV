@@ -167,8 +167,8 @@ if ($_SESSION['profile_image'] != null) {
 <div id="basdepage">
     <p id="auteurs">Auteurs:<br>
         <br>
-         Fondateur : Romain Henry  <br>
-         Co-fondateur : Kilian Stievenard </p>
+        Fondateur : <form action="profil.php" method="post" ><input type="hidden" name="idfondateur" value="8">Romain Henry</input></form>  <br>
+    Co-fondateur : <form action="profil.php" method="post" ><input type="hidden" name="idcofondateur" value="6">Kilian Stievenard</input></form> </p>
 
     <p id="support">Support: support@loga-univ.fr</p>
     <h6 id="condition">Les universités et formations proviennent du site data.gouv.
