@@ -1,6 +1,9 @@
 <?php
 session_start();
-if (!isset($_SESSION['email'])) {
+if(!isset($_POST['idfondateur'])||!isset($_POST['idcofondateur'])){
+
+}
+elseif(!isset($_SESSION['email'])) {
     header('Location: login.php');
     exit();
 }
@@ -27,6 +30,8 @@ if (!isset($_SESSION['email'])) {
                 <i class="fa-solid fa-trophy"> &nbsp Classement</i></a><br>
             <a href="profil.php">
                 <i class="fa-solid fa-user"> &nbsp Profil</i></a>
+            <a href="modifiervotremotdepasse.php">
+                <i class="fa-solid fa-gear"> &nbsp Paramètre</i></a>
         </ul>
     </div>
 </nav>

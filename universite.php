@@ -42,6 +42,8 @@ if ($_SESSION['profile_image'] != null) {
                 <i class="fa-solid fa-trophy"> &nbsp Classement</i></a><br>
             <a href="profil.php">
                 <i class="fa-solid fa-user"> &nbsp Profil</i></a>
+            <a href="modifiervotremotdepasse.php">
+                <i class="fa-solid fa-gear"> &nbsp Paramètre</i></a>
         </ul>
     </div>
 </nav>

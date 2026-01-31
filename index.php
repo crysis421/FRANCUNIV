@@ -31,6 +31,8 @@ if ($_SESSION['profile_image'] != null) {
                 <i class="fa-solid fa-trophy"> &nbsp Classement</i></a><br>
             <a href="profil.php">
                 <i class="fa-solid fa-user"> &nbsp Profil</i></a>
+            <a href="modifiervotremotdepasse.php">
+                <i class="fa-solid fa-gear"> &nbsp Paramètre</i></a>
 
         </ul>
     </div>
@@ -167,8 +169,8 @@ if ($_SESSION['profile_image'] != null) {
 <div id="basdepage">
     <p id="auteurs">Auteurs:<br>
         <br>
-        Fondateur : <form action="profil.php" method="post" ><input type="hidden" name="idfondateur" value="8">Romain Henry</input></form>  <br>
-    Co-fondateur : <form action="profil.php" method="post" ><input type="hidden" name="idcofondateur" value="6">Kilian Stievenard</input></form> </p>
+        Fondateur : <form action="profil.php" method="post" ><input type="hidden" name="idfondateur" value="8"><submit>Romain </submit>></input></form>  <br>
+    Co-fondateur : <form action="profil.php" method="post" ><input type="hidden" name="idcofondateur" value="6"><submit>Kilian Stievenard</submit></input></form> </p>
 
     <p id="support">Support: support@loga-univ.fr</p>
     <h6 id="condition">Les universités et formations proviennent du site data.gouv.
