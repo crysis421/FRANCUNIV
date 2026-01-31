@@ -18,25 +18,7 @@ if ($_SESSION['profile_image'] != null) {
 
 <img src="logo-loga.png" alt="LOGA"/>
 <a href="profil.php"><img id="pp" src="<?= htmlspecialchars($avatar) ?>" alt="Photo de profil"></a>
-<nav role="navigation">
-    <div id="menuToggle">
-        <input type="checkbox"/>
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul id="menu">
-            <a href="index.php">
-                <i class="fa-solid fa-house"> &nbsp Home</i></a><br>
-            <a href="classement.php">
-                <i class="fa-solid fa-trophy"> &nbsp Classement</i></a><br>
-            <a href="profil.php">
-                <i class="fa-solid fa-user"> &nbsp Profil</i></a><br>
-            <a href="modifiervotremotdepasse.php">
-                <i class="fa-solid fa-gear"> &nbsp Parametre</i></a>
-
-        </ul>
-    </div>
-</nav>
+<?php require('menu.php') ?>
 <div class="group">
     <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
         <g>
