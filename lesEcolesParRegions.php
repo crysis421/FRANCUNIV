@@ -100,7 +100,7 @@ if (isset($_GET['departement'])) {
 
 ?>
 
-<div id="liste">
+<div id="liste"><!-- 12-->
     <ul id="liste">
         <?php foreach ($requete as $row) {
             ?>
