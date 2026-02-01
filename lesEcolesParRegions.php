@@ -147,7 +147,7 @@ if (isset($_GET['departement'])) {
                         trouve = true;
                     }
                 }
-                if(trouve) {
+                if(!trouve) {
                     liste["autre"].add(univ);
                 }
             }
