@@ -740,7 +740,7 @@ path:hover,
 /* Icône "filtre" (dossier) à droite, au même niveau vertical que les radios */
 #filtre {
     position: absolute;     /* même hauteur que #radio (ligne horizontale) */
-    right: 400px;
+    left:50%;
     width: 500px;
     text-align: center;
     user-select: none;
@@ -884,4 +884,6 @@ path:hover,
 #modifiervotremotdepasse:hover{
     color:red;
 }
-
+#liste{
+    margin-top:100px
+}
