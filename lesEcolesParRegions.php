@@ -71,25 +71,25 @@ if ($_SESSION['profile_image'] != null) {
 <div id="filtre" class="radio-inputs">
     <div class="radio-inputs" id="filtreradio">
         <label class="radio">
-            <input type="radio" name="filtre" checked="" id="Tous1">
+            <input type="radio" name="radio" checked="" id="Tous1">
             <span class="name">Tous</span><br>
         </label>
         <label class="radio">
-            <input type="radio" name="filtre" checked="" id="Licence">
+            <input type="radio" name="radio" checked="" id="Licence">
             <span class="name">Licence</span><br>
         </label>
         <label class="radio">
-            <input type="radio" name="filtre" id="BTS/BUT">
+            <input type="radio" name="radio" id="BTS/BUT">
             <span class="name">BTS / BUT</span><br>
         </label>
 
         <label class="radio">
-            <input type="radio" name="filtre" id="Master">
+            <input type="radio" name="radio" id="Master">
             <span class="name">Master </span><br>
         </label>
 
         <label class="radio">
-            <input type="radio" name="filtre" id="CPGE">
+            <input type="radio" name="radio" id="CPGE">
             <span class="name">CPGE </span><br>
         </label>
     </div>
