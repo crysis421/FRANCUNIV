@@ -61,3 +61,5 @@ document.querySelector("#query").addEventListener("input", (event) => {
         }
     }
 })
+console.log(etat_pu.length)
+console.log(etat_pr.length)
