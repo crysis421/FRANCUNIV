@@ -100,11 +100,10 @@ if (isset($_GET['departement'])) {
 
 ?>
 
-<div id="liste"><!-- 12-->
+<div id="liste">
     <ul id="liste">
-        <?php $i= 0;
+        <?php
         foreach ($requete as $row) {
-            $i+=1
             ?>
 
             <form id="univ" action="universite.php" method="get" class="<?php if ($row['etat'] == 1) {
@@ -129,30 +128,30 @@ if (isset($_GET['departement'])) {
     let donneesJS = <?php echo json_encode($formations); ?>;
     console.log(donneesJS);
     document.querySelector("#Licence").addEventListener("click", e => {
-        supprimer()
-        resetResearch()
-        for (let eKey in donneesJS) {
-            let trouve = false;
-            for (let element in donneesJS[eKey]) {
-                if(donneesJS[eKey][element]['nom'].includes('Licence')){
-                    trouve = true;
+            supprimer()
+            resetResearch()
+            for (let eKey in donneesJS) {
+                let trouve = false;
+                for (let element in donneesJS[eKey]) {
+                    if (donneesJS[eKey][element]['nom'].includes('Licence')) {
+                        trouve = true;
+                    }
+                }
+                if (trouve) {
+                    etat_pr.forEach(element => {
+                        console.log(element.innerHTML, ' : La : ', eKey);
+                        if (element.querySelector("p").innerHTML === eKey) {
+                            document.querySelector("#liste").appendChild(element)
+                        }
+                    })
+                    etat_pu.forEach(element => {
+                        if (element.innerHTML === eKey) {
+                            document.querySelector("#liste").appendChild(element)
+                        }
+                    })
                 }
             }
-            if (trouve) {
-                etat_pr.forEach(element => {
-                    console.log(element.querySelector("input").innerHTML,' : La : ',eKey);
-                    if (element.querySelector("input").innerHTML === eKey) {
-                        document.querySelector("#liste").appendChild(element)
-                    }
-                })
-                etat_pu.forEach(element => {
-                    if (element.innerHTML === eKey) {
-                        document.querySelector("#liste").appendChild(element)
-                    }
-                })
-            }
         }
-    }
     )
 </script>
 
