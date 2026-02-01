@@ -78,10 +78,13 @@ if ($_SESSION['profile_image'] != null) {
         <span class="name">Licence</span><br>
     </label>
     <label class="radio">
-        <input type="radio" name="radio2" id="BTS/BUT">
-        <span class="name">BTS / BUT</span><br>
+        <input type="radio" name="radio2" id="BTS">
+        <span class="name">BTS</span><br>
     </label>
-
+    <label class="radio">
+        <input type="radio" name="radio2" id="BUT">
+        <span class="name">BUT</span><br>
+    </label>
     <label class="radio">
         <input type="radio" name="radio2" id="Master">
         <span class="name">Master </span><br>
@@ -153,6 +156,10 @@ if (isset($_GET['departement'])) {
         )
     <?php }
     cherche('Licence');
+    cherche('BTS');
+    cherche('BUT');
+    cherche('Master');
+    cherche('CPGE');
 
     ?>
 </script>
