@@ -21,7 +21,7 @@
                 <i class="fa-solid fa-trophy"> &nbsp Classement</i></a><br>
             <a href="profil.php">
                 <i class="fa-solid fa-user"> &nbsp Profil</i></a><br>
-            <a href="modifiervotremotdepasse.php">
+            <a href="parametre.php">
                 <i class="fa-solid fa-gear"> &nbsp Parametre</i></a>
 
         </ul>
