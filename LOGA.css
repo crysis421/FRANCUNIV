@@ -876,6 +876,9 @@ path:hover,
     display:flex;
     justify-content: center;
 }
-
+#listeformation{
+    display:flex;
+    justify-content: center;
+}
 
 
