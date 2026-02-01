@@ -25,23 +25,23 @@ function supprimer() {
 }
 
 
-function event(etat) {
+function changerlaliste(eta) {
     supprimer()
     resetResearch()
-    for (let etatPrKey of etat) {
+    for (let etatPrKey of eta) {
         document.querySelector("#liste").appendChild(etatPrKey)
     }
 }
 
-document.querySelector('#Tous').addEventListener("click", (event) => {
-    event(etat_tt)
-})
-document.querySelector('#Public').addEventListener("click", (event) => {
-    event(etat_pu)
-})
-document.querySelector('#Privee').addEventListener("click", (event) => {
-    event(etat_pr)
-})
+document.querySelector('#Tous').addEventListener("click",
+    changerlaliste(etat_tt)
+)
+document.querySelector('#Public').addEventListener("click",
+    changerlaliste(etat_pu)
+)
+document.querySelector('#Privee').addEventListener("click",
+    changerlaliste(etat_pr)
+)
 
 document.querySelector("#query").addEventListener("input", (event) => {
     supprimer()
