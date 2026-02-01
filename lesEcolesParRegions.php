@@ -132,7 +132,7 @@ if (isset($_GET['departement'])) {
         for (let eKey in donneesJS) {
             let trouve = false;
             for(let element in donneesJS[eKey]){
-                if(donneesJS[eKey][element]['nom'].contains('Licence')){
+                if(donneesJS[eKey][element]['nom'].innerHTML.contains('Licence')){
                     trouve = true;
                 }
             }
