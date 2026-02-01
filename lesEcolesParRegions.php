@@ -95,7 +95,7 @@ if ($_SESSION['profile_image'] != null) {
         <span class="name">CPGE</span><br>
     </label>
     <label class="radio">
-        <input type="radio" name="radio2" id="D.E">
+        <input type="radio" name="radio2" id="DE">
         <span class="name">D.E</span><br>
     </label>
     <label class="radio">
@@ -187,7 +187,7 @@ if (isset($_GET['departement'])) {
     mettreEvent(all['BTS'],'BTS')
     mettreEvent(all['Master'],'Master')
     mettreEvent(all['CPGE'],'CPGE')
-    mettreEvent(all['D.E'],'D.E')
+    mettreEvent(all['D.E'],'DE')
     mettreEvent(all['autre'],'Autre')
     mettreEvent(mergeSets(all['Licence'],all['BUT'],all['BTS'],all['Master'],all['D.E'],all['CPGE'],all['autre']),'Tous1')
 </script>
