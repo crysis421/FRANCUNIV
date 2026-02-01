@@ -7,7 +7,7 @@ try {
     $requete->execute();
     $requete = $requete->fetchAll();
     $formations = [];
-    foreach($requete as $row) {
+    foreach ($requete as $row) {
         $formation = $database->prepare("SELECT nom FROM formation WHERE univ=:univ");
         $formation->bindParam(':univ', $row['id']);
         $formation->execute();
@@ -69,28 +69,28 @@ if ($_SESSION['profile_image'] != null) {
     </label>
 </div>
 <div id="filtre" class="radio-inputs">
-        <label class="radio">
-            <input type="radio" name="radio2" checked="" id="Tous1">
-            <span class="name">Tous</span><br>
-        </label>
-        <label class="radio">
-            <input type="radio" name="radio2" checked="" id="Licence">
-            <span class="name">Licence</span><br>
-        </label>
-        <label class="radio">
-            <input type="radio" name="radio2" id="BTS/BUT">
-            <span class="name">BTS / BUT</span><br>
-        </label>
+    <label class="radio">
+        <input type="radio" name="radio2" checked="" id="Tous1">
+        <span class="name">Tous</span><br>
+    </label>
+    <label class="radio">
+        <input type="radio" name="radio2" checked="" id="Licence">
+        <span class="name">Licence</span><br>
+    </label>
+    <label class="radio">
+        <input type="radio" name="radio2" id="BTS/BUT">
+        <span class="name">BTS / BUT</span><br>
+    </label>
 
-        <label class="radio">
-            <input type="radio" name="radio2" id="Master">
-            <span class="name">Master </span><br>
-        </label>
+    <label class="radio">
+        <input type="radio" name="radio2" id="Master">
+        <span class="name">Master </span><br>
+    </label>
 
-        <label class="radio">
-            <input type="radio" name="radio2" id="CPGE">
-            <span class="name">CPGE </span><br>
-        </label>
+    <label class="radio">
+        <input type="radio" name="radio2" id="CPGE">
+        <span class="name">CPGE </span><br>
+    </label>
 </div>
 <?php
 if (isset($_GET['departement'])) {
@@ -127,17 +127,27 @@ if (isset($_GET['departement'])) {
     let donneesJS = <?php echo json_encode($formations); ?>;
     console.log(donneesJS);
     document.querySelector("#Licence").addEventListener("click", e => {
-        supprimer()
-        resetResearch()
-        for (let eKey in donneesJS) {
-            let trouve = false;
-            for(let element in donneesJS[eKey]){
-                console.log(donneesJS[eKey][element]['nom'],' ',typeof donneesJS[eKey][element]['nom']);
-            if(trouve){
-                etat_pr.forEach(element => {if(element.innerHTML === eKey){document.querySelector("#liste").appendChild(element)}})
-                etat_pu.forEach(element => {if(element.innerHTML === eKey){document.querySelector("#liste").appendChild(element)}})
+            supprimer()
+            resetResearch()
+            for (let eKey in donneesJS) {
+                let trouve = false;
+                for (let element in donneesJS[eKey]) {
+                    console.log(donneesJS[eKey][element]['nom'], ' ', typeof donneesJS[eKey][element]['nom']);
+                    if (trouve) {
+                        etat_pr.forEach(element => {
+                            if (element.innerHTML === eKey) {
+                                document.querySelector("#liste").appendChild(element)
+                            }
+                        })
+                        etat_pu.forEach(element => {
+                            if (element.innerHTML === eKey) {
+                                document.querySelector("#liste").appendChild(element)
+                            }
+                        })
+                    }
+                }
             }
         }
-    })
+    )
 </script>
 </body>
