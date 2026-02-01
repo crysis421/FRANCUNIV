@@ -1,6 +1,7 @@
 let etat_pu = document.querySelectorAll('.public')
 let etat_pr = document.querySelectorAll('.privee')
-console.log(etat_pu, etat_pr)
+let all = etat_pr + etat_pr
+console.log(etat_pu, etat_pr , all)
 
 function resetResearch(){
     document.querySelector('#query').value = '';
@@ -45,11 +46,6 @@ document.querySelector('#Privee').addEventListener("click", (event) => {
     for (let etatPrkey of etat_pr) {
         document.querySelector("#liste").appendChild(etatPrkey)
     }
-})
-
-document.querySelector("#Tous1").addEventListener("click", event => {
-    supprimer()
-    resetResearch()
 })
 
 document.querySelector("#query").addEventListener("input", (event) => {
