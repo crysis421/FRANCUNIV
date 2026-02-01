@@ -138,6 +138,6 @@ if (isset($_GET['departement'])) {
                 etat_pu.forEach(element => {if(element.innerHTML === eKey){document.querySelector("#liste").appendChild(element)}})
             }
         }
-    });
+    })
 </script>
 </body>
