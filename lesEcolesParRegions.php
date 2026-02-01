@@ -126,10 +126,19 @@ if (isset($_GET['departement'])) {
     console.log('donneesJS.id');
     let donneesJS = <?php echo json_encode($formations); ?>;
     console.log(donneesJS);
-    document.querySelector("#Tous1").addEventListener("click", e => {
+    document.querySelector("#Licence").addEventListener("click", e => {
+        supprimer()
+        resetResearch()
         for (let eKey in donneesJS) {
+            let trouve = false;
             for(let element in donneesJS[eKey]){
-                console.log(donneesJS[eKey][element]['nom']);
+                if(donneesJS[eKey][element]['nom'].innerHTML.contains('Licence')){
+                    trouve = true;
+                }
+            }
+            if(trouve){
+                etat_pr.forEach(element => {if(element.innerHTML === eKey){document.querySelector("#liste").appendChild(element)}})
+                etat_pu.forEach(element => {if(element.innerHTML === eKey){document.querySelector("#liste").appendChild(element)}})
             }
         }
     });
