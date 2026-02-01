@@ -1,9 +1,11 @@
 let etat_pu = document.querySelectorAll('.public')
 let etat_pr = document.querySelectorAll('.privee')
+etat_tt = etat_pu.concat(etat_pr)
 
-function resetResearch(){
+function resetResearch() {
     document.querySelector('#query').value = '';
 }
+
 function supprimer() {
     for (let i of etat_pu) {
         try {
@@ -21,43 +23,43 @@ function supprimer() {
     }
 }
 
-document.querySelector('#Tous').addEventListener("click", (event) => {
+function afficher(l, index) {
+    supprimer()
+    for (let i = index * 12; i < (index + 1) * 12; i++) {
+        document.querySelector('#liste').appendChild(l[i])
+    }
+}
+
+function event(etat,index) {
     supprimer()
     resetResearch()
-    for (let etatPrKey of etat_pr) {
-        document.querySelector("#liste").appendChild(etatPrKey)
+    let liste
+    for (let etatPrKey of etat) {
+        liste.push(etatPrKey)
     }
-    for (let etatPukey of etat_pu) {
-        document.querySelector("#liste").appendChild(etatPukey)
-    }
+    afficher(liste,index)
+}
+
+document.querySelector('#Tous').addEventListener("click", (event) => {
+    event(etat_tt)
 })
 document.querySelector('#Public').addEventListener("click", (event) => {
-    supprimer()
-    resetResearch()
-    for (let etatPukey of etat_pu) {
-        document.querySelector("#liste").appendChild(etatPukey)
-    }
+    event(etat_pu)
 })
 document.querySelector('#Privee').addEventListener("click", (event) => {
-    supprimer()
-    resetResearch()
-    for (let etatPrkey of etat_pr) {
-        document.querySelector("#liste").appendChild(etatPrkey)
-    }
+    event(etat_pr)
 })
 
 document.querySelector("#query").addEventListener("input", (event) => {
     supprimer()
     for (let etatPrKey of etat_pr) {
-        if(etatPrKey.innerHTML.toLowerCase().includes(document.getElementById("query").value.toLowerCase())) {
+        if (etatPrKey.innerHTML.toLowerCase().includes(document.getElementById("query").value.toLowerCase())) {
             document.querySelector("#liste").appendChild(etatPrKey)
         }
     }
     for (let etatPrKey of etat_pu) {
-        if(etatPrKey.innerHTML.toLowerCase().includes(document.getElementById("query").value.toLowerCase())) {
+        if (etatPrKey.innerHTML.toLowerCase().includes(document.getElementById("query").value.toLowerCase())) {
             document.querySelector("#liste").appendChild(etatPrKey)
         }
     }
 })
-console.log(etat_pu.length)
-console.log(etat_pr.length)
