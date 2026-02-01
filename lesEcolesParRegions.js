@@ -33,13 +33,13 @@ function changerlaliste(eta) {
     }
 }
 
-document.querySelector('#Tous').addEventListener("click",
+document.querySelector('#Tous').addEventListener("click",even =>
     changerlaliste(etat_tt)
 )
-document.querySelector('#Public').addEventListener("click",
+document.querySelector('#Public').addEventListener("click",event =>
     changerlaliste(etat_pu)
 )
-document.querySelector('#Privee').addEventListener("click",
+document.querySelector('#Privee').addEventListener("click",event =>
     changerlaliste(etat_pr)
 )
 
