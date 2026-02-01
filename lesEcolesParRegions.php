@@ -115,7 +115,7 @@ if (isset($_GET['departement'])) {
                    onmouseover="this.style.backgroundImage = 'url(<?= htmlspecialchars($row['banniere']) ?>)'"
                    onmouseout="this.style.backgroundImage = ''">
                     <input type="hidden" name="universite" value="<?= htmlspecialchars($row['nom']) ?>"/>
-                    <?= htmlspecialchars($row['nom']) ?><br><br><br><br>
+                    <p><?= htmlspecialchars($row['nom']) ?></p><br><br><br><br>
                 </a>
             </form>
         <?php } ?>
@@ -139,7 +139,7 @@ if (isset($_GET['departement'])) {
                 }
                 if (trouve) {
                     etat_pr.forEach(element => {
-                        console.log(element.innerHTML, ' : La : ', eKey);
+                        console.log(element.querySelector("p").innerHTML, ' : La : ', eKey);
                         if (element.querySelector("p").innerHTML === eKey) {
                             document.querySelector("#liste").appendChild(element)
                         }
