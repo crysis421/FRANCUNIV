@@ -874,6 +874,7 @@ path:hover,
 }
 #parametre{
     display:flex;
+    justify-content: center;
 }
 
 

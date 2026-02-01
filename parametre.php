@@ -14,10 +14,8 @@ if (!isset($_SESSION['email'])) {
 </head>
 <body>
 <div id="parametre">
-    <h1>Parametres</h1>
-    <br>
-    <br>
-    <a id="modifiervotremotdepasse" href="modifiervotremotdepasse.php">Modifier votre mot de passe </a>
+    <h2>Parametres</h2>
+    <p><a id="modifiervotremotdepasse" href="modifiervotremotdepasse.php">Modifier votre mot de passe </a></p>
 
 </div>
 </body>
