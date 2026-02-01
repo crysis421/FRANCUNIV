@@ -12,6 +12,7 @@ try {
         $formation->bindParam(':univ', $row['id']);
         $formation->execute();
         $formations[$row['nom']] = $formation->fetchAll();
+        echo $row['nom'];
     }
     $database = null;
 } catch (Exception $e) {
@@ -125,6 +126,6 @@ if (isset($_GET['departement'])) {
 <script>
     console.log('donneesJS.id');
     let donneesJS = <?php echo json_encode($formations); ?>;
-    console.log('donneesJS.id');
+    console.log(donneesJS);
 </script>
 </body>
