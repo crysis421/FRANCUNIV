@@ -141,13 +141,9 @@ if (isset($_GET['departement'])) {
                     }
                     if (trouve) {
                         console.log(eKey);
-                        etat_pr.forEach(element => {
+                        etat_tt.forEach(element => {
+                            console.log(element.querySelector("p").innerHTML);
                             if (element.querySelector("p").innerHTML === eKey) {
-                                document.querySelector("#liste").appendChild(element)
-                            }
-                        })
-                        etat_pu.forEach(element => {
-                            if (element.innerHTML === eKey) {
                                 document.querySelector("#liste").appendChild(element)
                             }
                         })
