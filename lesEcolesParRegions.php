@@ -128,7 +128,11 @@ if (isset($_GET['departement'])) {
     console.log(donneesJS);
     document.querySelector("#Tous1").addEventListener("click", e => {
         for (let eKey in donneesJS) {
-            console.log(eKey);
+            for(let element in donneesJS[eKey]){
+                if(element.contains('BUT')){
+                    console.log(element)
+                }
+            }
         }
     });
 </script>
