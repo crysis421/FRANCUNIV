@@ -70,25 +70,25 @@ if ($_SESSION['profile_image'] != null) {
 </div>
 <div id="filtre" class="radio-inputs">
         <label class="radio">
-            <input type="radio" name="radio" checked="" id="Tous1">
+            <input type="radio" name="radio2" checked="" id="Tous1">
             <span class="name">Tous</span><br>
         </label>
         <label class="radio">
-            <input type="radio" name="radio" checked="" id="Licence">
+            <input type="radio" name="radio2" checked="" id="Licence">
             <span class="name">Licence</span><br>
         </label>
         <label class="radio">
-            <input type="radio" name="radio" id="BTS/BUT">
+            <input type="radio" name="radio2" id="BTS/BUT">
             <span class="name">BTS / BUT</span><br>
         </label>
 
         <label class="radio">
-            <input type="radio" name="radio" id="Master">
+            <input type="radio" name="radio2" id="Master">
             <span class="name">Master </span><br>
         </label>
 
         <label class="radio">
-            <input type="radio" name="radio" id="CPGE">
+            <input type="radio" name="radio2" id="CPGE">
             <span class="name">CPGE </span><br>
         </label>
 </div>
@@ -129,7 +129,7 @@ if (isset($_GET['departement'])) {
     document.querySelector("#Tous1").addEventListener("click", e => {
         for (let eKey in donneesJS) {
             for(let element in donneesJS[eKey]){
-                console.log(donneesJS[eKey][element]);
+                console.log(donneesJS[eKey][element]['nom']);
             }
         }
     });
