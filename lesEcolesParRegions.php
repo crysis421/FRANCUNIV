@@ -140,12 +140,15 @@ if (isset($_GET['departement'])) {
         }
         for (let univ in donneesJS) {
             for (let formation in donneesJS[univ]) {
+                let trouve = false;
                 for (let key in liste) {
                     if (donneesJS[univ][formation]['nom'].includes(key)) {
                         liste[key].add(univ);
-                    } else {
-                        liste['autre'].add(univ);
+                        trouve = true;
                     }
+                }
+                if(trouve) {
+                    liste["autre"].add(univ);
                 }
             }
         }
