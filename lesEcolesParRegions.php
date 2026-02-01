@@ -136,6 +136,7 @@ if (isset($_GET['departement'])) {
                     trouve = true;
                 }
             }
+            console.log(trouve);
             if (trouve) {
                 etat_pr.forEach(element => {
                     if (element.innerHTML === eKey) {
