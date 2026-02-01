@@ -137,7 +137,8 @@ if (isset($_GET['departement'])) {
                 }
             }
             if(trouve){
-                //document.querySelector("#liste").appendChild()
+                etat_pr.forEach(element => {if(element.innerHTML === eKey){document.querySelector("#liste").appendChild(element)}})
+                etat_pu.forEach(element => {if(element.innerHTML === eKey){document.querySelector("#liste").appendChild(element)}})
             }
         }
     });

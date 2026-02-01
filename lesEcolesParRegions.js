@@ -1,7 +1,7 @@
 let etat_pu = document.querySelectorAll('.public')
 let etat_pr = document.querySelectorAll('.privee')
-let all = etat_pr + etat_pr
-console.log(etat_pu, etat_pr , all)
+
+console.log(etat_pu, etat_pr)
 
 function resetResearch(){
     document.querySelector('#query').value = '';
