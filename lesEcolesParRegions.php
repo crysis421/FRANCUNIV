@@ -108,9 +108,9 @@ if (isset($_GET['departement'])) {
             ?>
 
             <form id="univ" action="universite.php" method="get" class="<?php if ($row['etat'] == 1) {
-                echo htmlspecialchars("public");
+                echo htmlspecialchars("public tout");
             } else {
-                echo htmlspecialchars("privee");
+                echo htmlspecialchars("privee tout");
             } ?>">
                 <a onclick="this.closest('form').submit();" class="nomecole"
                    onmouseover="this.style.backgroundImage = 'url(<?= htmlspecialchars($row['banniere']) ?>)'"
