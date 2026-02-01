@@ -13,6 +13,7 @@ if (!isset($_SESSION['email'])) {
 
 </head>
 <body>
+<?php require('menu.php') ?>
 <div id="parametre">
     <ul><h2>Parametres</h2>
         <a id="modifiervotremotdepasse" href="modifiervotremotdepasse.php">Modifier votre mot de passe </a></p></ul>
