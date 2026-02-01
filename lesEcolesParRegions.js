@@ -1,7 +1,7 @@
 let etat_pu = document.querySelectorAll('.public');
 let etat_pr = document.querySelectorAll('.privee');
 let etat_tt=[]
-let etat_tt = etat_tt.concat(etat_pr,etat_pu);
+let etat_tt1 = etat_tt.concat(etat_pr,etat_pu);
 
 function resetResearch() {
     document.querySelector('#query').value = '';
