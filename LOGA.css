@@ -872,6 +872,9 @@ path:hover,
     text-decoration: none;
     color: #1a1252;
 }
+#parametre{
+    display:flex;
+}
 
 
 

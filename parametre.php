@@ -1,9 +1,9 @@
 <?php
 session_start();
-if(!isset($_SESSION['email'])) {
+if (!isset($_SESSION['email'])) {
     header('Location: login.php');
     exit();
-}?>
+} ?>
 
 <html>
 <head>
@@ -13,6 +13,12 @@ if(!isset($_SESSION['email'])) {
 
 </head>
 <body>
-<a id="modifiervotremotdepasse" href="modifiervotremotdepasse.php">Modifier votre mot de passe </a>
+<div id="parametre">
+    <h1>Parametres</h1>
+    <br>
+    <br>
+    <a id="modifiervotremotdepasse" href="modifiervotremotdepasse.php">Modifier votre mot de passe </a>
+
+</div>
 </body>
 </html>
