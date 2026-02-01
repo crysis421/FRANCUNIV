@@ -23,21 +23,13 @@ function supprimer() {
     }
 }
 
-function afficher(l, index) {
-    supprimer()
-    for (let i = index * 12; i < (index + 1) * 12; i++) {
-        document.querySelector('#liste').appendChild(l[i])
-    }
-}
 
-function event(etat,index) {
+function event(etat) {
     supprimer()
     resetResearch()
-    let liste
     for (let etatPrKey of etat) {
-        liste.push(etatPrKey)
+        document.querySelector("#liste").appendChild(etatPrKey)
     }
-    afficher(liste,index)
 }
 
 document.querySelector('#Tous').addEventListener("click", (event) => {

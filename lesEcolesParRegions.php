@@ -124,10 +124,6 @@ if (isset($_GET['departement'])) {
 </div>
 <?php require('basdepage.php') ?>
 <script src="lesEcolesParRegions.js"></script>
-<?php
-    for($u=0;$u<(($i)/12)+1; ++$u){
-        ?><input type="submit" id="<?= $u?>" name="nbpage" value="<?= $u?>">
-    <?php }?>
 <script>
     console.log('donneesJS.id');
     let donneesJS = <?php echo json_encode($formations); ?>;
