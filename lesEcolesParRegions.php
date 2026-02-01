@@ -132,10 +132,7 @@ if (isset($_GET['departement'])) {
         for (let eKey in donneesJS) {
             let trouve = false;
             for(let element in donneesJS[eKey]){
-                if(donneesJS[eKey][element]['nom'].value.contains('Licence')){
-                    trouve = true;
-                }
-            }
+                console.log(donneesJS[eKey][element]['nom'],' ',typeof donneesJS[eKey][element]['nom']);
             if(trouve){
                 etat_pr.forEach(element => {if(element.innerHTML === eKey){document.querySelector("#liste").appendChild(element)}})
                 etat_pu.forEach(element => {if(element.innerHTML === eKey){document.querySelector("#liste").appendChild(element)}})
