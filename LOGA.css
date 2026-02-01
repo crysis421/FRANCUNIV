@@ -753,7 +753,7 @@ path:hover,
 }
 
 /* Le panneau des checkboxes reste relatif au filtre */
-#filtre {
+#filtreradio {
     display: none;
     position: absolute;
     top: 120%;      /* sous l’icône */
@@ -782,7 +782,7 @@ path:hover,
         text-align: center;
     }
 
-    #filtre {
+    #filtreradio {
         top: 110%;    /* ajuste si besoin */
         right: 50%;
         transform: translateX(50%);
