@@ -48,7 +48,6 @@ elseif(!isset($_SESSION['email'])) {
     <p id="name">Pseudo : <?= $_SESSION['pseudo'] ?></p>
     <p id="name">Email : <?= $_SESSION['email'] ?></p>
     <p id="name">Université : </p>
-    <a id="modifiervotremotdepasse" href="modifiervotremotdepasse.php">Modifier votre mot de passe </a>
     <br><br><br><br>
 </div>
 <div id="commentaire">
