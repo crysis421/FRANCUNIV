@@ -150,7 +150,6 @@ if (isset($_GET['departement'])) {
             }
         }
     }
-    }
     )
 </script>
 </body>
