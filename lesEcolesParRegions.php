@@ -87,12 +87,12 @@ if ($_SESSION['profile_image'] != null) {
     </label>
     <label class="radio">
         <input type="radio" name="radio2" id="Master">
-        <span class="name">Master </span><br>
+        <span class="name">Master</span><br>
     </label>
 
     <label class="radio">
         <input type="radio" name="radio2" id="CPGE">
-        <span class="name">CPGE </span><br>
+        <span class="name">CPGE</span><br>
     </label>
 </div>
 <?php
@@ -140,6 +140,7 @@ if (isset($_GET['departement'])) {
                         }
                     }
                     if (trouve) {
+                        console.log(eKey);
                         etat_pr.forEach(element => {
                             if (element.querySelector("p").innerHTML === eKey) {
                                 document.querySelector("#liste").appendChild(element)
