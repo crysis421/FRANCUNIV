@@ -138,8 +138,8 @@ if (isset($_GET['departement'])) {
             }
             if (trouve) {
                 etat_pr.forEach(element => {
-                    console.log(element.innerHTML,eKey);
-                    if (element.innerHTML === eKey) {
+                    console.log(element.querySelector("input").innerHTML,eKey);
+                    if (element.querySelector("input").innerHTML === eKey) {
                         document.querySelector("#liste").appendChild(element)
                     }
                 })
