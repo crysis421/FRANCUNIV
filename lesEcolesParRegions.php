@@ -128,37 +128,55 @@ if (isset($_GET['departement'])) {
 <script src="lesEcolesParRegions.js"></script>
 <script>
     const donneesJS = <?php echo json_encode($formations); ?>;
-    <?php function cherche($nom){ ?>
-        document.querySelector("#<?=$nom?>").addEventListener("click", e => {
-                supprimer()
-                resetResearch()
-                for (let eKey in donneesJS) {
-                    let trouve = false;
-                    for (let element in donneesJS[eKey]) {
-                        if (donneesJS[eKey][element]['nom'].includes('<?=$nom?>')) {
-                            trouve = true;
-                        }
-                    }
-                    if (trouve) {
-                        console.log(eKey);
-                        etat_tt.forEach(element => {
-                            console.log(element.querySelector("p").innerHTML);
-                            if (element.querySelector("p").innerHTML === eKey) {
-                                document.querySelector("#liste").appendChild(element)
-                            }
-                        })
+
+    function getListe() {
+        let liste = {
+            'BUT': new Set(),
+            'BTS': new Set(),
+            'Licence': new Set(),
+            'CPGE': new Set(),
+            'Master': new Set(),
+            'autre': new Set()
+        }
+        for (let univ in donneesJS) {
+            for (let formation in donneesJS[univ]) {
+                for (let key in liste) {
+                    if (donneesJS[univ][formation]['nom'].includes(key)) {
+                        liste[key].add(univ);
+                    } else {
+                        liste['autre'].add(univ);
                     }
                 }
             }
-        )
+        }
+        return liste;
+    }
+
+    <?php function cherche($nom){ ?>
+    document.querySelector("#<?=$nom?>").addEventListener("click", e => {
+            supprimer()
+            resetResearch()
+            for (let eKey in donneesJS) {
+                let trouve = false;
+                for (let element in donneesJS[eKey]) {
+                    if (donneesJS[eKey][element]['nom'].includes('<?=$nom?>')) {
+                        trouve = true;
+                    }
+                }
+                if (trouve) {
+                    etat_tt.forEach(element => {
+                        if (element.querySelector("p").innerHTML === eKey) {
+                            document.querySelector("#liste").appendChild(element)
+                        }
+                    })
+                }
+            }
+        }
+    )
     <?php }
-    cherche('Licence');
-    cherche('BTS');
-    cherche('BUT');
-    cherche('Master');
-    cherche('CPGE');
 
     ?>
+    console.log(getListe())
 </script>
 
 </body>
