@@ -74,7 +74,7 @@ if ($_SESSION['profile_image'] != null) {
         <span class="name">Tous</span><br>
     </label>
     <label class="radio">
-        <input type="radio" name="radio2" checked="" id="Licence">
+        <input type="radio" name="radio2" id="Licence">
         <span class="name">Licence</span><br>
     </label>
     <label class="radio">
@@ -126,7 +126,7 @@ if (isset($_GET['departement'])) {
 </div>
 <?php require('basdepage.php') ?>
 <script src="lesEcolesParRegions.js"></script>
-<script>
+<script defer>
     const donneesJS = <?php echo json_encode($formations); ?>;
 
     function getListe() {
@@ -147,7 +147,7 @@ if (isset($_GET['departement'])) {
                         trouve = true;
                     }
                 }
-                if(!trouve) {
+                if (!trouve) {
                     liste["autre"].add(univ);
                 }
             }
@@ -155,31 +155,26 @@ if (isset($_GET['departement'])) {
         return liste;
     }
 
-    <?php function cherche($nom){ ?>
-    document.querySelector("#<?=$nom?>").addEventListener("click", e => {
+    function mettreEvent(liste, nom) {
+        document.querySelector("#" + nom).addEventListener("click", e => {
             supprimer()
             resetResearch()
-            for (let eKey in donneesJS) {
-                let trouve = false;
-                for (let element in donneesJS[eKey]) {
-                    if (donneesJS[eKey][element]['nom'].includes('<?=$nom?>')) {
-                        trouve = true;
-                    }
+            console.log(nom)
+            etat_tt.forEach(autreUniv => {
+                if (liste.has(autreUniv.querySelector('p').innerHTML)) {
+                    document.querySelector("#liste").appendChild(autreUniv)
                 }
-                if (trouve) {
-                    etat_tt.forEach(element => {
-                        if (element.querySelector("p").innerHTML === eKey) {
-                            document.querySelector("#liste").appendChild(element)
-                        }
-                    })
-                }
-            }
-        }
-    )
-    <?php }
+            })
+        })
+    }
 
-    ?>
-    console.log(getListe())
+    let all = getListe();
+    mettreEvent(all['Licence'],'Licence')
+    mettreEvent(all['BUT'],'BUT')
+    mettreEvent(all['BTS'],'BTS')
+    mettreEvent(all['Master'],'Master')
+    mettreEvent(all['autre'],'Tous1')
+    mettreEvent(all['CPGE'],'CPGE')
 </script>
 
 </body>
