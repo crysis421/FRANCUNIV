@@ -126,5 +126,10 @@ if (isset($_GET['departement'])) {
     console.log('donneesJS.id');
     let donneesJS = <?php echo json_encode($formations); ?>;
     console.log(donneesJS);
+    document.querySelector("#Tous1").addEventListener("click", e => {
+        for (let eKey of donneesJS) {
+            console.log(eKey);
+        }
+    });
 </script>
 </body>
