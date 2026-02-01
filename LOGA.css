@@ -544,7 +544,7 @@ path:hover,
 }
 
 /* Radio boutons filtres */
-.radio-inputs,.filtre-inputs {
+.radio-inputs {
     position: relative;
     display: flex;
     border-radius: 0.5rem;
@@ -554,14 +554,14 @@ path:hover,
     width: 300px;
     font-size: 14px;
 }
-.radio-inputs .radio,.filtre-inputs .filtre {
+.radio-inputs .radio {
     flex: 1 1 auto;
     text-align: center;
 }
-.radio-inputs .radio input,.filtre-inputs .filtre input {
+.radio-inputs .radio input {
     display: none;
 }
-.radio-inputs .radio .name,.filtre-inputs .filtre {
+.radio-inputs .radio .name {
     display: flex;
     cursor: pointer;
     align-items: center;
@@ -572,7 +572,7 @@ path:hover,
     color: #fff;
     transition: all .15s ease-in-out;
 }
-.radio-inputs .radio input:checked + .name,.filtre-inputs .filtre input:checked + {
+.radio-inputs .radio input:checked + .name {
     background-color: #fff;
     font-weight: 600;
     color: #000;
@@ -714,7 +714,7 @@ path:hover,
 }
 
 /* Style du bloc radio */
-.radio-inputs,.filtre-inputs {
+.radio-inputs {
     position: relative;          /* plus de absolute */
     display: flex;
     justify-content: center;
@@ -729,7 +729,7 @@ path:hover,
 }
 
 /* Boutons radio individuels (si besoin) */
-.radio-inputs .radio,.filtre-inputs .filtre {
+.radio-inputs .radio {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -753,7 +753,7 @@ path:hover,
 }
 
 /* Le panneau des checkboxes reste relatif au filtre */
-#filtreradio {
+#filtre {
     display: none;
     position: absolute;
     top: 120%;      /* sous l’icône */
@@ -776,7 +776,7 @@ path:hover,
         transform: translateX(-50%);
     }
 
-    #filtreradio {
+    #filtre {
         position: static;          /* repasse dans le flux normal */
         margin: 12px auto 0 auto;  /* sous les radios, centré */
         text-align: center;
