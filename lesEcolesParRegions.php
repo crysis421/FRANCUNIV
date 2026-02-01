@@ -127,27 +127,30 @@ if (isset($_GET['departement'])) {
     let donneesJS = <?php echo json_encode($formations); ?>;
     console.log(donneesJS);
     document.querySelector("#Licence").addEventListener("click", e => {
-            supprimer()
-            resetResearch()
-            for (let eKey in donneesJS) {
-                let trouve = false;
-                for (let element in donneesJS[eKey]) {
-                    console.log(donneesJS[eKey][element]['nom'], ' ', typeof donneesJS[eKey][element]['nom']);
-                    if (trouve) {
-                        etat_pr.forEach(element => {
-                            if (element.innerHTML === eKey) {
-                                document.querySelector("#liste").appendChild(element)
-                            }
-                        })
-                        etat_pu.forEach(element => {
-                            if (element.innerHTML === eKey) {
-                                document.querySelector("#liste").appendChild(element)
-                            }
-                        })
-                    }
+        supprimer()
+        resetResearch()
+        for (let eKey in donneesJS) {
+            let trouve = false;
+            for (let element in donneesJS[eKey]) {
+                if(donneesJS[eKey][element]['nom'].includes('Licence')){
+                    trouve = true;
                 }
             }
+            if (trouve) {
+                etat_pr.forEach(element => {
+                    if (element.innerHTML === eKey) {
+                        document.querySelector("#liste").appendChild(element)
+                    }
+                })
+                etat_pu.forEach(element => {
+                    if (element.innerHTML === eKey) {
+                        document.querySelector("#liste").appendChild(element)
+                    }
+                })
+            }
         }
+    }
+    }
     )
 </script>
 </body>
