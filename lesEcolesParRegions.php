@@ -69,7 +69,6 @@ if ($_SESSION['profile_image'] != null) {
     </label>
 </div>
 <div id="filtre" class="radio-inputs">
-    <div class="radio-inputs" id="filtreradio">
         <label class="radio">
             <input type="radio" name="radio" checked="" id="Tous1">
             <span class="name">Tous</span><br>
@@ -92,7 +91,6 @@ if ($_SESSION['profile_image'] != null) {
             <input type="radio" name="radio" id="CPGE">
             <span class="name">CPGE </span><br>
         </label>
-    </div>
 </div>
 <?php
 if (isset($_GET['departement'])) {
