@@ -127,6 +127,6 @@ if (isset($_GET['departement'])) {
 <script>
     console.log('donneesJS.id');
     let donneesJS = <?php echo json_encode($formations); ?>;
-    console.log('donneesJS.id');
+    console.log(donneesJS.id);
 </script>
 </body>
