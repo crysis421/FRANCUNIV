@@ -1,6 +1,5 @@
 <?php session_start();
 require('Database.php');
-echo 'la';
 try {
     $database = Database::connect();
     $requete = $database->prepare("SELECT id,nom,banniere,etat FROM universite WHERE region=:region");
@@ -8,7 +7,7 @@ try {
     $requete->execute();
     $requete = $requete->fetchAll();
     $formations = [];
-    foreach($requete as $row){
+    foreach($requete as $row) {
         $formation = $database->prepare("SELECT nom FROM formation WHERE univ=:univ");
         $formation->bindParam(':univ', $row['id']);
         $formation->execute();
@@ -122,7 +121,8 @@ if (isset($_GET['departement'])) {
     </ul>
 </div>
 <?php require('basdepage.php') ?>
-<script src="lesEcolesParRegions.js">
+<script src="lesEcolesParRegions.js"></script>
+<script>
     console.log('donneesJS.id');
     let donneesJS = <?php echo json_encode($formations); ?>;
     console.log('donneesJS.id');
