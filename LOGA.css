@@ -876,6 +876,7 @@ path:hover,
     display:flex;
     justify-content: center;
     text-align: center;
+    font-size: 30px;
 }
 #modifiervotremotdepasse:hover{
     color:red;
