@@ -12,7 +12,6 @@ try {
         $formation->bindParam(':univ', $row['id']);
         $formation->execute();
         $formations[$row['nom']] = $formation->fetchAll();
-        echo $row['nom'];
     }
     $database = null;
 } catch (Exception $e) {
