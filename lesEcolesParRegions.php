@@ -94,6 +94,14 @@ if ($_SESSION['profile_image'] != null) {
         <input type="radio" name="radio2" id="CPGE">
         <span class="name">CPGE</span><br>
     </label>
+    <label class="radio">
+        <input type="radio" name="radio2" id="D.E">
+        <span class="name">D.E</span><br>
+    </label>
+    <label class="radio">
+        <input type="radio" name="radio2" id="Autre">
+        <span class="name">Autre</span><br>
+    </label>
 </div>
 <?php
 if (isset($_GET['departement'])) {
@@ -129,6 +137,10 @@ if (isset($_GET['departement'])) {
 <script defer>
     const donneesJS = <?php echo json_encode($formations); ?>;
 
+    function mergeSets(...sets) {
+        return new Set(sets.flatMap(s => [...s]));
+    }
+
     function getListe() {
         let liste = {
             'BUT': new Set(),
@@ -136,6 +148,7 @@ if (isset($_GET['departement'])) {
             'Licence': new Set(),
             'CPGE': new Set(),
             'Master': new Set(),
+            'D.E': new Set(),
             'autre': new Set()
         }
         for (let univ in donneesJS) {
@@ -173,8 +186,10 @@ if (isset($_GET['departement'])) {
     mettreEvent(all['BUT'],'BUT')
     mettreEvent(all['BTS'],'BTS')
     mettreEvent(all['Master'],'Master')
-    mettreEvent(all['autre'],'Tous1')
     mettreEvent(all['CPGE'],'CPGE')
+    mettreEvent(all['D.E'],'D.E')
+    mettreEvent(all['autre'],'Autre')
+    mettreEvent(mergeSets(all['Licence'],all['BUT'],all['BTS'],all['Master'],all['D.E'],all['CPGE'],all['autre']),'Tous1')
 </script>
 
 </body>
