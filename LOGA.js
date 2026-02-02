@@ -7,7 +7,7 @@ document.querySelector('#Licence1').addEventListener("click",even =>
 )
 document.querySelector('#Master1').addEventListener("click",even =>
     paths.forEach(p => {
-        p.style.fill = '#32cd32';      // rouge
+        p.style.fill = '#32cd32';// rouge
     })
 )
 
