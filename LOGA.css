@@ -284,16 +284,21 @@ p {
 
 /* Styles des régions (SVG) */
 path {
-    fill: #82c46c;
     stroke: white;
     stroke-width: 1.25;
     transition: fill 0.2s ease, transform 0.15s ease;
 }
-path:hover,
-.groupir:hover .Ile-de-France {
-    fill: red;
-    transform: translateY(-1px);
-    cursor: pointer;
+path.licence{
+    fill:#82c46c;
+}
+path.licence:hover {
+    fill: #516a32;
+}
+path.master {
+    fill: #32cd32;
+}
+path.master:hover{
+    fill:#00a900;
 }
 
 /* ============================
