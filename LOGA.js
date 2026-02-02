@@ -1,8 +1,14 @@
+
+const paths = document.querySelectorAll('path')
 document.querySelector('#Licence1').addEventListener("click",even =>
-    document.getElementsByTagName("path").style.backgroundColor='#82c46c'
+    paths.forEach(p => {
+        p.style.fill = '#82c46c';  // vert
+    })
 )
 document.querySelector('#Master1').addEventListener("click",even =>
-    document.getElementsByTagName("path").style.backgroundColor='red'
+    paths.forEach(p => {
+        p.style.fill = 'red';      // rouge
+    })
 )
 
 
