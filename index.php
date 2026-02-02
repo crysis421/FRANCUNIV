@@ -42,7 +42,7 @@ if ($_SESSION['profile_image'] != null) {
 <br><br><br><br>
 
 <p id="ordre">S&eacute;lectionnez la r&eacute;gion de l'universit&eacute;</p>
-<div class="radio-inputs" id="radio">
+<div class="radio-inputs" id="radio3">
     <label class="radio">
         <input type="radio" name="radio3" checked="" id="Licence1">
         <span class="name">Licence</span>
