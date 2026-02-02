@@ -31,7 +31,9 @@ function changerlaliste(eta) {
         document.querySelector("#liste").appendChild(etatPrKey)
     }
 }
-
+document.querySelector('#Tous').addEventListener("click",even =>
+    changerlaliste(etat_tt)
+)
 document.querySelector('#Tous').addEventListener("click",even =>
     changerlaliste(etat_tt)
 )
@@ -55,3 +57,21 @@ document.querySelector("#query").addEventListener("input", (event) => {
         }
     }
 })
+const container=document.getElementById('liste');
+
+const xhr = new XMLHttpRequest();
+
+xhr.onreadystatechange= function (){
+    if(this.readyState === 4 && this.status === 200 ){
+        const data= JSON.parse(this.responseText);
+
+        for (const item of data){
+            const listItem= document.createElement('li');
+            listItem.textContent= item.title;
+            container.appendChild(listItem);
+        }
+    }
+};
+
+xhr.open('GET','hhtps etc');
+xhr.send();
