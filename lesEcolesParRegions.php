@@ -191,5 +191,4 @@ if (isset($_GET['departement'])) {
     mettreEvent(all['autre'],'Autre')
     mettreEvent(mergeSets(all['Licence'],all['BUT'],all['BTS'],all['Master'],all['D.E'],all['CPGE'],all['autre']),'Tous1')
 </script>
-
 </body>
