@@ -74,22 +74,33 @@ if ($_SESSION['profile_image'] != null) {
         <span class="name">Tous</span><br>
     </label>
     <label class="radio">
-        <input type="radio" name="radio2" checked="" id="Licence">
+        <input type="radio" name="radio2" id="Licence">
         <span class="name">Licence</span><br>
     </label>
     <label class="radio">
-        <input type="radio" name="radio2" id="BTS/BUT">
-        <span class="name">BTS / BUT</span><br>
+        <input type="radio" name="radio2" id="BTS">
+        <span class="name">BTS</span><br>
     </label>
-
+    <label class="radio">
+        <input type="radio" name="radio2" id="BUT">
+        <span class="name">BUT</span><br>
+    </label>
     <label class="radio">
         <input type="radio" name="radio2" id="Master">
-        <span class="name">Master </span><br>
+        <span class="name">Master</span><br>
     </label>
 
     <label class="radio">
         <input type="radio" name="radio2" id="CPGE">
-        <span class="name">CPGE </span><br>
+        <span class="name">CPGE</span><br>
+    </label>
+    <label class="radio">
+        <input type="radio" name="radio2" id="DE">
+        <span class="name">D.E</span><br>
+    </label>
+    <label class="radio">
+        <input type="radio" name="radio2" id="Autre">
+        <span class="name">Autre</span><br>
     </label>
 </div>
 <?php
@@ -100,23 +111,22 @@ if (isset($_GET['departement'])) {
 
 ?>
 
-<div id="liste"><!-- 12-->
+<div id="liste">
     <ul id="liste">
-        <?php $i= 0;
+        <?php
         foreach ($requete as $row) {
-            $i+=1
             ?>
 
             <form id="univ" action="universite.php" method="get" class="<?php if ($row['etat'] == 1) {
-                echo htmlspecialchars("public");
+                echo htmlspecialchars("public tout");
             } else {
-                echo htmlspecialchars("privee");
+                echo htmlspecialchars("privee tout");
             } ?>">
                 <a onclick="this.closest('form').submit();" class="nomecole"
                    onmouseover="this.style.backgroundImage = 'url(<?= htmlspecialchars($row['banniere']) ?>)'"
                    onmouseout="this.style.backgroundImage = ''">
                     <input type="hidden" name="universite" value="<?= htmlspecialchars($row['nom']) ?>"/>
-                    <?= htmlspecialchars($row['nom']) ?><br><br><br><br>
+                    <p><?= htmlspecialchars($row['nom']) ?></p><br><br><br><br>
                 </a>
             </form>
         <?php } ?>
@@ -124,36 +134,62 @@ if (isset($_GET['departement'])) {
 </div>
 <?php require('basdepage.php') ?>
 <script src="lesEcolesParRegions.js"></script>
-<script>
-    console.log('donneesJS.id');
-    let donneesJS = <?php echo json_encode($formations); ?>;
-    console.log(donneesJS);
-    document.querySelector("#Licence").addEventListener("click", e => {
-        supprimer()
-        resetResearch()
-        for (let eKey in donneesJS) {
-            let trouve = false;
-            for (let element in donneesJS[eKey]) {
-                if(donneesJS[eKey][element]['nom'].includes('Licence')){
-                    trouve = true;
+<script defer>
+    const donneesJS = <?php echo json_encode($formations); ?>;
+
+    function mergeSets(...sets) {
+        return new Set(sets.flatMap(s => [...s]));
+    }
+
+    function getListe() {
+        let liste = {
+            'BUT': new Set(),
+            'BTS': new Set(),
+            'Licence': new Set(),
+            'CPGE': new Set(),
+            'Master': new Set(),
+            'D.E': new Set(),
+            'autre': new Set()
+        }
+        for (let univ in donneesJS) {
+            for (let formation in donneesJS[univ]) {
+                let trouve = false;
+                for (let key in liste) {
+                    if (donneesJS[univ][formation]['nom'].includes(key)) {
+                        liste[key].add(univ);
+                        trouve = true;
+                    }
+                }
+                if (!trouve) {
+                    liste["autre"].add(univ);
                 }
             }
-            if (trouve) {
-                etat_pr.forEach(element => {
-                    console.log(element.querySelector("input").innerHTML,' : La : ',eKey);
-                    if (element.querySelector("input").innerHTML === eKey) {
-                        document.querySelector("#liste").appendChild(element)
-                    }
-                })
-                etat_pu.forEach(element => {
-                    if (element.innerHTML === eKey) {
-                        document.querySelector("#liste").appendChild(element)
-                    }
-                })
-            }
         }
+        return liste;
     }
-    )
+
+    function mettreEvent(liste, nom) {
+        document.querySelector("#" + nom).addEventListener("click", e => {
+            supprimer()
+            resetResearch()
+            console.log(nom)
+            etat_tt.forEach(autreUniv => {
+                if (liste.has(autreUniv.querySelector('p').innerHTML)) {
+                    document.querySelector("#liste").appendChild(autreUniv)
+                }
+            })
+        })
+    }
+
+    let all = getListe();
+    mettreEvent(all['Licence'],'Licence')
+    mettreEvent(all['BUT'],'BUT')
+    mettreEvent(all['BTS'],'BTS')
+    mettreEvent(all['Master'],'Master')
+    mettreEvent(all['CPGE'],'CPGE')
+    mettreEvent(all['D.E'],'DE')
+    mettreEvent(all['autre'],'Autre')
+    mettreEvent(mergeSets(all['Licence'],all['BUT'],all['BTS'],all['Master'],all['D.E'],all['CPGE'],all['autre']),'Tous1')
 </script>
 
 </body>

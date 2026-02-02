@@ -1,14 +1,7 @@
 let etat_pu = document.querySelectorAll('.public');
 let etat_pr = document.querySelectorAll('.privee');
-let etat_tt=[]
+let etat_tt = document.querySelectorAll('.tout');
 
-
-for(let etat of etat_pr){
-    etat_tt.push(etat);
-}
-for(let etat of etat_pu){
-    etat_tt.push(etat);
-}
 function resetResearch() {
     document.querySelector('#query').value = '';
 }
