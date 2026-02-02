@@ -4,10 +4,10 @@ let etat_tt=[]
 
 
 for(let etat of etat_pr){
-    etat_tt.psuh(etat);
+    etat_tt.push(etat);
 }
 for(let etat of etat_pu){
-    etat_tt.psuh(etat);
+    etat_tt.push(etat);
 }
 function resetResearch() {
     document.querySelector('#query').value = '';
