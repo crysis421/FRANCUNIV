@@ -291,7 +291,7 @@ path {
 }
 path:hover,
 .groupir:hover .Ile-de-France {
-    fill: #00a900;
+    fill: red;
     transform: translateY(-1px);
     cursor: pointer;
 }
