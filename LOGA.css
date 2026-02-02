@@ -284,12 +284,13 @@ p {
 
 /* Styles des régions (SVG) */
 path {
+    fill:#1fe01f;
     stroke: white;
     stroke-width: 1.25;
     transition: fill 0.2s ease, transform 0.15s ease;
 }
 path.licence{
-    fill:#82c46c;
+    fill:#1fe01f;
 }
 path.licence:hover {
     fill: #516a32;
