@@ -892,7 +892,7 @@ path:hover,
      position: absolute;
      margin: 15% auto 0 auto;
      left: 50%;
-     top: -2%;
+     top: -10%;
      transform: translateX(-50%);
      text-align: center;
  }
