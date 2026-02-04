@@ -290,7 +290,7 @@ path {
     transition: fill 0.2s ease, transform 0.15s ease;
 }
 path.licence{
-    fill:#1fe01f;
+    fill:#00bfff;
 }
 path.licence:hover {
     fill: #516a32;
