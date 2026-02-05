@@ -170,16 +170,29 @@ if (isset($_GET['departement'])) {
 
     function mettreEvent(liste, nom) {
         document.querySelector("#" + nom).addEventListener("click", e => {
-            supprimer()
-            resetResearch()
-            console.log(nom)
+            supprimer();
+            resetResearch();
+
+            // quel état est sélectionné ? (Tous / Public / Privee)
+            const inputEtat = document.querySelector('input[name="radio"]:checked');
+            const etatId = inputEtat ? inputEtat.id : 'Tous';
+
             etat_tt.forEach(autreUniv => {
-                if (liste.has(autreUniv.querySelector('p').innerHTML)) {
-                    document.querySelector("#liste").appendChild(autreUniv)
-                }
-            })
-        })
+                const nomUniv = autreUniv.querySelector('p').innerHTML;
+
+                // Filtre par type (Licence / BTS / etc.)
+                if (!liste.has(nomUniv)) return;
+
+                // Filtre par état
+                if (etatId === 'Public' && !autreUniv.classList.contains('public')) return;
+                if (etatId === 'Privee' && !autreUniv.classList.contains('privee')) return;
+                // si Tous => on ne filtre pas plus
+
+                document.querySelector("#liste").appendChild(autreUniv);
+            });
+        });
     }
+
 
     let all = getListe();
     mettreEvent(all['Licence'],'Licence')
