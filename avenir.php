@@ -1,4 +1,11 @@
-<?php ?>
+<?php
+session_start();
+require('Database.php');
+if ($_SESSION['profile_image'] != null) {
+    $avatar = 'uploads/avatars/' . $_SESSION['profile_image'];
+} else {
+    $avatar = 'profil-image.png';
+}?>
 <html>
 <head xmlns="http://www.w3.org/1999/html">
     <link rel="stylesheet" href="LOGA.css">
