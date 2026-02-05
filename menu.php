@@ -23,6 +23,8 @@
                 <i class="fa-solid fa-user"> &nbsp Profil</i></a><br>
             <a href="parametre.php">
                 <i class="fa-solid fa-gear"> &nbsp Parametre</i></a>
+            <a href="avenir.php">
+                <i class="fa-solid fa-arrows-split-up-and-left">&nbsp Avenir</i></a>
 
         </ul>
     </div>
