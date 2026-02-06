@@ -909,4 +909,6 @@ path.master:hover ,.master.groupir:hover{
     margin-top:150px;
     display: flex;
     justify-content: center;
+    font-size: large;
+    font-weight: bold;
 }
