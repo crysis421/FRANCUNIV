@@ -48,14 +48,8 @@ if ($_SESSION['profile_image'] != null) {
         foreach ($requete as $row) {
             ?>
 
-            <form id="univ" action="universite.php" method="get" class="<?php if ($row['etat'] == 1) {
-                echo htmlspecialchars("public tout");
-            } else {
-                echo htmlspecialchars("privee tout");
-            } ?>">
+            <form id="univ" action="universite.php" method="get" >
                 <a onclick="this.closest('form').submit();" class="nomecole"
-                   onmouseover="this.style.backgroundImage = 'url(<?= htmlspecialchars($row['banniere']) ?>)'"
-                   onmouseout="this.style.backgroundImage = ''">
                     <input type="hidden" name="universite" value="<?= htmlspecialchars($row['nom']) ?>"/>
                     <p><?= htmlspecialchars($row['nom']) ?></p><br><br><br><br>
                 </a>
