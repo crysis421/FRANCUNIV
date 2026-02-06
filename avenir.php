@@ -4,7 +4,7 @@ require('Database.php');
 $entree=$_POST['entree'];
 try {
     $database = Database::connect();
-    $requete = $database->prepare("SELECT id,nom,banniere,etat FROM formation WHERE nom LIKE CONCAT('%', :nom, '%')");
+    $requete = $database->prepare("SELECT * FROM formation WHERE nom LIKE CONCAT('%', :nom, '%')");
     $requete->bindParam(':nom', $_POST['entree']);
     $requete->execute();
     $requete = $requete->fetchAll();
