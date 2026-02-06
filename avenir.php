@@ -22,7 +22,7 @@ if ($_SESSION['profile_image'] != null) {
         les formations qui accepte des gens avec cette formation</p>
 </div>
 <form id="formationacquis" method="post" action="avenir.php">
-    <input type="hidden" name="entree" >Veuillez entrée le nom de la formation</input>
+    <input type="text" name="entree" value="">Veuillez entrée le nom de la formation</input>
 </form>
 <?php require('menu.php') ?>
 </html>
