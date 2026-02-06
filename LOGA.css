@@ -912,3 +912,8 @@ path.master:hover ,.master.groupir:hover{
     font-size: large;
     font-weight: bold;
 }
+#formationacquis{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
