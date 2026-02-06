@@ -1,7 +1,7 @@
 <?php session_start();
 require('Database.php');
 try {
-    $database = Database::connect();
+    $ database = Database::connect();
     $requete = $database->prepare("SELECT id,nom,banniere,etat FROM universite WHERE region=:region");
     $requete->bindParam(':region', $_GET['departement']);
     $requete->execute();
