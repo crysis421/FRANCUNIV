@@ -2,7 +2,7 @@
 session_start();
 require('Database.php');
 $entree=$_POST['entree'];
-try {
+if (!empty($_POST['entree'])) {try {
     $database = Database::connect();
     $requete = $database->prepare("SELECT * FROM formation WHERE nom LIKE CONCAT('%', :nom, '%')");
     $requete->bindParam(':nom', $_POST['entree']);
@@ -16,7 +16,7 @@ try {
 } catch (Exception $e) {
     echo $e->getMessage();
     $database = null;
-}
+}}
 if ($_SESSION['profile_image'] != null) {
     $avatar = 'uploads/avatars/' . $_SESSION['profile_image'];
 } else {
