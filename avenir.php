@@ -1,14 +1,19 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 session_start();
 require('Database.php');
 $entree=$_POST['entree'];
+$formations = [];
+$requete=[];
 if (!empty($_POST['entree'])) {try {
     $database = Database::connect();
     $requete = $database->prepare("SELECT * FROM formation WHERE nom LIKE CONCAT('%', :nom, '%')");
     $requete->bindParam(':nom', $_POST['entree']);
     $requete->execute();
     $requete = $requete->fetchAll();
-    $formations = [];
+
     foreach ($requete as $row) {
         $formations[$row['nom']] = $requete->fetchAll();
     }
