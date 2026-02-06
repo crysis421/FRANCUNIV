@@ -15,7 +15,7 @@ if (!empty($_POST['entree'])) {try {
     $requete = $requete->fetchAll();
 
     foreach ($requete as $row) {
-        $formations[$row['nom']] = $requete->fetchAll();
+        $formations[$row['nom']] = $row;
     }
     $database = null;
 } catch (Exception $e) {
