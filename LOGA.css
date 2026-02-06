@@ -916,4 +916,5 @@ path.master:hover ,.master.groupir:hover{
     display: flex;
     justify-content: center;
     font-weight: bold;
+    margin-top:50px;
 }
