@@ -14,16 +14,17 @@
         <span></span>
         <span></span>
         <ul id="menu">
-            <a href="algebre.php">
-                <i class="fa-solid fa-house"> &nbsp Algebre</i></a><br>
-            <a href="analyse.php">
-                <i class="fa-solid fa-trophy"> &nbsp Analyse</i></a><br>
-            <a href="equadiff.php">
-                <i class="fa-solid fa-user"> &nbsp Equadiff</i></a><br>
-            <a href="index.php">
-                <i class="fa-solid fa-gear"> &nbsp Loga</i></a><br>
             <a href="math.php">
-                <i class="fa-solid fa-infinity">&nbsp Math</i></a>
+                <i class="fa-solid fa-infinity">&nbsp Math</i></a><br>
+            <a href="algebre.php">
+                &nbsp Algebre</a><br>
+            <a href="analyse.php">
+                 &nbsp Analyse</a><br>
+            <a href="equadiff.php">
+                 &nbsp Equadiff</a><br>
+            <a href="index.php">
+                 &nbsp Loga</a><br>
+
 
         </ul>
     </div>
