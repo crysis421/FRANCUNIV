@@ -17,11 +17,11 @@
             <a href="math.php">
                 <i class="fa-solid fa-infinity">&nbsp Math</i></a><br>
             <a href="algebre.php">
-                &nbsp Algebre</a><br>
+                <i class="fa-solid fa-square-root-variable"> Algebre</i></a><br>
             <a href="analyse.php">
-                 &nbsp Analyse</a><br>
+                <i class="fa-solid fa-square-root-variable">&nbsp Analyse</i></a><br>
             <a href="equadiff.php">
-                 &nbsp Equadiff</a><br>
+                <i class="fa-solid fa-square-root-variable">&nbsp Equadiff</i></a><br>
             <a href="index.php">
                  &nbsp Loga</a><br>
 
