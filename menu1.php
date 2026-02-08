@@ -17,7 +17,7 @@
             <a href="math.php">
                 <i class="fa-solid fa-infinity">&nbsp Math</i></a><br>
             <a href="algebre.php">
-                <i class="fa-solid fa-square-root-variable"> Algebre</i></a><br>
+                <i class="fa-solid fa-square-root-variable">&nbsp Algebre</i></a><br>
             <a href="analyse.php">
                 <i class="fa-solid fa-square-root-variable">&nbsp Analyse</i></a><br>
             <a href="equadiff.php">

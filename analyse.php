@@ -9,5 +9,6 @@
 </head>
 <body>
 <?php require('menu1.php') ?>
+<div id="titre"><h1>Analyse</h1></div>
 </body>
 </html>
