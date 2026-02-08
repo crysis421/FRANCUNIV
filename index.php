@@ -103,9 +103,9 @@ if ($_SESSION['profile_image'] != null) {
 <form id="provenceAlpesCoteAzur" method="get" action="lesEcolesParRegions.php">
     <input type="hidden" name="departement" value="Provence Alpes Cote d Azur">
 </form>
-<form id="corse" method="get" action="lesEcolesParRegions.php">
-    <input type="hidden" name="departement" value="Corse">
-</form>
+    <form id="corse" method="get" action="lesEcolesParRegions.php">
+        <input type="hidden" name="departement" value="Corse">
+    </form>
 
 
 <svg id="svg-carte-france" fill="#41484F" aria-label="Carte de France vectorielle, départements et régions groupés par code INSEE" role="group" version="1.1" viewBox="0 0 1600 1080" xmlns="http://www.w3.org/2000/svg">

@@ -24,7 +24,10 @@
             <a href="parametre.php">
                 <i class="fa-solid fa-gear"> &nbsp Parametre</i></a><br>
             <a href="avenir.php">
-                <i class="fa-solid fa-arrows-split-up-and-left">&nbsp Poursuite Etude</i></a>
+                <i class="fa-solid fa-arrows-split-up-and-left">&nbsp Poursuite Etude</i></a><br>
+            <a href="math.php">
+                <i class="fa-solid fa-infinity">&nbsp Math</i></a>
+
 
         </ul>
     </div>
