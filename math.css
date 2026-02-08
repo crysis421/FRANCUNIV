@@ -98,3 +98,7 @@ body {
     font-size: 1.1rem;
     transition: font-size 0.2s ease-out;
 }
+#titre{
+    display: flex;
+
+}
