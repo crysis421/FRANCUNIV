@@ -24,6 +24,19 @@
         \[
         \cos x =  1  - \frac{x^2}{2!} + \frac{x^4}{4!} -\frac{x^6}{6!} + x\epsilon(x)
         \]
+        \[
+        \frac{1}{1+x} =  1  - x + x^2 - x^3 + x\epsilon(x)
+        \]
+        \[
+        \frac{1}{1-x} =  1  + x + x^2 + x^3 + x\epsilon(x)
+        \]
+        \[
+        \ln(\frac{1}{1+x}) =  x  - \frac{x^2}{2} + \frac{x^3}{3!} -\frac{x^4}{4!} + x\epsilon(x)
+        \]
+        \[
+        \ln(\frac{1}{1-x}) = - x  - \frac{x^2}{2} - \frac{x^3}{3!} -\frac{x^4}{4!} + x\epsilon(x)
+        \]
+
     </div>
     <p> </p>
 
