@@ -31,10 +31,13 @@
         \frac{1}{1-x} =  1  + x + x^2 + x^3 + x\epsilon(x)
         \]
         \[
-        \ln(\frac{1}{1+x}) =  x  - \frac{x^2}{2} + \frac{x^3}{3!} -\frac{x^4}{4!} + x\epsilon(x)
+        \ln(1+x) =  x  - \frac{x^2}{2} + \frac{x^3}{3!} -\frac{x^4}{4!} + x\epsilon(x)
         \]
         \[
-        \ln(\frac{1}{1-x}) = - x  - \frac{x^2}{2} - \frac{x^3}{3!} -\frac{x^4}{4!} + x\epsilon(x)
+        \ln(1-x) = - x  - \frac{x^2}{2} - \frac{x^3}{3!} -\frac{x^4}{4!} + x\epsilon(x)
+        \]
+        \[
+        \(1+x)^\alpha = 1 + \alpha x  - \frac{\alpha (\alpha -1 )x^2}{2!}  + x\epsilon(x)
         \]
 
     </div>
