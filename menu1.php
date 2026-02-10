@@ -22,6 +22,9 @@
                 <i class="fa-solid fa-square-root-variable">&nbsp Analyse</i></a><br>
             <a href="equadiff.php">
                 <i class="fa-solid fa-square-root-variable">&nbsp Equadiff</i></a><br>
+            <a href="formules.php">
+                <i class="fa-solid fa-square-root-variable">&nbsp Formules</i></a><br>
+
             <a href="index.php">
                  &nbsp Loga</a><br>
 
