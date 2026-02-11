@@ -123,6 +123,7 @@ h2{
     justify-content: center;
     margin-top: 50px;
     font-weight: bold;
+    text-decoration: underline;
 }
 p{
     display: flex;
@@ -134,4 +135,5 @@ h3{
     justify-content: center;
     margin-top: 50px;
     font-weight: bold;
+    text-decoration: underline;
 }
