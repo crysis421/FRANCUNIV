@@ -12,7 +12,8 @@
 <?php require('menu1.php') ?>
 <div id="titre"><h1>Analyse</h1></div>
 <h2>Convergence de serie :</h2><br>
-<br><p> Si le terme generale de la suite ne tend pas <br>
+<div id="convergence">
+    <br><p> Si le terme generale de la suite ne tend pas <br>
     vers 0 => la serie ne converge pas  <br>
 <br>
  Exemple: la série </p>
@@ -25,6 +26,23 @@
     u_k = e^x  \lim_{x \to +\infty} e^x = +\infty  \neq 0
     \]
 
+</div>
+    <h3>Convergence de series entieres </h3>
+    <br>
+    <p>Dans la pratique on calcul : </p>
+    <div class="math">
+        \[
+        \sum\limits_{k=1}^{+\infty} a_{k}z^{k}
+        \]
+        \[
+        \lim_{x \to +\infty} \lvert \frac{a_{n+1}{a_{n}} \lvert = l => r= \frac{1}{l}
+        \]
+        \[
+        \lim_{x \to +\infty} \lvert a_{n}^{|frac{1}{n}} \lvert = l => r= \frac{1}{l}
+        \]
+        <p> Avec r le rayon de convergence de la serie. C est pour quelle valeur de z la serie converge </p>
+
+    </div>
 </div>
 </body>
 </html>

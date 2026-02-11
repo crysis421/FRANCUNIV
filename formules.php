@@ -39,6 +39,9 @@
         \[
         (1+x)^\alpha = 1 + \alpha x  - \frac{\alpha (\alpha -1 )x^2}{2!}  + x\epsilon(x)
         \]
+        \[
+        \lim_{x \to +\infty} \epsilon (x) = 0
+        \]
 
     </div>
 </div>
