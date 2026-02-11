@@ -28,7 +28,7 @@
     <p> Donc on a la solution de la forme </p>
     <div class="math">
         \[
-        y(x)=e^{[\int -\alpha (x) \]
+        y(x)=e^{\int -\alpha (x) \]}
         \]
     </div>
 
