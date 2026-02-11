@@ -16,9 +16,22 @@
     <br><p> Il faut mettre sous forme résolu </p>
     <div class="math">
         \[
-        y'(x) + \alpha y(x) = 0
+        y'(x) + \alpha (x) y(x) = 0
         \]
     </div>
+    <p>Apres ecrire sous la forme suivante :</p><br>
+    <div class="math">
+        \[
+        \frac{y'(x)}{y(x)} = -\alpha (x)
+        \]
+    </div>
+    <p> Donc on a la solution de la forme </p>
+    <div class="math">
+        \[
+        y(x)=e^{[\int -\alpha (x) \]
+        \]
+    </div>
+
 </div>
 </body>
 </html>
