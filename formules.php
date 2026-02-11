@@ -41,8 +41,17 @@
         \]
 
     </div>
-    <p> </p>
+</div>
+<div id="cosexp">
+    <h2>Cosinus et Sinus en exponentielle</h2><br>
+    <br>
+    <div class="math">
+        \[
+        \sin x =  \frac{e^ix - e^-ix}{2}   cos x =  \frac{e^ix + e^-ix}{2}
+        \]
 
+
+    </div>
 </div>
 </body>
 </html>
