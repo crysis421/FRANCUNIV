@@ -37,7 +37,7 @@
         \]
 
     </div>
-    <br><p>(En 0) Si il existe un</p> \( \alpha < 1 \)<p> tels que :</p> <br>
+    <br><div><p>(En 0) Si il existe un</p> \( \alpha < 1 \)<p> tels que :</p> </div> <br>
     <div class="math">
         \[
         \lim_{x \to +\infty} x^{\alpha } f(x) = l
