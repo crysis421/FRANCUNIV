@@ -35,10 +35,16 @@
     <p>Pour [a;b[ :</p>
     <div class ="math">
         \[
-        f \sim g \] <p> en b </p>
+        f \sim g \]
+        <p> en b </p>
+        <br>
         \[= >    \int_{a}^b f(x)dx   \int_{a}^b g(x)dx   \] <p>Les integrales on la meme nature </p>
 
     </div>
+    <h3>Theoreme de comparaison</h3>
+    <p> Pour 0 &nbsp\(\leq  f(x) \leq g(x)\) &nbspon a : </p><br>
+    <p>  Si &nbsp \(\int_{a}^b g(x)dx \)&nbsp  converge alors &nbsp\(\int_{a}^b f(x)dx \)&nbsp converge </p>
+    <p>  Si &nbsp \(\int_{a}^b f(x)dx \)&nbsp  diverge alors &nbsp\(\int_{a}^b g(x)dx \)&nbsp diverge </p>
 </div>
 <h2>Convergence de serie :</h2><br>
 <div id="convergence">
