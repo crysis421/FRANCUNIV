@@ -29,27 +29,21 @@
 
 </div>
     <h3>Regle de Rieman</h3>
-    <br><p>(En   +\infty -\infty ) Si il existe un \[ \alpha \]>1 tels que : <br>
+    <br><p>(En   \(+\infty -\infty\) ) Si il existe un \( \alpha > 1 \) tels que : <br>
     <div class="math">
         \[
         \lim_{x \to +\infty} x^{\alpha } f(x) = l
-        = >
-        \]
-
-        \[
-        \int_{a}^+\infty f(x)dx
+        = > \int_{a}^+\infty f(x)dx
         \]
 
     </div>
-    <br><p>(En 0) Si il existe un \[ \alpha \]<1 tels que : <br>
+    <br><p>(En 0) Si il existe un \( \alpha < 1 \) tels que : <br>
     <div class="math">
         \[
         \lim_{x \to +\infty} x^{\alpha } f(x) = l
-        = >
+        = >         \int_{0}^a f(x)dx
         \]
-        \[
-        \int_{0}^a f(x)dx
-        \]
+
 
     </div>
     <h3>Convergence de series entieres : </h3>
