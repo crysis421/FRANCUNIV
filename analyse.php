@@ -27,7 +27,7 @@
     \]
 
 </div>
-    <h3>Convergence de series entieres </h3>
+    <h3>Convergence de series entieres : </h3>
     <br>
     <p>Dans la pratique on calcul : </p>
     <div class="math">
@@ -35,10 +35,10 @@
         \sum\limits_{k=1}^{+\infty} a_{k}z^{k}
         \]
         \[
-        \lim_{x \to +\infty} \lvert \frac{a_{n+1}{a_{n}} \lvert = l => r= \frac{1}{l}
+        \lim_{x \to +\infty} \lvert \frac{a_{n+1}{a_{n}}} \lvert = l => r= \frac{1}{l}
         \]
         \[
-        \lim_{x \to +\infty} \lvert a_{n}^{|frac{1}{n}} \lvert = l => r= \frac{1}{l}
+        \lim_{x \to +\infty} \lvert a_{n}^{\frac{1}{n}} \lvert = l => r= \frac{1}{l}
         \]
         <p> Avec r le rayon de convergence de la serie. C est pour quelle valeur de z la serie converge </p>
 
