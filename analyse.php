@@ -35,9 +35,9 @@
     <p>Pour [a;b[ :</p>
     <div class ="math">
         \[
-        f \sim g <p> en b </p>
-        = >    \int_{a}^b f(x)dx   \int_{a}^b g(x)dx   <p>Les integrales on la meme nature </p>
-        \]
+        f \sim g \] <p> en b </p>
+        \[= >    \int_{a}^b f(x)dx   \int_{a}^b g(x)dx   \] <p>Les integrales on la meme nature </p>
+
     </div>
 </div>
 <h2>Convergence de serie :</h2><br>
