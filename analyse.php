@@ -22,6 +22,6 @@
     \sum\limits_{k=1}^{+\inf} u_k}
     \]
 </div>
-<p>    Avec \[u_k\] = e^x </p>
+<p>    Avec \[u_k\] = e^x  car \[\lim_{x \to +\infty} e^x = +\infty \] \neq 0 </p>
 </body>
 </html>
