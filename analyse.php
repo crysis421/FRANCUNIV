@@ -29,7 +29,7 @@
 
 </div>
     <h3>Regle de Rieman</h3>
-    <br><p>(En   \(+\infty -\infty\) ) Si il existe un \( \alpha > 1 \) tels que :</p> <br>
+    <br><p>(En  &nbsp \(+\infty -\infty\) ) Si il existe un &nbsp \( \alpha > 1 \) &nbsp tels que :</p> <br>
     <div class="math">
         \[
         \lim_{x \to +\infty} x^{\alpha } f(x) = l
@@ -37,7 +37,7 @@
         \]
 
     </div>
-    <br><div><p>(En 0) Si il existe un</p> \( \alpha < 1 \)<p> tels que :</p> </div> <br>
+    <br><p>(En 0) Si il existe un &nbsp\( \alpha < 1 \) &nbsp tels que :</p> <br>
     <div class="math">
         \[
         \lim_{x \to +\infty} x^{\alpha } f(x) = l
