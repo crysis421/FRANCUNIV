@@ -11,6 +11,27 @@
 <body>
 <?php require('menu1.php') ?>
 <div id="titre"><h1>Analyse</h1></div>
+<h2>integrales:</h2>
+<div id="integrale">
+    <h3>Regle de Rieman</h3>
+    <br><p>(En  &nbsp \(+\infty -\infty\) ) Si il existe un &nbsp \( \alpha > 1 \) &nbsp tels que :</p> <br>
+    <div class="math">
+        \[
+        \lim_{x \to +\infty} x^{\alpha } f(x) = l
+        = > \int_{a}^+\infty f(x)dx
+        \]
+
+    </div>
+    <br><p>(En 0) Si il existe un &nbsp\( \alpha < 1 \) &nbsp tels que :</p> <br>
+    <div class="math">
+        \[
+        \lim_{x \to +\infty} x^{\alpha } f(x) = l
+        = >         \int_{0}^a f(x)dx
+        \]
+
+
+    </div>
+</div>
 <h2>Convergence de serie :</h2><br>
 <div id="convergence">
     <h3>Condition</h3>
