@@ -140,3 +140,7 @@ h3{
 mjx-container {
     vertical-align: middle !important;
 }
+.math {
+    display: inline;
+    vertical-align: middle;
+}
