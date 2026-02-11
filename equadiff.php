@@ -15,14 +15,9 @@
     <h2>Resolution d'une equation diff ordinaire homogene :</h2><br>
     <br><p> Il faut mettre sous forme résolu </p>
     <div class="math">
-        \[ \y'(x) + \alpha y(x) = 0 ]\
-    </div>
-    <div class="math">
         \[
-        \sin x =  \frac{e^{ix} - e^{-ix}}{2i}\    \ cos x =  \frac{e^{ix} + e^{-ix}}{2}
-        \]
-
-
+        y'(x) + \alpha y(x) = 0
+        ]\
     </div>
 </div>
 </body>
