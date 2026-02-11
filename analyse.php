@@ -35,10 +35,10 @@
         \sum\limits_{k=1}^{+\infty} a_{k}z^{k}
         \]
         \[
-        \lim_{x \to +\infty} \lvert \frac{a_{n+1}{a_{n}}} \lvert = l => r= \frac{1}{l}
+        \lim_{x \to +\infty}  |\frac{a_{n+1}{a_{n}}}| = l => r= \frac{1}{l}
         \]
         \[
-        \lim_{x \to +\infty} \lvert a_{n}^{\frac{1}{n}} \lvert = l => r= \frac{1}{l}
+        \lim_{x \to +\infty}  |a_{n}|^{\frac{1}{n}}  = l => r= \frac{1}{l}
         \]
         <p> Avec r le rayon de convergence de la serie. C est pour quelle valeur de z la serie converge </p>
 
