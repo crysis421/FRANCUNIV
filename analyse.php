@@ -22,7 +22,7 @@
     \sum\limits_{k=1}^{+\infty} u_{k}
     \]
     \[
-    \u_k = e^x  \lim_{x \to +\infty} e^x = +\infty  \neq 0
+    u_k = e^x  \lim_{x \to +\infty} e^x = +\infty  \neq 0
     \]
 
 </div>
