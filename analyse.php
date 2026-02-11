@@ -11,9 +11,9 @@
 <body>
 <?php require('menu1.php') ?>
 <div id="titre"><h1>Analyse</h1></div>
-<h2>integrales:</h2>
+<h2>Integrales :</h2>
 <div id="integrale">
-    <h3>Regle de Rieman</h3>
+    <h3>Regle de Rieman : </h3>
     <br><p>(En  &nbsp \(+\infty -\infty\) ) Si il existe un &nbsp \( \alpha > 1 \) &nbsp tels que :</p> <br>
     <div class="math">
         \[
@@ -31,10 +31,18 @@
 
 
     </div>
+    <h3>Theoreme d equivalence : </h3>
+    <p>Pour [a;b[ :</p>
+    <div class ="math">
+        \[
+        f \sim g <p> en b </p>
+        = >    \int_{a}^b f(x)dx   \int_{a}^b g(x)dx   <p>Les integrales on la meme nature </p>
+        \]
+    </div>
 </div>
 <h2>Convergence de serie :</h2><br>
 <div id="convergence">
-    <h3>Condition</h3>
+    <h3>Condition : </h3>
     <br><p> Si le terme generale de la suite ne tend pas <br>
     vers 0 => la serie ne converge pas  <br>
 <br>
@@ -49,7 +57,7 @@
     \]
 
 </div>
-    <h3>Regle de Rieman</h3>
+    <h3>Regle de Rieman :</h3>
     <br><p>(En  &nbsp \(+\infty -\infty\) ) Si il existe un &nbsp \( \alpha > 1 \) &nbsp tels que :</p> <br>
     <div class="math">
         \[
