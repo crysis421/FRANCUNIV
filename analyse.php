@@ -34,8 +34,8 @@
     <h3>Theoreme d equivalence : </h3>
     <p>Pour [a;b[ :</p>
     <div class ="math">
-        \(
-        f \sim g \)
+        \[
+        f \sim g \]
         <p> en b </p>
         <br>
         \[= >    \int_{a}^b f(x)dx   \int_{a}^b g(x)dx   \] <p>Les integrales on la meme nature </p>
