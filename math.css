@@ -137,10 +137,12 @@ h3{
     font-weight: bold;
     text-decoration: underline;
 }
-mjx-container {
+mjx-container[jax="CHTML"] {
+    display: inline-block !important;
     vertical-align: middle !important;
 }
-.math {
-    display: inline;
-    vertical-align: middle;
+
+p {
+    line-height: 1.6;
 }
+
