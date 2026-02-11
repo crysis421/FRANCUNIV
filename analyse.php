@@ -13,6 +13,7 @@
 <div id="titre"><h1>Analyse</h1></div>
 <h2>Convergence de serie :</h2><br>
 <div id="convergence">
+    <h3>Condition</h3>
     <br><p> Si le terme generale de la suite ne tend pas <br>
     vers 0 => la serie ne converge pas  <br>
 <br>
@@ -27,6 +28,29 @@
     \]
 
 </div>
+    <h3>Regle de Rieman</h3>
+    <br><p>(En  \[ +\infty -\infty \]) Si il existe un \[ \alpha \]>1 tels que : <br>
+    <div class="math">
+        \[
+        \lim_{x \to +\infty} x^{\alpha } f(x) = l
+        \]
+    = >
+        \[
+        \int_{a}^+\infty f(x)dx
+        \]
+
+    </div>
+    <br><p>(En 0) Si il existe un \[ \alpha \]<1 tels que : <br>
+    <div class="math">
+        \[
+        \lim_{x \to +\infty} x^{\alpha } f(x) = l
+        \]
+        = >
+        \[
+        \int_{0}^a f(x)dx
+        \]
+
+    </div>
     <h3>Convergence de series entieres : </h3>
     <br>
     <p>Dans la pratique on calcul : </p>
@@ -35,10 +59,10 @@
         \sum\limits_{k=1}^{+\infty} a_{k}z^{k}
         \]
         \[
-        \lim_{x \to +\infty}  |\frac{a_{n+1}}{a_{n}}| = l => r= \frac{1}{l}
+        \lim_{k \to +\infty}  |\frac{a_{k+1}}{a_{k}}| = l => r= \frac{1}{l}
         \]
         \[
-        \lim_{x \to +\infty}  |a_{n}|^{\frac{1}{n}}  = l => r= \frac{1}{l}
+        \lim_{k \to +\infty}  |a_{k}|^{\frac{1}{k}}  = l => r= \frac{1}{l}
         \]
         <p> Avec r le rayon de convergence de la serie. C est pour quelle valeur de z la serie converge </p>
 
