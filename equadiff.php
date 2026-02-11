@@ -17,7 +17,7 @@
     <div class="math">
         \[
         y'(x) + \alpha y(x) = 0
-        ]\
+        \]
     </div>
 </div>
 </body>
