@@ -35,7 +35,7 @@
         \sum\limits_{k=1}^{+\infty} a_{k}z^{k}
         \]
         \[
-        \lim_{x \to +\infty}  |\frac{a_{n+1}{a_{n}}}| = l => r= \frac{1}{l}
+        \lim_{x \to +\infty}  |\frac{a_{n+1}}{a_{n}}| = l => r= \frac{1}{l}
         \]
         \[
         \lim_{x \to +\infty}  |a_{n}|^{\frac{1}{n}}  = l => r= \frac{1}{l}
