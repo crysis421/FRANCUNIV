@@ -47,7 +47,7 @@
     <br>
     <div class="math">
         \[
-        \sin x =  \frac{e^ix - e^-ix}{2}   cos x =  \frac{e^ix + e^-ix}{2}
+        \sin x =  \frac{e^ix - e^-ix}{2}\    \ cos x =  \frac{e^ix + e^-ix}{2}
         \]
 
 
