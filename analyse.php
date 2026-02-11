@@ -19,7 +19,7 @@
 
 <div class="math">
     \[
-    \sum\limits_{k=1}^{+\inf} u_k}
+    \sum\limits_{k=1}^{+\inf} u_{k}
     \]
     \[
     \[u_k\] = e^x  \[\lim_{x \to +\infty} e^x = +\infty \] \neq 0
