@@ -21,7 +21,10 @@
     \[
     \sum\limits_{k=1}^{+\inf} u_k}
     \]
+    \[
+    \[u_k\] = e^x  \[\lim_{x \to +\infty} e^x = +\infty \] \neq 0
+    \]
+
 </div>
-<p>    Avec \[u_k\] = e^x  car \[\lim_{x \to +\infty} e^x = +\infty \] \neq 0 </p>
 </body>
 </html>
