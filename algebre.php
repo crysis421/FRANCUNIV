@@ -35,5 +35,6 @@
 \[\forall (x,y) \in G² , \Phi (xy)=\Phi (x) \Phi (y)\]
 <p> Pour un morphisme qui va de A vers B et les elements neutre a et b des groupes A et B alors :</p>
 \[\Phi(a)=b ~ et ~ x \in A ,\Phi (x^{-1})=(\Phi(x))^{-1} \]
+\[ \Phi ~ est ~ un ~ morphisme ~ de ~ G ~ dans ~ A , ~ on ~dit ~ que ~ \Phi ~ est ~ un ~ isomorphisme ~ si ~ il ~ existe ~ \psi ~ de ~ A ~ dans~ G ~ tel ~ que ~ \Phi\circ\psi = ID_A ~ \psi\circ\Phi = ID_G \]
 </body>
 </html>
