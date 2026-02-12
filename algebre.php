@@ -34,6 +34,6 @@
 <p> Un morphisme de groupe de G dans A est une application qui verifie : </p>
 \[\forall (x,y) \in G² , \Phi (xy)=\Phi (x) \Phi (y)\]
 <p> Pour un morphisme qui va de A vers B et les elements neutre a et b des groupes A et B alors :</p>
-\[\Phi(a)=b ~ et ~ x \in A , {\Phi (x)}^{-1}=(\Phi(x))^{-1} \]
+\[\Phi(a)=b ~ et ~ x \in A ,\Phi (x^{-1})=(\Phi(x))^{-1} \]
 </body>
 </html>
