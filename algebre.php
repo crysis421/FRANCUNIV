@@ -16,8 +16,8 @@
     <h3>Montrez que c est un groupe/sous groupes :</h3>
         <p> Dans la pratique on montre que c est un sous groupe<br>
             d un groupe connu (exmple un sous groupe de (R,+)). Pour ca on montre que :<br>
-            1) H contient l'élément neutre de G <br></p>
-        <p>2) si x,y &nbsp\[\in H \]&nbsp, alors xy &nbsp\[\in H \]&nbsp et &nbsp\[ x^{-1} \in H \] </p>
+            1) H contient l'élément neutre de G <br>
+        2) si x,y &nbsp\[\in H \]&nbsp, alors xy &nbsp\[\in H \]&nbsp et &nbsp\[ x^{-1} \in H \] </p>
 
 
 </body>
