@@ -28,5 +28,12 @@
 <h3> Groupes cycliques :</h3>
 <p> C est des groupes qui sont cylcique qui se repetent (exemple: les modulos)</p>
 \[ \frac{\mathbb{Z}}{n\mathbb{Z}} \]
+<p> Soit G un groupe cyclique d ordre n.Pour tout diviseurs d de n, il existe un sous groupe de G d ordre d</p>
+
+<h3> Morphisme de Groupe :</h3>
+<p> Un morphisme de groupe de G dans A est une application qui verifie : </p>
+\[\forall (x,y) \in G² , \Phi (xy)=\Phi (x) \Phi (y)\]
+<p> Pour un morphisme qui va de A vers B et les elements neutre a et b des groupes A et B alors :</p>
+\[\Phi(a)=b ~ et ~ x \in A , {\Phi (x)}^{-1}=(\Phi(x))^{-1} \]
 </body>
 </html>
