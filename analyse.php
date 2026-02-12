@@ -102,8 +102,15 @@
      <p> Un boule ouverte ou ferme </p>
     <div class="math">
         \[
-        \beta (x_0,r_0) = \left\{ x \in X \mid d(x,x_0) < r_0 }\right\    \beta (x_0,r_0) = \left\{ x \in X \mid d(x,x_0) \leq r_0 }\right\
+        \beta (x_0, r_0)
+        = \left\{ x \in X \mid d(x, x_0) < r_0 \right\}
         \]
+
+        \[
+        \beta (x_0, r_0)
+        = \left\{ x \in X \mid d(x, x_0) \le r_0 \right\}
+        \]
+
 
 
     </div>
