@@ -25,7 +25,8 @@
             d un groupe connu (exmple un sous groupe de (R,+)). Pour ca on montre que :<br></p>
 <p>1) H contient l'élément neutre de G</p>
            <p> 2) si   &nbsp\( x,y\in H \)&nbsp , alors  &nbsp\( xy \in H\)&nbsp  et  &nbsp\( x^{-1} \in H \)  </p>
-
-
+<h3> Groupes cycliques :</h3>
+<p> C est des groupes qui sont cylcique qui se repetent (exemple: les modulos)</p>
+\[ \frac{\mathbb{Z}}{n\mathbb{Z}} \]
 </body>
 </html>
