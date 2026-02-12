@@ -17,7 +17,7 @@
 <p>On dit que "e" l element neure de G si :</p>
 \[ \forall x \in G , x * e = e * x = x \]
 <p>On dit l inverse\symetrique de x est :</p>
-\[ \forall x \in G , \exists y , x * y = y * x = e  &nbsp y  &nbsp note x^{-1} \]
+\[ \forall x \in G , \exists y , x * y = y * x = e  ~ y  ~ note x^{-1} \]
     <h3>Montrez que c est un groupe/sous groupes :</h3>
         <p> Dans la pratique on montre que H est un sous groupe de G avec x.y . la loi de G<br>
             d un groupe connu (exmple un sous groupe de (R,+)). Pour ca on montre que :<br></p>
