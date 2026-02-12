@@ -15,9 +15,9 @@
 <h2> Groupes et sous groupes :</h2>
     <h3>Montrez que c est un groupe/sous groupes :</h3>
         <p> Dans la pratique on montre que c est un sous groupe<br>
-            d un groupe connu (exmple un sous groupe de (R,+)). Pour ca on montre que :<br>
-            1) H contient l'élément neutre de G <br>
-            2) si x,y appartiennent a H , alors xy appartient a H  et  x<sup>{-1}</sup>appartient a H  </p>
+            d un groupe connu (exmple un sous groupe de (R,+)). Pour ca on montre que :<br></p>
+<p>1) H contient l'élément neutre de G</p> <br>
+           <p> 2) si x,y \[ \in H \] , alors xy \[ \in H\]  et  \[ x^{-1} \in H \]  </p>
 
 
 </body>
