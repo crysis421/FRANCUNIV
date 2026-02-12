@@ -103,9 +103,8 @@
     <div class="math">
         \[
         \beta (x_0,r_0) = {x \in X / d(x,x_0) < r_0 } \beta (x_0,r_0) = {x \in X / d(x,x_0) \leq r_0 }
-        \[
+        \]
 
-        <p> Avec r le rayon de convergence de la serie. C est pour quelle valeur de z la serie converge </p>
 
     </div>
 </div>
