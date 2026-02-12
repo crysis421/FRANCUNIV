@@ -17,7 +17,7 @@
         <p> Dans la pratique on montre que c est un sous groupe<br>
             d un groupe connu (exmple un sous groupe de (R,+)). Pour ca on montre que :<br>
             1) H contient l'élément neutre de G <br>
-        2) si x,y appartiennent a H , alors xy appartient a H  et  x^{-1}   appartient a h H  </p>
+            2) si x,y appartiennent a H , alors xy appartient a H  et  x<sup>{-1}</sup>appartient a H  </p>
 
 
 </body>
