@@ -14,7 +14,7 @@
 <div id="titre"><h1>Algebre</h1></div>
 <h2> Groupes et sous groupes :</h2>
     <h3>Montrez que c est un groupe/sous groupes :</h3>
-        <p> Dans la pratique on montre que c est un sous groupe<br>
+        <p> Dans la pratique on montre que H est un sous groupe de G avec x.y . la loi de G<br>
             d un groupe connu (exmple un sous groupe de (R,+)). Pour ca on montre que :<br></p>
 <p>1) H contient l'élément neutre de G</p>
            <p> 2) si   &nbsp\( x,y\in H \)&nbsp , alors  &nbsp\( xy \in H\)&nbsp  et  &nbsp\( x^{-1} \in H \)  </p>
