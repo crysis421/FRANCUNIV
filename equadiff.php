@@ -31,6 +31,8 @@
         y(x)=e^{\int -\alpha (x) }
         \]
     </div>
+    <h2>Resolution d un systeme differentiel homogene :</h2>
+    <p> On va trouver la matrice associe au systeme et puis on cherche les valeurs propres \((\lambda)_1 ~ (\lambda)_2\) puis leurs vecteurs propres associées  </p>
 
 </div>
 </body>
