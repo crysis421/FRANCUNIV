@@ -32,7 +32,7 @@
         \]
     </div>
     <h2>Resolution d un systeme differentiel homogene :</h2>
-    <p> On va trouver la matrice associe au systeme a 2 dimensions et puis on cherche les valeurs propres \(\lambda _1 ~ \lambda _2\) puis leurs vecteurs propres associées <br>
+    <p> On va trouver la matrice associe au systeme a 2 dimensions et puis on cherche les valeurs propres \( ~\lambda _1 ~ \lambda _2 ~\) puis leurs vecteurs propres associées <br>
     Les solutions sont de la forme :</p>
  \[ Y(t) = \alpha e^{\lambda _1 t}v_1+\beta e^{\lambda _2 t }v_2\]
 </div>
