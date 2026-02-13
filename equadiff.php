@@ -38,8 +38,8 @@
     \[ Y(t) = \alpha e^{\lambda _1 t}v_1+\beta e^{\lambda _2 t }v_2\]
     <p> Exemple : </p>
     \( \left\{ \begin{array}
-    y'(t)= ~x(t)
-    x'(t)= ~y(t)
+    \y'(t)= ~x(t)
+    \x'(t)= ~y(t)
     \end{array}
     \rigth
 </div>
