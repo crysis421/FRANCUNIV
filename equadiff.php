@@ -37,11 +37,11 @@
         ~ \lambda _2 ~\) ,puis leurs vecteurs propres associées. Les solutions sont de la forme :</p>
     \[ Y(t) = \alpha e^{\lambda _1 t}v_1+\beta e^{\lambda _2 t }v_2\]
     <p> Exemple : </p>
-    \( \left\{ \begin{array}
+    \[ \left\{ \begin{array}
     y'(t)= ~x(t) \\
     x'(t)= ~y(t)
     \end{array}
-    \right. \)
+    \right. \]
 </div>
 </body>
 </html>
