@@ -41,7 +41,7 @@
     y'(t)= ~x(t) \\
     x'(t)= ~y(t)
     \end{array}
-    \right \)
+    \right. \)
 </div>
 </body>
 </html>
