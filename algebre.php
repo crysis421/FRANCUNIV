@@ -173,7 +173,7 @@ det(f\circ g )=det(f)det(g)
 2) f est injectif \\
 3) f est surjectif \\
 4) {f(e_1),...,f(e_n)} est une base de } \mathbf{R}^n
-\text{ 5)} \def(f) \ne  0 \text{ c est a dire }\det(f(e_1),...,f(e_n)) \ne 0
+\text{ 5)} \det(f) \ne  0 \text{ c est a dire }\det(f(e_1),...,f(e_n)) \ne 0
 
 \end{gathered}
 \]
