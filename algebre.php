@@ -214,8 +214,20 @@ det(f\circ g )=det(f)det(g)
 \phi(x,x)\ge 0 ~~~\forall x \in  V \\
 \\
 \text{Definie (separation) : }~~~
-\phi(x,x)\g e0 \Leftrightarrow ~~~ x=0_V ~~~\forall x \in  V \\
+\phi(x,x) \ge0 \Leftrightarrow ~~~ x=0_V ~~~\forall x \in  V \\
 \\
+\text{Matrice de}\phi : \\
+\\
+\text{La matrice M_B(}\phi\text{) de }\phi\text{ dans la base B est la matrice n × n dont le coefficient d indice (i, j) (i-eme
+ligne et j-eme colonne, avec i, j} \in \text{{1, . . . , n}) est}\phi\text{(e_i
+, e_j )}\\
+\\
+Mat_B(\phi)=\begin{pmatrix}
+\phi(e_1,e_1 & ... & \phi(e_1,e_n) \\
+\phi(e_2,e_1 & ... & \phi(e_2,e_n) \\
+\vdots & \ddots & \vdots \\
+\phi(e_1,e_1 & ... & \phi(e_1,e_n)
+\end{pmatrix}
 
 
 
