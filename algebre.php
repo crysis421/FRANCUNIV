@@ -161,6 +161,11 @@ Mat_e(f)=\begin{pmatrix}
 \end{pmatrix}
 \end{gathered}
 \]
+<p> Soit f et g 2 endomorphisme : </p>
+\[\begin{gathered}
+det(f\circ g )=det(f)det(g)
+\end{gathered}
+\]
 <p>Aussi aller voir regle de Cramer mais c'est long pour rien</p>
 </body>
 </html>
