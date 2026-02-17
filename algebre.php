@@ -220,14 +220,16 @@ det(f\circ g )=det(f)det(g)
 \\
 \text{La matrice}~ M_B(\phi)\ ~ de ~ \phi\text{ dans la base B est la matrice n × n dont le coefficient d indice (i, j) (i-eme
 ligne et j-eme colonne, avec i, j} \in \text{{1, . . . , n}) est }\phi(e_i
-, e_j )\\
+, e_j ) ou ecrit sous forme de matrcie : \\
 \\
 Mat_B(\phi)=\begin{pmatrix}
-\phi(e_1,e_1 & ... & \phi(e_1,e_n) \\
-\phi(e_2,e_1 & ... & \phi(e_2,e_n) \\
+\phi(e_1,e_1) & ... & \phi(e_1,e_n) \\
+\phi(e_2,e_1) & ... & \phi(e_2,e_n) \\
 \vdots & \ddots & \vdots \\
 \phi(e_n,e_1) & ... & \phi(e_n,e_n)
-\end{pmatrix}
+\end{pmatrix}\\
+\\
+\text{Avec } B=(e_1,e_2,...,e_n) \text{ une base de V}
 
 
 
