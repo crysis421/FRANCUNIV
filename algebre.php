@@ -122,10 +122,11 @@ Exemple: </p>
 \end{pmatrix} \\
 ~det(A)~=1*5*9=45 \]
 <br>
-\[\begin{document}det(A^{T})~=~det(A) \\
+\[\begin{itemize}
+det(A^{T})~=~det(A) \\
 det(I_n)~=~1  \\
 \text{ si A est inversible alors : } det(A^{-1})~=~\frac{1}{det(A})
-\end{document}
+\end{itemize}
 \]
 <p> Soit 2 matrices carrées A et B : </p>
 \[ det(AB)~=~det(A)det(B)\]
