@@ -205,10 +205,10 @@ det(f\circ g )=det(f)det(g)
 \forall \lambda , \mu \in \mathbf{R}~~~ \forall x_1,x_2,y_1,y_2 \in V\\
 \\
 \text{Symetrique : }~~~
-\phi(x,y)~=~\phi(y,x) \\
+\phi(x,y)~=~\phi(y,x) ~~~\forall x,y \in  V \\
 \\
 \text{AntiSymetrique : }~~~
-\phi(x,y)~=~-\phi(y,x) \\
+\phi(x,y)~=~-\phi(y,x) ~~~\forall x,y \in  V \\
 \\
 
 
