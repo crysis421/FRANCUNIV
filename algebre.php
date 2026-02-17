@@ -57,7 +57,7 @@ a_{n1} & a_{n2} & \cdots & a_{nn}
 \]
 <p>Exemple: </p>
 \[
-\begin{aligned}
+\begin{gathered}
 \text{La matrice }
 A &=
 \begin{pmatrix}
@@ -85,31 +85,31 @@ A &=
 \end{vmatrix}~
 \det(A)=1*(5*9-8*6)-2*(4*9-7*6)+3*(4*8-7*5)=-3 +12-9=0\\
 \text{A est donc pas inversible }
-\end{aligned}
+\end{gathered}
 \]
 <p> Soit A un matrice carre de  taille n x n .Les permutations deux 2 colonnes inveerse le signe du determinant :</p>
-\[\begin{aligned}
+\[\begin{gathered}
 C_i \leftrightarrow C_j \\
 det(A)~ =~-det(A)
-\end{aligned}
+\end{gathered}
 \]
 
 <p>Multiplication d une colonne par un scalaire: </p>
-\[\begin{aligned}
+\[\begin{gathered}
 C_i \leftrightarrow \alpha C_i \\
 det(A)~ = \alpha det(A)
-\end{aligned}\]
+\end{gathered}\]
 <p> Addition d un multiple d une colonne a une autre colonne :</p>
-\[ \begin{aligned}
+\[ \begin{gathered}
 C_j \leftrightarrow C_j + \alpha C_i \\
  \text{det(A) reste inchangé }
-\end{aligned}
+\end{gathered}
 \]
 <p>Attention si on fait :</p>
-\[\begin{aligned}
+\[\begin{gathered}
 C_j \leftrightarrow \beta C_j + \alpha C_i \newline
 det(A)= ~\beta det(A)
-\end{aligned}\]
+\end{gathered}\]
 <p>Tout ce qu il y a au dessus marche aussi avec les lignes </p>
 <p>Si on multiplie tout une matrice par un scalaire on a :</p>
 \[ det(\alpha A)~= ~ \alpha^n det(A)\]
@@ -125,10 +125,11 @@ Exemple: </p>
 \[\begin{gathered}
 det(A^{T})~=~det(A) \\
 det(I_n)~=~1  \\
-\text{ si A est inversible alors : } det(A^{-1})~=~\frac{1}{det(A})
+\text{ si A est inversible alors : } det(A^{-1})~=~\frac{1}{det(A)}
 \end{gathered}
 \]
 <p> Soit 2 matrices carrées A et B : </p>
 \[ det(AB)~=~det(A)det(B)\]
+<p>Aussi aller voir regle de Cramer mais c'est long pour rien</p>
 </body>
 </html>
