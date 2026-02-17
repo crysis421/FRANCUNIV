@@ -148,7 +148,18 @@ x_1^{\,n-1} & x_2^{\,n-1} & \cdots & x_n^{\,n-1}
 \prod_{1 \le i < j \le n}
 (x_j - x_i)
 \]
-
+<p>Matrice d un endomorphisme : </p>
+\[\begin{gathered}
+f(x,y,z)=(x+2y,y-z,3x+z) \\
+\text{sa matrice dans la base canonique e=(e_1,e_2,e_3)} \\
+f(e_1)=f(1,0,0)=(1,0,3) ~~ f(e_2)=f(0,1,0)=(2,1,0)~~ f(e_3)=f(0,0,1)=(0,-1,1)\\
+\text{on a la matrice de f dans la base canonique :}
+Mat_e(f)=\begin{pmatrix}
+1 & 2 & 0 \\
+0 & 1 & -1 \\
+3 & 0 & 1
+\end{pmatrix}
+\]
 <p>Aussi aller voir regle de Cramer mais c'est long pour rien</p>
 </body>
 </html>
