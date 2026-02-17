@@ -210,6 +210,13 @@ det(f\circ g )=det(f)det(g)
 \text{AntiSymetrique : }~~~
 \phi(x,y)~=~-\phi(y,x) ~~~\forall x,y \in  V \\
 \\
+\text{Positivite : }~~~
+\phi(x,x)\ge 0 ~~~\forall x \in  V \\
+\\
+\text{Definie (separation) : }~~~
+\phi(x,x)\g e0 \Leftrightarrow ~~~ x=0_V ~~~\forall x \in  V \\
+\\
+
 
 
 
