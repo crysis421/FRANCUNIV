@@ -159,6 +159,7 @@ Mat_e(f)=\begin{pmatrix}
 0 & 1 & -1 \\
 3 & 0 & 1
 \end{pmatrix}
+\end{gathered}
 \]
 <p>Aussi aller voir regle de Cramer mais c'est long pour rien</p>
 </body>
