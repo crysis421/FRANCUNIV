@@ -55,20 +55,38 @@ a_{n1} & a_{n2} & \cdots & a_{nn}
 \sum_{j=1}^{n} a_{1j} C_{1j}
 \]
 <p>Exemple: </p>
-\[ La & matrice & A = \begin{pmatrix}
-1 & 2 & 3\\
+\[
+\begin{aligned}
+\text{La matrice }
+A &=
+\begin{pmatrix}
+1 & 2 & 3 \\
 4 & 5 & 6 \\
 7 & 8 & 9
 \end{pmatrix}
- On & va & avoir & le & calcul & suivant & det(A)= 1 \begin{vmatrix}
+\\[0.5em]
+\det(A)
+&=
+1
+\begin{vmatrix}
 5 & 6 \\
 8 & 9
-\end{vmatrix} 2 \begin{vmatrix}
+\end{vmatrix}
+- 2
+\begin{vmatrix}
 4 & 6 \\
 7 & 9
-\end{vmatrix} 3 \begin{vmatrix}
+\end{vmatrix}
++ 3
+\begin{vmatrix}
 4 & 5 \\
 7 & 8
-\end{vmatrix} = 1*(5*9-8*6) + 2*(4*9-7*6) + 3*(4*5-7*8)= -3 -12 -108 = -123\]
+\end{vmatrix}
+\det(A)=1*(5*9-8*6)-2*(4*9-7*6)+3*(4*8-7*5)=-3 +12-9=0
+\text{A est donc pas inversible }
+\end{aligned}
+
+\]
+
 </body>
 </html>
