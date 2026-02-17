@@ -170,7 +170,7 @@ det(f\circ g )=det(f)det(g)
 \[
 \begin{gathered}
 \text{Soit } f : \mathbf{R}^n \to \mathbf{R}^n
-\text{ un endomorphisme linéaire. Les assertions suivantes sont équivalentes :} \\[6pt]
+\text{ un endomorphisme linéaire. Les assertions suivantes sont équivalentes :} \\
 
 1) \; f \text{ est bijectif} \\
 
