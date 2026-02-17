@@ -53,6 +53,7 @@ a_{n1} & a_{n2} & \cdots & a_{nn}
 \end{vmatrix}
 =
 \sum_{j=1}^{n} a_{1j} C_{1j}
+~~ avec ~C_{ik} = (-1)^{i+k}*det(A_{ik})
 \]
 <p>Exemple: </p>
 \[
