@@ -130,6 +130,25 @@ det(I_n)~=~1  \\
 \]
 <p> Soit 2 matrices carrées A et B : </p>
 \[ det(AB)~=~det(A)det(B)\]
+<p> La matrice de Vandermonde : </p>
+\[
+V =
+\begin{pmatrix}
+1 & 1 & \cdots & 1 \\
+x_1 & x_2 & \cdots & x_n \\
+x_1^{2} & x_2^{2} & \cdots & x_n^{2} \\
+\vdots & \vdots & \ddots & \vdots \\
+x_1^{\,n-1} & x_2^{\,n-1} & \cdots & x_n^{\,n-1}
+\end{pmatrix}
+\]
+<p> Et son determinant :</p>
+\[
+\det(V)
+=
+\prod_{1 \le i < j \le n}
+(x_j - x_i)
+\]
+
 <p>Aussi aller voir regle de Cramer mais c'est long pour rien</p>
 </body>
 </html>
