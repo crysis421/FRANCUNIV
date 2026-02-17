@@ -53,7 +53,7 @@ a_{n1} & a_{n2} & \cdots & a_{nn}
 \end{vmatrix}
 =
 \sum_{j=1}^{n} a_{1j} C_{1j}
-~~ avec ~C_{ik} = (-1)^{i+k}*det(A_{ik})
+~~ avec ~C_{ik} = (-1)^{i+k}det(A_{ik})
 \]
 <p>Exemple: </p>
 \[
@@ -121,6 +121,11 @@ Exemple: </p>
 0 & 0 & 9
 \end{pmatrix} \\
 ~det(A)~=1*5*9=45 \]
-
+<br>
+\[ \det(A^{T})~=~\det(A) \\
+\det(I_n)~=~1  \\
+\text{ si A est inversible alors : } \det(A^{-1})~=~\frac{1}{det(A}) \]
+<p> Soit 2 matrices carrées A et B : </p>
+\[ det(AB)~=~det(A)det(B)
 </body>
 </html>
