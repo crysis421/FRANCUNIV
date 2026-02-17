@@ -111,7 +111,7 @@ det(A)= ~\beta det(A)
 \end{aligned}\]
 <p>Tout ce qu il y a au dessus marche aussi avec les lignes </p>
 <p>Si on multiplie tout une matrice par un scalaire on a :</p>
-\[ det(\alpha A)~= ~ \alpha^n det(A)
+\[ det(\alpha A)~= ~ \alpha^n det(A)\]
 <p> Pour une matrice diagonale ou triangulaire superieur ou inferieur on a : le determinant de A et la multiplication des elements de la diagonale <br>
 Exemple: </p>
 \[ A~\begin{pmatrix}
@@ -119,7 +119,7 @@ Exemple: </p>
 0 & 5 & 6 \\
 0 & 0 & 9
 \end{pmatrix} \\
-det(A)~=1*5*9=45 \]
+~det(A)~=1*5*9=45 \]
 
 </body>
 </html>
