@@ -193,12 +193,16 @@ det(f\circ g )=det(f)det(g)
 \[
 \begin{gathered}
 \text{Par rapprot a la premiere variable }\\
+\\
 \phi(.,y):V \rightarrow \mathbf{R} , ~ x \rightarrow \phi(x,y) \\
 \phi(\lambda x_1 + \mu x_2,y) ~=~\lambda\phi(x_1,y) ~+\mu\phi(x_2,y)\\
+\\
 \text{Par rapprot a la deuxieme variable }\\
+\\
 \phi(x,.):V \rightarrow \mathbf{R} , ~ y \rightarrow \phi(x,y) \\
 \phi(x,\lambda y_1 + \mu y_2) ~=~\lambda\phi(x,y_1) ~+\mu\phi(x,y_2)\\
-\forall \lamda , \mu \in \mathbf{R}~~ \forall x_1,x_2,y_1,y_2 \in V
+\\
+\forall \lambda , \mu \in \mathbf{R}~~ \forall x_1,x_2,y_1,y_2 \in V
 
 
 \end{gathered}
