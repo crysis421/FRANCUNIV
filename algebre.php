@@ -41,7 +41,7 @@
 
 <h2>Determinant :</h2>
 <p> Le determinant est une forme n-linéaire alternées et il s ecrit : det(A) avec A une matrice carrée</p>
-<p> Le determinant ce calcul de la forme suivante : </p>
+<p class="titre"> Le determinant ce calcul de la forme suivante : </p>
 \[
 \det(A)
 =
@@ -55,7 +55,7 @@ a_{n1} & a_{n2} & \cdots & a_{nn}
 \sum_{j=1}^{n} a_{1j} C_{1j}
 ~~ avec ~C_{ik} = (-1)^{i+k}det(A_{ik})
 \]
-<p>Exemple: </p>
+<p class="titre">Exemple: </p>
 \[
 \begin{gathered}
 \text{La matrice }
@@ -166,7 +166,7 @@ Mat_e(f)=\begin{pmatrix}
 det(f\circ g )=det(f)det(g)
 \end{gathered}
 \]
-<p>Remarque : </p>
+<p class="titre">Remarque : </p>
 \[
 \begin{gathered}
 \text{Soit } f : \mathbf{R}^n \to \mathbf{R}^n
