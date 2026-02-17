@@ -232,8 +232,6 @@ Mat_B(\phi)=\begin{pmatrix}
 \text{Avec } B=(e_1,e_2,...,e_n) \text{ une base de V}
 
 
-
-
 \end{gathered}
 \]
 
