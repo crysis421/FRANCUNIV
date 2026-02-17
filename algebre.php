@@ -197,26 +197,26 @@ det(f\circ g )=det(f)det(g)
 \phi(.,y):V \rightarrow \mathbf{R} , ~~~ x \rightarrow \phi(x,y) \\
 \phi(\lambda x_1 + \mu x_2,y) ~=~\lambda\phi(x_1,y) ~+\mu\phi(x_2,y)\\
 \\
-\text{\underline{Par rapprot a la deuxieme variable :}}\\
+\underline{\text{Par rapprot a la deuxieme variable :}}\\
 \\
 \phi(x,.):V \rightarrow \mathbf{R} , ~~~ y \rightarrow \phi(x,y) \\
 \phi(x,\lambda y_1 + \mu y_2) ~=~\lambda\phi(x,y_1) ~+\mu\phi(x,y_2)\\
 \\
 \forall \lambda , \mu \in \mathbf{R}~~~ \forall x_1,x_2,y_1,y_2 \in V\\
 \\
-\text{\underline{Symetrique : }}~~~
+\underline{\text{Symetrique : }}~~~
 \phi(x,y)~=~\phi(y,x) ~~~\forall x,y \in  V \\
 \\
-\text{\underline{AntiSymetrique : }}~~~
+\underline{\text{AntiSymetrique : }}~~~
 \phi(x,y)~=~-\phi(y,x) ~~~\forall x,y \in  V \\
 \\
-\text{\underline{Positivite : }}~~~
+\underline{\text{Positivite : }}~~~
 \phi(x,x)\ge 0 ~~~\forall x \in  V \\
 \\
-\text{\underline{Definie (separation) : }}~~~
+\underline{\text{Definie (separation) : }}~~~
 \phi(x,x) \ge0 \Leftrightarrow ~~~ x=0_V ~~~\forall x \in  V \\
 \\
-\text{\underline{Matrice de }}\phi : \\
+\underline{\text{Matrice de }}\phi : \\
 \\
 \text{La matrice}~ M_B(\phi)\ ~ de ~ \phi\text{ dans la base B est la matrice n × n dont le coefficient d indice (i, j) (i-eme
 ligne et j-eme colonne, avec i, j} \in \text{{1, . . . , n}) est }\phi(e_i
