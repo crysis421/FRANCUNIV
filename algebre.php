@@ -87,17 +87,28 @@ A &=
 \end{aligned}
 \]
 <p> Soit A un matrice carre de  taille n x n .Les permutations deux 2 colonnes inveerse le signe du determinant :</p>
-\[ C_i \leftrightarrow C_j \\
-det(A)~ =~-det(A)\]
+\[\begin{aligned}
+C_i \leftrightarrow C_j \\
+det(A)~ =~-det(A)
+\end{aligned}
+\]
+
 <p>Multiplication d une colonne par un scalaire: </p>
-\[ C_i \leftrightarrow \alpha C_i ~~
-det(A)~ = \alpha^n det(A)\]
+\[\begin{aligned}
+C_i \leftrightarrow \alpha C_i \\
+det(A)~ = \alpha det(A)
+\end{aligned}\]
 <p> Addition d un multiple d une colonne a une autre colonne :</p>
-\[ C_j \leftrightarrow C_j + \alpha C_i \\
- \text{det(A) reste inchangé } \]
+\[ \begin{aligned}
+C_j \leftrightarrow C_j + \alpha C_i \\
+ \text{det(A) reste inchangé }
+\end{aligned}
+\]
 <p>Attention si on fait :</p>
-\[ C_j \leftrightarrow \beta C_j + \alpha C_i \newline
-det(A)= ~\beta^n det(A)  \]
+\[\begin{aligned}
+C_j \leftrightarrow \beta C_j + \alpha C_i \newline
+det(A)= ~\beta det(A)
+\end{aligned}\]
 <p>Tout ce qu il y a au dessus marche aussi avec les lignes </p>
 </body>
 </html>
