@@ -166,6 +166,17 @@ Mat_e(f)=\begin{pmatrix}
 det(f\circ g )=det(f)det(g)
 \end{gathered}
 \]
+<p>Remarque : </p>
+\[\begin{gathered}
+\text{  Soit f: } \mathbf{R}^n \rightarrow \mathbf{R}^n \text{ un endomorphisme linéaire . Les assertions suivante sont equivalentes :
+1) f est bijectif \\
+2) f est injectif \\
+3) f est surjectif \\
+4) {f(e_1),...,f(e_n)} est une base de } \mathbf{R}^n
+\text{ 5)} \def(f) \ne  0 \text{ c est a dire }\det(f(e_1),...,f(e_n)) \ne 0
+
+\end{gathered}
+\]
 <p>Aussi aller voir regle de Cramer mais c'est long pour rien</p>
 </body>
 </html>
