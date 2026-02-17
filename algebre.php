@@ -192,7 +192,7 @@ det(f\circ g )=det(f)det(g)
 <p>Def : Une application est appelee forme bilineaire dans V , si elle est lineaire en chacune de ses variables : </p>
 \[
 \begin{gathered}
-\\underline{\text{Par rapprot a la premiere variable : }}\\
+\underline{\text{Par rapprot a la premiere variable : }}\\
 \\
 \phi(.,y):V \rightarrow \mathbf{R} , ~~~ x \rightarrow \phi(x,y) \\
 \phi(\lambda x_1 + \mu x_2,y) ~=~\lambda\phi(x_1,y) ~+\mu\phi(x_2,y)\\
