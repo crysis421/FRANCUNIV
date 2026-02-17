@@ -55,12 +55,12 @@ a_{n1} & a_{n2} & \cdots & a_{nn}
 \sum_{j=1}^{n} a_{1j} C_{1j}
 \]
 <p>Exemple: </p>
-\[ La ~matrice ~A = \begin{pmatrix}
+\[ La & matrice & A = \begin{pmatrix}
 1 & 2 & 3\\
 4 & 5 & 6 \\
 7 & 8 & 9
 \end{pmatrix}
- On & va &  avoir & le & calcul & suivant & det(A)= 1 \begin{vmatrix}
+ On & va & avoir & le & calcul & suivant & det(A)= 1 \begin{vmatrix}
 5 & 6 \\
 8 & 9
 \end{vmatrix} 2 \begin{vmatrix}
