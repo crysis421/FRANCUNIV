@@ -66,7 +66,7 @@ A &=
 \end{pmatrix}
 ~ ~
 \det(A)
-&=
+=
 1
 \begin{vmatrix}
 5 & 6 \\
@@ -81,12 +81,23 @@ A &=
 \begin{vmatrix}
 4 & 5 \\
 7 & 8
-\end{vmatrix}
+\end{vmatrix}~
 \det(A)=1*(5*9-8*6)-2*(4*9-7*6)+3*(4*8-7*5)=-3 +12-9=0\\
 \text{A est donc pas inversible }
 \end{aligned}
-
 \]
-
+<p> Soit A un matrice carre de  taille n x n .Les permutations deux 2 colonnes inveerse le signe du determinant </p>
+\[ C_i \leftrightarrow C_j \\
+det(A)& =&-det(A)\]
+<p>Multiplication d une colonne par un scalaire: </p>
+\[ C_i \leftrightarrow \alpha C_i \\
+det(A)& = \alpha^n det(A)\]
+<p> Addition d un multiple d une colonne a une autre colonne </p>
+\[ C_j \leftrightarrow C_j + \alpha C_i \\
+ \text{det(A) reste inchangé } \]
+<p>Attention si on fait :</p>
+\[ C_j \leftrightarrow \beta C_j + \alpha C_i \\
+det(A)= \beta^n det(A)  \]
+<p>Tout ce qu il y a au dessus marche aussi avec les lignes </p>
 </body>
 </html>
