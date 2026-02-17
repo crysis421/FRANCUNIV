@@ -167,16 +167,26 @@ det(f\circ g )=det(f)det(g)
 \end{gathered}
 \]
 <p>Remarque : </p>
-\[\begin{gathered}
-\text{  Soit f: } \mathbf{R}^n \rightarrow \mathbf{R}^n \text{ un endomorphisme linéaire . Les assertions suivante sont equivalentes :\\
-\;1) f est bijectif \\
-\;2) f est injectif \\
-\;3) f est surjectif \\
-\;4) {f(e_1),...,f(e_n)} est une base de } \mathbf{R}^n \\
-\text{ 5)} \det(f) \ne  0 \text{ c est a dire }\det(f(e_1),...,f(e_n)) \ne 0
+\[
+\begin{gathered}
+\text{Soit } f : \mathbf{R}^n \to \mathbf{R}^n
+\text{ un endomorphisme linéaire. Les assertions suivantes sont équivalentes :} \\[6pt]
 
+1) \; f \text{ est bijectif} \\
+
+2) \; f \text{ est injectif} \\
+
+3) \; f \text{ est surjectif} \\
+
+4) \; \{ f(e_1), \dots, f(e_n) \}
+\text{ est une base de } \mathbf{R}^n \\
+
+5) \; \det(f) \neq 0
+\text{ c'est-à-dire }
+\det(f(e_1), \dots, f(e_n)) \neq 0
 \end{gathered}
 \]
+
 <p>Aussi aller voir regle de Cramer mais c'est long pour rien</p>
 </body>
 </html>
