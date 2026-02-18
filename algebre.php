@@ -234,8 +234,8 @@ Mat_B(\phi)=\begin{pmatrix}
 \text{Avec } B=(e_1,e_2,...,e_n) \text{ une base de V}\\
 \\
 \underline{\text{Exemple : }}\\
-
-\underline{\text{on peux aussi voir }}\phi(x,y)\\
+\text{Soit } \phi((x_1,x_2),(y_1,y_2))= x_1y_1~~+~~2x_1y_2~~+~~4x_2y_1~~+5_2y_2~~~~~~ B_c=(e_1,e_2)~~,~~B'=(f_1,f_2) ~~ avec ~~f_1=(1,1),f_2=(1,-1)
+\underline{\text{on peux aussi voir }}\phi(x,y)\\)
 \\
 X=\begin{pmatrix}
 x_1 \\
