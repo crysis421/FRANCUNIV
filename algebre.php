@@ -257,7 +257,8 @@ M'(\phi)=\begin{pmatrix}
 12 & -2\\
 -6 & 0\\
 \end{pmatrix}\\
-\underline{\text{on peux aussi voir }}\phi(x,y)\\)
+\\
+\underline{\text{on peux aussi voir }}\phi(x,y)\\
 \\
 X=\begin{pmatrix}
 x_1 \\
