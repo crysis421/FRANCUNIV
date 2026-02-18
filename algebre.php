@@ -246,7 +246,17 @@ M_{B_c}=\begin{pmatrix}
 \end{pmatrix}=\begin{pmatrix}
 1 & 2\\
 4 & 5\\
-\end{pmatrix}
+\end{pmatrix}\\
+M'=\begin{pmatrix}
+\phi(f_1,f_1) & \phi(f_1,f_2)\\
+\phi(f_2,f_1) & \phi(f_2,f_2)\\
+\end{pmatrix}=\begin{pmatrix}
+(1*1+2*1*1+4*1*1+5*1*1) & (1*1+2*1*-1+4*1*1+5*1*-1)\\
+(1*1+2*1*1+4*-1*1+5*-1*1) & (1*1+2*1*-1+4*-1*1+5*-1*-1)\\
+\end{pmatrix}=\begin{pmatrix}
+12 & -2\\
+-6 & 0\\
+\end{pmatrix}\\
 \underline{\text{on peux aussi voir }}\phi(x,y)\\)
 \\
 X=\begin{pmatrix}
