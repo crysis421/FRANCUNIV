@@ -268,7 +268,7 @@ A=M_b(\phi)\\
 <p>Soit M la matrice de f un endomorphisme(ca marche aussi avec les formes bilineaires). P la matrice de passage.Pour avoir la matrice M dans la base B' on fait :</p>
 \[M'=P^{-1}MP\]
 <h3>Produit scalaire</h3>
-\[\text{On appelle produit scalaire sur E toute application }~~\phi : E x E \rightarrow \mathbf{R}~~\text{  qui verifie les proprietes suivantes :}\]<br><p>
+\[\text{On appelle produit scalaire sur E toute application }~~\phi : E \Chi E \rightarrow \mathbf{R}~~\text{  qui verifie les proprietes suivantes :}\]<p>
 <ul>
     <li>Bilinearite</li>
     <li>Symetrique</li>
