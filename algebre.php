@@ -256,11 +256,15 @@ A=M_b(\phi)\\
 \phi(X,Y)=X^{T}AY
 \end{gathered}
 \]
-<p id="titre"> Changement de base :</p>
+<p class="titre"> Changement de base :</p>
 <p> Soit B et B' 2 bases de V . La matrice de passage de B vers B' notee P,P est la matrice inversible dont la j-i eme colonne est le
     vecteur e′j
     exprime dans la base B.</p>
 \[X=PX'~~~ \text{avec X,X' des coordonnees dans la base B et B'}
 \]
+<p class="titre">Exemple</p>
+
+<p>Soit M la matrice de f un endomorphisme.P la matrice de passage.Pour avoir la matrice M dans la base B' on fait :</p>
+\[M'=P^{-1}MP\]
 </body>
 </html>
