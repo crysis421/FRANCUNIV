@@ -142,3 +142,9 @@ h3{
 .titre{
     text-decoration: underline;
 }
+ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-weight: bold;
+}
