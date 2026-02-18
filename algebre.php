@@ -87,6 +87,8 @@ A &=
 \text{A est donc pas inversible }
 \end{gathered}
 \]
+<p>Si une matrice a 2 colonnes/lignes egaux ou si une ligne/colonne est
+    <br>une compinaison lineaire des autres, alors le determinant est nul </p>
 <p> Soit A un matrice carre de  taille n x n .Les permutations deux 2 colonnes inveerse le signe du determinant :</p>
 \[\begin{gathered}
 C_i \leftrightarrow C_j \\
