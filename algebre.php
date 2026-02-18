@@ -233,7 +233,8 @@ Mat_B(\phi)=\begin{pmatrix}
 \\
 \text{Avec } B=(e_1,e_2,...,e_n) \text{ une base de V}\\
 \\
-\underline{\text{Exemple : }}
+\underline{\text{Exemple : }}\\
+
 \underline{\text{on peux aussi voir }}\phi(x,y)\\
 \\
 X=\begin{pmatrix}
@@ -262,9 +263,19 @@ A=M_b(\phi)\\
     exprime dans la base B.</p>
 \[X=PX'~~~ \text{avec X,X' des coordonnees dans la base B et B'}
 \]
-<p class="titre">Exemple</p>
+<p class="titre">Exemple : </p>
 
 <p>Soit M la matrice de f un endomorphisme(ca marche aussi avec les formes bilineaires). P la matrice de passage.Pour avoir la matrice M dans la base B' on fait :</p>
 \[M'=P^{-1}MP\]
+<h3>Produit scalaire</h3>
+<p>On appelle produit scalaire sur E toute application \[\phi : E x E \rightarrow \mathbf{R}\] qui verifie les proprietes suivantes :<br>
+<ul>
+    <li>Bilinearite</li>
+    <li>Symetrique</li>
+    <li>Positivite</li>
+    <li>Definie</li>
+</ul>
+<br>
+Le produit scalaire entre x et y  est noté  ⟨x, y⟩, ⟨x | y⟩, (x | y), x · y </p>
 </body>
 </html>
