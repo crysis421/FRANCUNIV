@@ -263,10 +263,11 @@ A=M_b(\phi)\\
     exprime dans la base B.</p>
 \[X=PX'~~~ \text{avec X,X' des coordonnees dans la base B et B'}
 \]
-<p class="titre">Exemple : </p>
+
 
 <p>Soit M la matrice de f un endomorphisme(ca marche aussi avec les formes bilineaires). P la matrice de passage.Pour avoir la matrice M dans la base B' on fait :</p>
 \[M'=P^{-1}MP\]
+<p class="titre">Exemple : </p>
 <h3>Produit scalaire</h3>
 \[\text{On appelle produit scalaire sur E toute application }~~\phi : E \chi E \rightarrow \mathbf{R}~~\text{  qui verifie les proprietes suivantes :}\]<p>
 <ul>
