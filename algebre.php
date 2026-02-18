@@ -276,7 +276,6 @@ A=M_b(\phi)\\
     <li>Positivite</li>
     <li>Definie</li>
 </ul>
-<br>
 <p>Le produit scalaire entre x et y  est noté  ⟨x, y⟩, ⟨x | y⟩, (x | y), x · y </p>
 </body>
 </html>
