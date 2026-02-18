@@ -231,7 +231,8 @@ Mat_B(\phi)=\begin{pmatrix}
 \phi(e_n,e_1) & ... & \phi(e_n,e_n)
 \end{pmatrix}\\
 \\
-\text{Avec } B=(e_1,e_2,...,e_n) \text{ une base de V}
+\text{Avec } B=(e_1,e_2,...,e_n) \text{ une base de V}\\
+\\
 
 \underline{\text{on peux aussi voir }}\phi(x,y)\\
 \\
@@ -255,6 +256,11 @@ A=M_b(\phi)\\
 \phi(X,Y)=X^{T}AY
 \end{gathered}
 \]
-
+<p id="titre"> Changement de base :</p>
+<p> Soit B et B' 2 bases de V . La matrice de passage de B vers B' notee P,P est la matrice inversible dont la j-i eme colonne est le
+    vecteur e′j
+    exprime dans la base B.</p>
+\[X=PX'~~~ \text{avec X,X' des coordonnees dans la base B et B'}
+\]
 </body>
 </html>
