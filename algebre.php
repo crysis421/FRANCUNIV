@@ -233,7 +233,7 @@ Mat_B(\phi)=\begin{pmatrix}
 \\
 \text{Avec } B=(e_1,e_2,...,e_n) \text{ une base de V}\\
 \\
-
+\underline{\text{Exemple : }}
 \underline{\text{on peux aussi voir }}\phi(x,y)\\
 \\
 X=\begin{pmatrix}
@@ -264,7 +264,7 @@ A=M_b(\phi)\\
 \]
 <p class="titre">Exemple</p>
 
-<p>Soit M la matrice de f un endomorphisme.P la matrice de passage.Pour avoir la matrice M dans la base B' on fait :</p>
+<p>Soit M la matrice de f un endomorphisme(ca marche aussi avec les formes bilineaires). P la matrice de passage.Pour avoir la matrice M dans la base B' on fait :</p>
 \[M'=P^{-1}MP\]
 </body>
 </html>
