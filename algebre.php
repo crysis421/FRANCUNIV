@@ -237,7 +237,7 @@ Mat_B(\phi)=\begin{pmatrix}
 \text{Soit } \phi((x_1,x_2),(y_1,y_2))= x_1y_1~~+~~2x_1y_2~~+~~4x_2y_1~~+5_2y_2\\
 B_c=(e_1,e_2)~~,~~B'=(f_1,f_2) ~~ avec ~~f_1=(1,1),f_2=(1,-1)\\
 \\
-M_{B_c}=\begin{pmatrix}
+M_{B_c}(\phi)=\begin{pmatrix}
 \phi(e_1,e_1) & \phi(e_1,e_2)\\
 \phi(e_2,e_1) & \phi(e_2,e_2)\\
 \end{pmatrix} = \begin{pmatrix}
@@ -247,7 +247,7 @@ M_{B_c}=\begin{pmatrix}
 1 & 2\\
 4 & 5\\
 \end{pmatrix}\\
-M'=\begin{pmatrix}
+M'(\phi)=\begin{pmatrix}
 \phi(f_1,f_1) & \phi(f_1,f_2)\\
 \phi(f_2,f_1) & \phi(f_2,f_2)\\
 \end{pmatrix}=\begin{pmatrix}
