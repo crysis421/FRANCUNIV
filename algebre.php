@@ -216,7 +216,7 @@ det(f\circ g )=det(f)det(g)
 \phi(x,x)\ge 0 ~~~\forall x \in  V \\
 \\
 \underline{\text{Definie (separation) : }}~~~
-\phi(x,x) \ge0 \Leftrightarrow ~~~ x=0_V ~~~\forall x \in  V \\
+\phi(x,x) ~~= ~~0 \Leftrightarrow ~~~ x=0_V ~~~\forall x \in  V \\
 \\
 \underline{\text{Matrice de }}\phi : \\
 \\
